@@ -1,0 +1,21 @@
+body{
+    background-image: linear-gradient(green,red);
+}
+.di{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: large;
+    height: 400px;
+margin-left: 40%;
+}
+#name{
+    display: flex;
+    align-items: center;
+
+}
+#age{
+    display: flex;
+    align-items: center;
+ 
+}
