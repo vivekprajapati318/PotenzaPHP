@@ -29,13 +29,13 @@
 ?>
 <?php
 if (isset($_POST['send'])) {
-    print_r($_POST);
+
     $to = $_POST['email'];
     $subject = $_POST['subjecti'];
     $massage = $_POST['massage'];
     $header = "from: vivekprajapati318@gmail.com";
 
-    if (mail($to, $subject, $massage, $header)) {
+    if (mail($to, $subject, $massage)) {
         echo "massage sent";
     } else {
         echo "error";
