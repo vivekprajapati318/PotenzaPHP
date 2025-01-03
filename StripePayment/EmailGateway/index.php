@@ -24,21 +24,45 @@
 </body>
 
 </html>
-<?php
 
-?>
+
 <?php
+require "vendor/autoload.php";
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
 if (isset($_POST['send'])) {
-
-    $to = $_POST['email'];
+    print_r($_POST);
+    $name = $_POST['name'];
+    $email = $_POST['email'];
     $subject = $_POST['subjecti'];
-    $massage = $_POST['massage'];
-    $header = "from: vivekprajapati318@gmail.com";
+    $message = $_POST['massage'];
 
-    if (mail($to, $subject, $massage)) {
-        echo "massage sent";
-    } else {
-        echo "error";
+    // Setup PHPMailer
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();
+    $mail->SMTPAuth = true;
+    $mail->Host = 'smtp.gmail.com'; // Replace with your SMTP server (e.g., smtp.gmail.com)
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = 587;
+    $mail->Username = 'vivekprajapati120304@gmail.com'; // Replace with your SMTP username
+    $mail->Password = 'zjph mmhq zwsc fhpy'; // Replace with your SMTP password
+
+    // Sender and recipient
+    $mail->setFrom('vivekprajapati120304@gmail.com', 'Vivek Prajapati'); // Sender's email
+    $mail->addAddress($email, 'Vivek Prajapati'); // Recipient's email
+
+    // Email content
+    $mail->Subject = $subject;
+    $mail->Body = $message;
+
+    // Send email
+    try {
+        $mail->send();
+        echo "Message has been sent.";
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
 ?>
