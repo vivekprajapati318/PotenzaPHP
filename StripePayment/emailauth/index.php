@@ -44,14 +44,14 @@
                         email: email
                     },
                     success: function(data) {
-
+                        console.log(data)
                         $('#send').hide();
                         $('#otp').show();
                         alert("Message has been sent.")
                         $("#submit").on("click", function() {
-
                             var OTP = $("#code").val();
-                            console.log(OTP)
+
+                            console.log(OTP, data)
                             if (OTP == data) {
                                 alert("otp is right")
                             } else {
