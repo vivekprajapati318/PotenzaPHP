@@ -19,7 +19,7 @@ require __DIR__ . "/vendor/autoload.php";
         <select name="clothes" id="clothes">
 
             <option value="pents">pents</option>
-            <option value="shirt">shirt</option>
+            <option value="chaddi">shirt</option>
             <option value="Tshirt">Tshirt</option>
         </select>
         <label for="number" class="number" id="label2">enter amount</label>

@@ -6,6 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Gatway</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+        body {
+            background-image: linear-gradient(255deg, blue, aqua);
+        }
+
+        input,
+        textarea {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 45%;
+            color: black;
+            background: #9687f1;
+        }
+
+        label {
+            margin-left: 45%;
+            color: #9687f1;
+            font-size: larger;
+            font-weight: 500;
+        }
+
+        #send {
+            background-image: radial-gradient(#635356, rgb(66, 122, 182));
+            color: rgb(135, 190, 241);
+            font-size: larger;
+            font-weight: 500;
+        }
+    </style>
 </head>
 
 <body>
