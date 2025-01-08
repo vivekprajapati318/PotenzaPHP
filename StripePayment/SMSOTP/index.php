@@ -131,12 +131,13 @@
 
                 $.ajax({
                     url: "varify.php",
-                    type: "POST",
+                    type: "post",
                     data: {
                         name: name,
                         number: number
                     },
                     success: function(data) {
+                        console.log(data)
                         data = data.trim();
                         alert("OTP sent");
                         $("#varification").show();
@@ -148,9 +149,11 @@
                         $("#varify").on("click", function() {
                             var otp = $("#otp").val();
                             if (otp == data) {
+                                console.log(data, otp)
                                 alert("OTP is correct!");
                             } else {
                                 alert("Incorrect OTP. Try again!");
+                                console.log(data, otp)
                             }
                         });
                     }
