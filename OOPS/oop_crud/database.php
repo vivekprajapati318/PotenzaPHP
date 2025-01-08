@@ -2,7 +2,6 @@
 
 use LDAP\Result;
 
-
 class Database
 {
     private $dbServer = "localhost";
@@ -25,7 +24,6 @@ class Database
         $table_column = implode(', ', array_keys($param));
         $table_value = implode("', '", $param);
 
-
         $sql = "INSERT INTO  $table ( $table_column) VALUES('$table_value')";
         if ($this->connn->query($sql)) {
             array_push($this->result, $this->connn->connect_error);
@@ -34,9 +32,9 @@ class Database
             echo  "Error";
         }
     }
+
     function update($table, $param = array(), $where = null)
     {
-
         foreach ($param as $k => $l) {
             $args[] = "$k='$l'";
         }
@@ -51,6 +49,7 @@ class Database
             echo  "Error";
         }
     }
+
     function delete($table,  $where = null)
     {
         $sql = "DELETE from $table ";
@@ -97,7 +96,6 @@ class Database
         }
     }
 
-
     function show($sql)
     {
         $query = $this->connn->query($sql);
@@ -109,6 +107,7 @@ class Database
             return false;
         }
     }
+
     function pagination($table,  $where = null,  $limit = null)
     {
         if ($limit != null) {
@@ -151,59 +150,120 @@ margin-left:20%;  list-style-type: none;'>";
             echo  $out . "  ";
         }
     }
+
     function getdata($table, $where, $limit)
     {
         $val = $this->result;
-
         $this->result = array();
-
 ?>
-
 
         <html>
 
+        <head>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f9;
+                    padding: 20px;
+                }
+
+                table {
+                    width: 100%;
+                    margin-top: 20px;
+                    border-collapse: collapse;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }
+
+                th,
+                td {
+                    padding: 12px;
+                    text-align: left;
+                    border: 1px solid #ddd;
+                }
+
+                th {
+                    background-color: #007bff;
+                    color: white;
+                }
+
+                td {
+                    background-color: #f9f9f9;
+                }
+
+                .pagination {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    list-style: none;
+                }
+
+                .pagination li {
+                    margin: 0 5px;
+                }
+
+                .pagination a {
+                    padding: 10px;
+                    background-color: #007bff;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                }
+
+                .pagination a:hover {
+                    background-color: #0056b3;
+                }
+
+                .active a {
+                    background-color: #0056b3;
+                }
+            </style>
+        </head>
+
         <body>
 
+            <div class="container">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Phone</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $sql = "SELECT * from $table";
 
-            <div>
-                <table class='table' id="myTable" style='display:flex;margin-left:40%;width: 500px; height: 250px;background-image: linear-gradient(30deg, yellow, transparent);'>
-                    <tr>
-                        <th style="margin-left:20px;">ID</th>
-                        <th>name</th>
-                        <th>age</th>
-                        <th>phone</th>
-                        <th>pass</th>
-                    </tr>
-                    <?php
-                    $sql = "SELECT * from $table";
-
-                    if ($where != null) {
-                        $sql .= "  WHERE $where";
-                    }
-
-                    if ($limit != null) {
-
-                        if (isset($_GET['page'])) {
-                            $page = $_GET['page'];
-                        } else {
-                            $page = 1;
+                        if ($where != null) {
+                            $sql .= "  WHERE $where";
                         }
-                        $start = ($page - 1) * $limit;
-                        $sql .= "  LIMIT $start,$limit";
-                    }
-                    $result =  $this->connn->query($sql);
-                    $sno = 0;
-                    while ($row = mysqli_fetch_assoc($result)) {
 
+                        if ($limit != null) {
 
-                        $sno = $sno + 1;
-                        echo "  <tr>
-                <td>" . $sno . "</td>
-                <td>" . $row['UserName'] . "</td>
-                <td>" . $row['age'] . "</td>
-                <td>" . $row['phone'] . "</td>
-                <td>" . $row['password'] . "</td></tr>";
-                    } ?>
+                            if (isset($_GET['page'])) {
+                                $page = $_GET['page'];
+                            } else {
+                                $page = 1;
+                            }
+                            $start = ($page - 1) * $limit;
+                            $sql .= "  LIMIT $start,$limit";
+                        }
+                        $result =  $this->connn->query($sql);
+                        $sno = 0;
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            $sno = $sno + 1;
+                            echo "  <tr>
+                                <td>" . $sno . "</td>
+                                <td>" . $row['UserName'] . "</td>
+                                <td>" . $row['age'] . "</td>
+                                <td>" . $row['phone'] . "</td>
+                                <td>" . $row['password'] . "</td></tr>";
+                        }
+                        ?>
+                    </tbody>
                 </table>
             </div>
 

@@ -143,7 +143,6 @@
                         $("#varification").show();
                         $("#send").hide();
 
-                        // Apply the slide-in effect for OTP verification
                         $(".otp-container").css("animation", "slideIn 1s ease-out");
 
                         $("#varify").on("click", function() {
