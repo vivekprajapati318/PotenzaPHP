@@ -1,0 +1,308 @@
+::selection {
+    background: $apple;
+    color: $white;
+    text-shadow: none;
+}
+body {
+  color: $muted;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: $font-open-sans;
+}
+.button,
+a,
+button,
+input,
+input[type=submit],
+select,
+textarea {
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out
+}
+
+btn,
+input,
+select,
+textarea {
+	outline: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $secondary;
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-family: $font-poppins;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 44px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 38px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 26px;
+	line-height: 34px;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+h5 {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+h6 {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 500;
+}
+
+hr {
+	margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    background-color: $gray-light !important;
+}
+.section-title h1,
+.section-title h2,
+.section-title h3,
+.section-title h4,
+.section-title h5,
+.section-title h6 {
+	word-break: break-word
+}
+
+table {
+	border: 1px solid $bg-gray-light;
+	margin-bottom: 20px
+}
+
+table#wp-calendar {
+	background: $white
+}
+
+table {
+	caption {
+		color: $muted
+	}
+	th {
+		background: $bg-gray-lightest;
+		color: $secondary
+	}
+	td, th {
+		border: 1px solid #eaeaea;
+		padding: 4px 8px
+	}
+}
+dl {
+	dd {
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+ol,
+ul {
+	padding-left: 25px;
+	margin-bottom: 1em
+}
+
+ol {
+	padding-left: 0
+	li {
+		list-style: decimal inside
+	}
+}
+
+ol ol {
+	padding-left: 25px
+}
+
+ul li {
+	list-style: inherit
+}
+
+ul.list-inside {
+	padding-left: 15px
+}
+
+ul.list-inside li {
+	list-style-position: inside
+}
+
+a {
+	color: $primary;
+	outline: 0
+}
+
+a:focus,
+a:hover {
+	color: $secondary;
+	text-decoration: none
+}
+
+ins {
+	background: #fff9c0;
+	text-decoration: none
+}
+
+img {
+	max-width: 100%
+}
+
+pre {
+	background: $bg-gray-light;
+	padding: 20px;
+	border: 1px solid #e1e1e1
+}
+
+select {
+	border-color: $border-darkest;
+	border: 1px solid $border-darkest;
+	height: 43px;
+	padding: 0 10px
+}
+
+abbr[title] {
+	text-decoration: none
+}
+
+audio, video {
+	width: 100%;
+	vertical-align: top;
+}
+
+blockquote {
+    background: 0 0;
+    padding: 0 20px;
+    line-height: 26px;
+    font-weight: 400;
+	border-left: 3px solid $primary;
+	p {
+		display: table;
+		vertical-align: top;
+		margin-bottom: 10px;
+	}
+	.quote-author {
+		color: $primary;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: left!important;
+	}
+}
+@media only screen and (max-width:1199px) {
+	h1 {
+		font-size: 40px;
+		line-height: 50px
+	}
+	h2 {
+		font-size: 32px;
+		line-height: 42px
+	}
+	h3 {
+		font-size: 26px;
+		line-height: 36px
+	}
+	h4 {
+		font-size: 22px;
+		line-height: 32px
+	}
+}
+
+@media only screen and (max-width:991px) {
+h1 {
+	font-size: 36px;
+	line-height: 46px
+}
+h2 {
+	font-size: 30px;
+	line-height: 40px
+}
+h3 {
+	font-size: 24px;
+	line-height: 34px
+}
+h4 {
+	font-size: 21px;
+	line-height: 28px
+}
+h5 {
+	font-size: 19px;
+	line-height: 22px
+}
+}
+@media only screen and (max-width:767px) {
+	h1 {
+		font-size: 32px;
+		line-height: 40px
+	}
+	h2 {
+		font-size: 26px;
+		line-height: 34px
+	}
+	h3 {
+		font-size: 22px;
+		line-height: 30px
+	}
+	h4 {
+		font-size: 20px;
+		line-height: 26px
+	}
+	h5 {
+		font-size: 18px;
+		line-height: 22px
+	}
+	h6 {
+		font-size: 17px;
+		line-height: 22px
+	}
+}
+@media only screen and (max-width:479px) {
+	h1 {
+		font-size: 26px;
+		line-height: 30px
+	}
+	h2 {
+		font-size: 22px;
+		line-height: 26px
+	}
+	h3 {
+		font-size: 20px;
+		line-height: 24px
+	}
+	h4 {
+		font-size: 19px;
+		line-height: 22px
+	}
+	h5 {
+		font-size: 17px;
+		line-height: 22px
+	}
+	h6 {
+		font-size: 16px;
+		line-height: 22px
+	}
+} 

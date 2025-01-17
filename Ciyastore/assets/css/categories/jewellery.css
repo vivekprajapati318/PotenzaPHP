@@ -1,0 +1,671 @@
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: "Playfair Display", sans-serif; }
+
+h1 {
+  line-height: 50px;
+  font-size: 44px; }
+
+h2 {
+  line-height: 42px;
+  font-size: 36px; }
+
+h3 {
+  line-height: 36px;
+  font-size: 30px; }
+
+h4 {
+  line-height: 30px;
+  font-size: 24px; }
+
+h5 {
+  line-height: 26px;
+  font-size: 20px; }
+
+h6 {
+  line-height: 24px;
+  font-size: 18px; }
+
+/***************************
+    REVOLUTION SLIDER
+***************************/
+.persephone.tparrows {
+  background: #323232 !important;
+  width: 34px !important;
+  height: 34px !important;
+  border: 1px solid rgba(255, 255, 255, 0) !important;
+  cursor: pointer;
+  background: rgba(201, 201, 201, 0.75);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 100;
+  border: 1px solid white; }
+  .persephone.tparrows:before {
+    line-height: 34px !important;
+    font-size: 13px !important;
+    font-family: "revicons";
+    font-size: 15px;
+    color: white;
+    display: block;
+    line-height: 40px;
+    text-align: center; }
+  .persephone.tparrows:hover {
+    background: #ccb883 !important;
+    background: black; }
+
+.persephone.tparrows.tp-leftarrow:before {
+  content: "\e824"; }
+
+.persephone.tparrows.tp-rightarrow:before {
+  content: "\e825"; }
+
+/***************************
+        HEADER CSS
+***************************/
+header.site-header {
+  background: #fff; }
+  header.site-header .header-nav {
+    background: #ccb883; }
+  header.site-header .logo-wrapper {
+    text-align: center;padding: 15px 0;}
+    header.site-header .logo-wrapper.sticky-logo{ display: none;  }
+    header.site-header.is-sticky .logo-wrapper.sticky-logo{ display: inline-block; }
+    header.site-header.is-sticky .logo-wrapper img{ max-height: 50px; }
+    header.site-header .logo-wrapper img {
+      max-height: 70px;
+      width: auto;
+      max-width: initial; }
+  header.site-header .topbar .topbar-link ul li a:hover {
+    color: #ccb883; }
+  header.site-header .topbar .topbar-right .topbar-link > ul > li a:hover {
+    color: #ccb883; }
+    header.site-header .topbar .topbar-right .topbar-link > ul > li a:hover i {
+      color: #ccb883; }
+  header.site-header .ciya-tools-cart a .count {
+    background: #ccb883; }
+  header.site-header .ciya-tools-cart .cart-link .count {
+    background: #ccb883 !important; }
+  header.site-header .ciya-tools-wishlist a .ciyastore-wishlist-count {
+    background: #ccb883 !important; }
+  header.site-header .ciya-tools-actions li .widget-shopping-cart .product-list-widget-container .ciyastore-mini-cart .ciya-mini-cart-item a.product-title {
+    color: #323232; }
+    header.site-header .ciya-tools-actions li .widget-shopping-cart .product-list-widget-container .ciyastore-mini-cart .ciya-mini-cart-item a.product-title:hover {
+      color: #ccb883; }
+  header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button {
+    background: #ccb883; }
+    header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button:hover {
+      background: #323232;
+      color: #ffffff !important; }
+    header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button:last-child {
+      background: #323232;
+      margin-right: 0; }
+      header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button:last-child:hover {
+        background: #ccb883;
+        color: #ffffff !important; }
+  header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__total .amount {
+    color: #ccb883; }
+  header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__total strong {
+    color: #323232;
+    min-width: 40px;
+    display: inline-block; }
+  header.site-header .ciya-tools-actions li .widget-shopping-cart .quantity .amount {
+    color: #ccb883; }
+  header.site-header .ciya-tools-actions > li i {
+    color: #fff; }
+  header.site-header .ciya-tools-actions > li:hover i {
+    color: #ccb883; }
+  header.site-header .ciya-tools-actions > li:focus i {
+    color: #ccb883; }
+
+.header-style-topbar-with-main-header .header-main-bg-color-default {
+  background: #ccb883; }
+
+.header-style-topbar-with-main-header .mega-menu .menu-links > li > a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px; }
+
+.header-style-topbar-with-main-header .mega-menu .menu-links > li:hover > a {
+  color: #fff; }
+
+.header-style-topbar-with-main-header .mega-menu .menu-links > li:focus > a {
+  color: #fff; }
+
+.header-style-topbar-with-main-header .header-search-wrap .search-button-wrap .search-button {
+  color: #fff;box-shadow: none !important;
+    background: inherit !important;
+    border-color: inherit !important; }
+
+
+  .header-style-topbar-with-main-header .header-search-wrap .search-button-wrap .search-button:hover {
+    color: #323232; }
+    .header-style-topbar-with-main-header.is-sticky .header-search-wrap .search-button-wrap .search-button:hover {
+    color: #ccb883; }
+
+i.hot-label {
+  background: #ff605f;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 2px 5px;
+  line-height: 16px;
+  margin-left: 5px;
+  border-radius: 2px;
+  position: relative;
+  top: -2px; }
+
+header.site-header.is-sticky .header-nav {
+  margin-left: auto;
+  background: #fff; }
+
+header.site-header.is-sticky.header-style-topbar-with-main-header .header-main-bg-color-default {
+  background: #fff; }
+
+header.site-header.is-sticky.header-style-topbar-with-main-header .mega-menu .menu-links > li > a {
+  color: #969696; }
+
+header.site-header.is-sticky.header-style-topbar-with-main-header .mega-menu .menu-links > li:hover > a {
+  color: #ccb883; }
+
+header.site-header.is-sticky.header-style-topbar-with-main-header .ciya-tools-actions > li i {
+  color: #969696 !important; }
+
+header.site-header.is-sticky.header-style-topbar-with-main-header .ciya-tools-actions > li a:hover i {
+  color: #ccb883 !important; }
+
+.mega-menu * {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px; }
+
+/***************************
+        FOOTER CSS
+***************************/
+footer.site-footer {
+  background: #f5f5f5;
+  color: #969696; }
+
+footer.site-footer .site-info {
+  background: #fff; }
+
+footer.site-footer .site-info .footer-widget p {
+  color: #969696; }
+
+footer.site-footer .footer-title {
+  color: #323232; }
+
+footer.site-footer .footer-nav-menu ul li:hover a {
+  color: #ccb883; }
+
+footer.site-footer .widget ul li a {
+  color: #969696; }
+
+footer.site-footer .pgs-social-profiles .social-profiles ul li a i {
+  color: #969696;
+  border: 1px solid rgba(173, 173, 173, 0.5); }
+
+footer.site-footer .pgs-social-profiles .social-profiles ul li a:hover i {
+  background-color: #ccb883;
+  border-color: #ccb883;
+  color: #fff; }
+
+footer.site-footer .site-info .footer-widget p a {
+  color: #969696; }
+
+footer.site-footer .site-info .footer-widget p a:hover {
+  color: #ccb883; }
+
+footer.site-footer .pgs-contact-widget ul li i {
+  color: #969696; }
+
+footer.site-footer .site-info a {
+  color: #969696; }
+
+footer.site-footer .site-info a:hover {
+  color: #ccb883; }
+
+footer.site-footer .pgs-recent-entries .recent-post .recent-post-info a {
+  color: #969696; }
+
+footer.site-footer .pgs-recent-entries .recent-post .recent-post-info a:hover {
+  color: #ccb883; }
+
+footer.site-footer .pgs-recent-entries .recent-post .recent-post-info .post-date i {
+  color: #ccb883; }
+
+footer.site-footer .product-tag-cloud .tagcloud a {
+  border: 1px solid rgba(150, 150, 150, 0.25);
+  color: #969696; }
+
+footer.site-footer .product-tag-cloud .tagcloud a:hover,
+footer.site-footer .product-tag-cloud .tagcloud a:focus {
+  border-color: #ccb883;
+  background-color: #ccb883; }
+
+footer.site-footer .pgs-newsletter-widget .newsletter_form .button-area .input-group-btn > .btn {
+  border-color: #ccb883;
+  background-color: #ccb883; }
+
+/***************************
+        LAYOUT CSS
+***************************/
+.ciyastore_banner {
+  margin-bottom: 30px; }
+  .ciyastore_banner h5 {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1em; }
+  .ciyastore_banner h4 {
+    color: #fff;
+    text-transform: uppercase; }
+  .ciyastore_banner h2 {
+    font-weight: 400; }
+  .ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn:hover,
+  .ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn:focus {
+    border-color: #fff;
+    color: #fff; }
+  .ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn {
+    border-color: #ccb883;
+    color: #ccb883;
+    font-size: 12px;
+    letter-spacing: 4px;
+    line-height: 34px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 500; }
+
+.bg-gray {
+  background: #f7f8fb; }
+
+.products .product-info .product-name a:hover,
+.products .product-info .product-name a:focus {
+  color: #ccb883; }
+
+.products .product-hover-button-style-flat .product-actions a:hover {
+  color: #ccb883; }
+
+.owl-carousel:hover .owl-nav .owl-next:hover i, .owl-carousel:hover .owl-nav .owl-prev:hover i {
+  background: #ccb883; }
+
+.product-deals-items-column .product-deals-item .product-deals-item-right .product-deal-content .product-deal-content-price ins {
+  color: #ccb883; }
+
+.products-listing-intro-wrapper .products-listing-link a {
+  color: #ccb883; }
+
+.ciyastore_banner h4 {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 0; }
+
+.ciyastore_banner h5 {
+  letter-spacing: 6px;
+  font-size: 13px;
+  text-transform: uppercase; font-family: Abril Fatface;    font-weight: 400;}
+
+.ciyastore_banner.ciyastore_banner-1 {
+  margin-bottom: 15px; }
+  .ciyastore_banner.ciyastore_banner-1 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper
+.ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn {
+    background: 0 0;
+    border-color: #fff;
+    color: #ffff; }
+    .ciyastore_banner.ciyastore_banner-1 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper
+.ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn:hover {
+      background: 0 0;
+      border-color: #ccb883;
+      color: #ccb883; }
+
+.ciyastore_banner.ciyastore_banner-2 {
+  margin-bottom: 15px; }
+  .ciyastore_banner.ciyastore_banner-2 h4, .ciyastore_banner.ciyastore_banner-2 h5 {
+    color: #323232; }
+  .ciyastore_banner.ciyastore_banner-2 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper
+.ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn {
+    background: 0 0;
+    border-color: #323232;
+    color: #323232; }
+    .ciyastore_banner.ciyastore_banner-2 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper
+.ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn:hover {
+      background: 0 0;
+      border-color: #ccb883;
+      color: #ccb883; }
+
+.ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper
+.ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn {
+  background: #ccb883;
+  border-color: #ccb883;
+  color: #fff;
+  border-radius: 3px; }
+
+.ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn:hover,
+.ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn:focus {
+  background: #323232;
+  border-color: #323232;
+  color: #fff; }
+
+.ciyastore-info-box {
+  position: relative;
+  margin-bottom: 30px; }
+  .ciyastore-info-box .ciyastore-info-box-icon {
+    color: #ccb883; }
+    .ciyastore-info-box .ciyastore-info-box-icon.ciya-shop-info-box-size-md {
+      width: 50px;
+      height: 50px;
+      font-size: 44px;
+      line-height: 48px; }
+  .ciyastore-info-box .ciyastore-info-box-step {
+    font-size: 85px;
+    font-weight: 500;
+    color: #000;
+    opacity: .03;
+    line-height: 85px;
+    position: absolute;
+    left: 0;
+    top: -10px; }
+  .ciyastore-info-box .ciyastore-info-box-title {
+    text-transform: uppercase; }
+
+.address-info-box {
+  padding: 40px 0 10px; }
+  .address-info-box .ciyastore-info-box .ciyastore-info-box-icon {
+    transition: all .3s ease-in-out; }
+  .address-info-box .ciyastore-info-box:hover .ciyastore-info-box-icon {
+    transform: scale(1.2); }
+  .address-info-box .ciyastore-info-box .ciyastore-info-box-description p {
+    color: #323232; }
+
+.ciyastore_newsletter_wrapper {
+  position: relative;
+  padding: 40px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  display: flex;
+  align-items: center; }
+  .ciyastore_newsletter_wrapper .newsletter-wrapper {
+    text-align: right;
+    padding-right: 15%;
+    padding-left: 0; }
+    .ciyastore_newsletter_wrapper .newsletter-wrapper .newsletter-title {
+      color: #323232;
+      text-transform: uppercase; }
+    .ciyastore_newsletter_wrapper .newsletter-wrapper .newsletter-email {
+      background: rgba(121, 121, 121, 0.4);
+      color: #fff;
+      border-color: transparent; }
+      .newsletter-wrapper.newsletter-style-2.newsletter-bg-type-light .input-area input[type=text]:focus{border-color: #ccb883;}
+
+.latest-post-wrapper .latest-post-item .latest-post-meta ul li i,
+.latest-post-wrapper .latest-post-item .latest-post-meta ul li a:hover,
+.latest-post-wrapper .latest-post-item .latest-post-meta ul li a:focus,
+.latest-post-wrapper .latest-post-item .blog-title a:hover,
+.latest-post-wrapper .latest-post-item .blog-title a:focus {
+  color: #ccb883; }
+
+.ciyastore_clients {
+  background: #ccb883;
+  padding: 80px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+button.submit {
+  background: #ccb883;
+  color: #fff; }
+  button.submit:hover {
+    background: #fff;
+    color: #323232; }
+
+.instafeed {
+  padding: 30px;
+  background: #f5f5f5; }
+
+.insta_v2_header--button a {
+  background: #ccb883;
+  color: #fff; }
+  .insta_v2_header--button a:hover {
+    background: #323232;
+    color: #fff; }
+
+.ciyastore_info_box-with-icon.ciyastore_info_box-icon-source-font.ciyastore_info_box-icon-size-sm .ciyastore_info_box-icon i {
+  color: #ccb883; }
+
+.mobile-butoon-menu {
+  float: right;
+  margin-top: 10px; }
+
+#back-to-top .top {
+  background: #ccb883; }
+#back-to-top .top:hover{    background: #323232;}
+#back-to-top .top i{font-weight: bold;}
+
+/*** Modal ***/
+#compare,#search-popup{ -webkit-overflow-scrolling: touch;}
+.table.compare-list{ border:none;font-size: 15px;     font-family: "Poppins", sans-serif;}
+.table.compare-list th{background: #fff; color: #323232;border-left-color: #e7e7e7;}
+.compare-modal .compare-content table tbody tr th{font-weight: 600;}
+.compare-modal .compare-content .compare-title h1{color: #ccb883;border:none;font-family: "Fredericka the Great", sans-serif;}
+.compare-modal .compare-wrapper{    background: #fff;    color: #323232;}
+.compare-modal .compare-content table tbody .remove th, .compare-modal .compare-content table tbody .remove td{border-top: 1px solid #dee2e6;}
+table.compare-list td, table.compare-list th{    padding: 10px 15px;border-bottom: 1px solid #f1f1f1;border-right: 1px solid #f1f1f1;    border-right-color:#e7e7e7;border-bottom-color:#e7e7e7;}
+.compare-modal .compare-content table tbody tr td:nth-of-type(odd){     background: #F7F7F7;color: #323232;  }
+.compare-modal .compare-content table tbody tr.title td { color: #323232; }
+.compare-modal .compare-content table tbody tr.price .ciya-Price-amount.amount,.compare-modal .compare-content table tbody tr.stock span,.compare-modal .compare-content table tbody tr.price .ciya-Price-amount.amount{color: #ccb883;}
+.compare-modal .compare-content table tbody tr.add-to-cart a { background: #ccb883; }
+.compare-modal .compare-content table tbody tr.add-to-cart a:hover{ background: #323232; }
+.compare-modal .compare-content .compare-title button.close{opacity: 1;right: 5px;}
+.compare-modal .compare-content .compare-title button.close span{ color:#323232; }
+.search-modal { background: transparent; }
+.search-modal .search-wrapper .search-modal-content { background: #fff; }
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner{    background: rgba(255,255,255,.01);border: 1px solid rgba(255,255,255,.1);}
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-search-button:before{ color: #ccb883;}
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner input.form-control{color: #969696;}
+.modal-header .close { color: #323232;opacity: 1;}
+.modal-header .close:focus{ outline: none; }
+.select2-container--default .select2-results__option[aria-selected="true"] {     background-color: #ccb883; }
+.select2-container--default .select2-results__option:hover { background-color: #ccb883; color: #fff;  }
+
+/***************************
+    RISPONSIVE CSS
+***************************/
+@media only screen and (max-width: 1399px) {
+  .ciyastore_newsletter_wrapper .newsletter-wrapper {
+    padding-right: 20%;
+    padding-top: 0;
+    padding-bottom: 0; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+
+@media only screen and (max-width: 1199px) {
+  h1 {
+    font-size: 40px;
+    line-height: 50px; }
+  h2 {
+    font-size: 32px;
+    line-height: 42px; }
+  h3 {
+    font-size: 26px;
+    line-height: 36px; }
+  h4 {
+    font-size: 22px;
+    line-height: 32px; }
+  .ciyastore_banner .ciyastore_banner-content {
+    padding: 15px 25px; }
+  .ciyastore_banner h4 {
+    font-size: 26px;
+    line-height: 26px; }
+  .ciyastore_banner h5 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0; }
+
+footer.site-footer .pgs-social-profiles .social-profiles ul li { margin-right: 4px; }
+
+
+     }
+
+@media only screen and (min-width: 992px) {
+  .ciyastore_banner {
+    background: 0 0 !important; } }
+
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 36px;
+    line-height: 46px; }
+  h2 {
+    font-size: 30px;
+    line-height: 40px; }
+  h3 {
+    font-size: 24px;
+    line-height: 34px; }
+  h4 {
+    font-size: 21px;
+    line-height: 28px; }
+  h5 {
+    font-size: 19px;
+    line-height: 22px; }
+  .ciyastore_banner .ciyastore_banner-content {
+    position: relative; }
+  .header-style-topbar-with-main-header .ciya-tools-actions > li i {
+    color: #323232 !important; }
+    .header-style-topbar-with-main-header .header-search-wrap .search-button-wrap .search-button {
+    color: #323232 !important; }
+  header.site-header .header-main-bg-color-default {
+    padding: 0 20px; }
+  header.site-header .logo-wrapper.sticky-logo {
+    display: inline-block; }
+.mobile-button-menu { float: right;margin-top: 10px; }
+  .ciyastore_banner {
+    background-size: cover;
+    background-position: center center; }
+    .ciyastore_banner .ciyastore_banner-image {
+      display: none; }
+  header.site-header.is-sticky .mobile-butoon-menu {
+    margin-top: 20px; }
+  .ciyastore_newsletter_wrapper .newsletter-wrapper {
+    padding-right: 0; }
+  .header-style-topbar-with-main-header .header-main-bg-color-default,
+  header.site-header .header-nav {
+    background: #fff; }
+  header.site-header .header-nav {
+    display: none; }
+  header.site-header.is-sticky .ciya-tools {
+    display: none; }
+  .our-clients {
+    margin-top: 20px; }
+  .ciyastore_banner h4 {
+    font-size: 24px;
+    line-height: 32px; }
+  .ciyastore_banner h5 {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0; }
+  .ciyastore_banner .ciyastore_banner-content {
+    padding: 25px; }
+  .products-listing-intro-wrapper .products-listing-title h2 {
+    font-size: 28px;
+    line-height: 38px; } }
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px; }
+  h2 {
+    font-size: 26px;
+    line-height: 34px; }
+  h3 {
+    font-size: 22px;
+    line-height: 30px; }
+  h4 {
+    font-size: 20px;
+    line-height: 26px; }
+  h5 {
+    font-size: 18px;
+    line-height: 22px; }
+  h6 {
+    font-size: 17px;
+    line-height: 22px; }
+  .products-listing-intro-wrapper .products-listing-title h2 {
+    font-size: 22px;
+    line-height: 36px; }
+  .ciyastore_newsletter_wrapper {
+    padding: 40px 20px; }
+  .ciyastore_banner h4 {
+    font-size: 20px;
+    line-height: 26px; }
+  .ciyastore_banner h5 {
+    font-size: 10px;
+    line-height: 16px;
+    margin-bottom: 0; }
+  .ciyastore_banner.ciyastore_banner-1 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-size-md .ciyastore_banner-btn {
+    border-width: 1px; }
+  footer.site-footer .site-info .text-right {
+    text-align: center !important; }
+  .ciyastore-info-box {
+    margin-bottom: 40px; }
+  .address-info-box .ciyastore-info-box {
+    margin-bottom: 30px; }
+
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner .search_form-input-wrap { margin-bottom: 0; }
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner .search_form-category-wrap{ margin-bottom: 0; }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+.search-modal .search-wrapper .search-modal-content {vertical-align: middle;   padding-top: 0;}
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner .search_form-category-wrap{ margin-bottom: 20px; }
+.compare-modal .compare-content .compare-title button.close{opacity: 1;right: 5px;top: 15px;}
+
+}
+
+
+@media only screen and (max-width: 479px) {
+  h1 {
+    font-size: 26px;
+    line-height: 30px; }
+  h2 {
+    font-size: 22px;
+    line-height: 26px; }
+  h3 {
+    font-size: 20px;
+    line-height: 24px; }
+  h4 {
+    font-size: 19px;
+    line-height: 22px; }
+  h5 {
+    font-size: 17px;
+    line-height: 22px; }
+  h6 {
+    font-size: 16px;
+    line-height: 22px; }
+  .ciyastore_clients.ciyastore_clients-grid-column-4 li {
+    width: 48%; } }
+
+
+@media only screen and (max-width: 370px) {
+header.site-header .logo-wrapper img { max-height: 50px; }
+header.site-header .ciya-tools .ciya-tools-actions li { width: 26px; }
+}
+
+

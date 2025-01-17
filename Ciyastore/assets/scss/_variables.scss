@@ -1,0 +1,110 @@
+// Base colors 
+$primary           :    #04d39f !default;
+$secondary         :    #323232 !default;
+$muted             :    #969696 !default;
+
+//white base color
+
+$white             :    #ffffff;
+$bg-gray-dark      :    darken( $white, 5% ); //#f2f2f2
+$bg-gray-darker    :    darken( $white, 4.8% ); //#f3f3f3 
+$bg-gray-light     :    darken( $white, 4% ); //#f5f5f5  (whitesmoke)
+$bg-gray-lighter   :    darken( $white, 2.6% ); //#f8f8f8 (use this color where #f9f9f9 and #f7f7f7)     
+$bg-gray-lightest  :    darken( $white, 1.5% ); // #fbfbfb
+$border-darkest    :    darken( $white, 9% ); //#e8e8e8  (#e8ebf1)
+$border-darker     :    darken( $white, 9.5% ); //#e7e7e7
+$border-dark       :    darken( $white, 10% ); //#e6e6e6
+$border-base       :    darken( $white, 10.2% ); //#e5e5e5
+$border-light      :    darken( $white, 6.5% ); //#eeeeee  
+$border-lighter    :    darken( $white, 7.5% ); //#ececec 
+
+//black base color
+
+$black             :    #000000;    
+$gray-darker       :    lighten( $black, 67% ); //#ababab  
+$gray-dark         :    lighten( $black, 73.5% ); //#bbbbbb 
+$gray              :    lighten( $black, 80% ); //#cccccc
+$gray-light        :    lighten( $black, 86.5%); //#dddddd  
+$gray-lighter      :    lighten( $black, 85.8%); //#dbdbdb                 
+  
+$gray-darkest      :    #a7a5a6;
+$gray-lightest     :    #d3ced2;   
+ 
+$cream             :    #fff4de;
+$yellow            :    #fff2d5;
+$light-orange      :    #fef0ea;
+$orange            :    #fde1d6;
+$green             :    #cdf6ec;
+$red               :    #de4646;
+$parrot            :    #61d008;
+$brown             :    #515151;
+$blue              :    #1e73be;
+$darkgrey          :    #686868;
+$pink              :    #f438c2;
+
+
+// social icon
+
+$twitter          :    #40bff5;
+$facebook         :    #3b5998;
+$pinterest        :    #ca2028;
+$googlepluse      :    #fc5b4d;
+$linkedin         :    #007bb5;
+$maxcdn           :    #ff5b02;
+$btc              :    #f7931a;
+$youtube          :    #ef4e41;
+$xing             :    #1a8e8c;
+$youtube-play     :    #c12025;
+$dropbox          :    #17a3eb;
+$instagram        :    #548bb6;
+$tumblr           :    #426d9b;
+$apple            :    #999999;
+$windows          :    #04aef4;
+$android          :    #a4c639;
+$dribbble         :    #f7659c;
+$skype            :    #13c1f3;
+$vk               :    #4c75a3;
+$weibo            :    #f93;
+$renren           :    #005eac;
+$pagelines        :    #1996fc;
+$slack            :    #78d4b6;
+$openid           :    #f7931e;
+$yahoo            :    #7b0099;
+$google           :    #eb5e4c;
+$stumbleupon      :    #ff5c30;
+$delicious        :    #377bda;
+$digg             :    #75788d;
+$drupal           :    #2aa9e0;
+$joomla           :    #116faf;
+$behance          :    #1879fd;
+$deviantart       :    #6a8a7b;
+$vine             :    #1ccd94;
+$git              :    #f05033;
+$tencent-weibo    :    #006cb6;
+$share-alt        :    #02bf01;
+$yelp             :    #d32323;
+$paypal           :    #253b80;
+$google-wallet    :    #d7d7d7;
+$lastfm           :    #d20039;
+$dashcube         :    #ff7f00;
+$forumbee         :    #86ad22;
+$medium           :    #263238;
+$odnoklassniki    :    #f96200;
+$chrome           :    #333333;
+$firefox          :    #f58d00;
+$opera            :    #ff1a2e;
+$internet-exp     :    #2672ec;
+$amazon           :    #ff8e2e;
+$houzz            :    #8ac541;
+$vimeo            :    #35c6ea;
+$reddit-alien     :    #ff4500;
+$edge             :    #2c74be;
+$codiepie         :    #96deda;
+$modx             :    #61a349;
+$scribd           :    #32201e;
+$envira           :    #7cc048; 
+
+
+// Font family
+$font-poppins     :    'Poppins', sans-serif;
+$font-open-sans   :    'Open Sans', sans-serif;

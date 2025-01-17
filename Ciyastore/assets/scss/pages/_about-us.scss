@@ -1,0 +1,99 @@
+.about-testimonial {
+    .testimonial {
+        &.testimonial-style-3 {
+            .owl-item {
+                .item {
+                    background: rgba(255,255,255,.03);
+                }
+            }
+        }
+    }
+    &.bg-image {
+        background-repeat: repeat;
+        background-size: auto;
+        background-image: url('../images/backgrounds/img-03.jpg'); 
+    }
+    &.bg-overlay-6 {
+        &::before {
+            background: rgba(0, 0, 0, 0.86);
+        }
+    }  
+}
+.content-wrapperbg-gray {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+/**********************************
+        payment method css
+**********************************/
+.method-img {
+    padding: 0 20%;   
+}
+
+
+
+@media only screen and (max-width: 1199px){
+    .about-us-img{
+        display:none;     
+    }
+    .content-wrapperbg-gray {
+        padding-bottom: 60px;        
+    }   
+}
+
+@media only screen and (max-width: 767px){ 
+    .content-wrapperbg-gray {
+        padding: 50px 0;  
+    }
+    .ciyastore_info_box-layout-style_2 {
+        .ciyastore_info_box-inner {
+            display: table;
+            width: 100%;
+            margin-top: 30px;  
+        }
+    }
+    .ciyastore_info_box-with-icon {
+        &.ciyastore_info_box-icon_position-right {
+            .ciyastore_info_box-icon {
+                float: none;
+                padding-left: 0;
+                padding-right: 20px;
+                display: table-cell;
+                vertical-align: top;
+            }
+        }
+    }
+    .ciyastore_info_box-content_alignment-right {
+      text-align: left;
+    }   
+    .ciyastore_clients {
+        &.ciyastore_clients-grid-column-4 {
+            li {
+                width: 32%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px){ 
+    .testimonial {
+        &.testimonial-style-3 {
+            .owl-item {
+                padding: 0px; 
+           }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px){
+    
+    .ciyastore_clients {
+        &.ciyastore_clients-grid-column-4 {
+            li {
+                width: 49%;
+            }
+        }
+    }
+}

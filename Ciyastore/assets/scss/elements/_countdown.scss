@@ -1,0 +1,782 @@
+.countdown {
+    padding: 0;
+    margin: 0px 0 0 !important;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    vertical-align: top;
+
+    li {
+        list-style-type: none;
+        float: left;
+        min-width: 48px;
+        padding: 5px 0;
+        margin: 2px;
+        background: $secondary;
+        color: $white;
+        line-height: 30px;
+        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.03);
+        -ms-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.03);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.03);
+        border: 0 solid $border-darkest;
+        text-align: center;
+        border-radius: 3px;
+
+        span {
+            vertical-align: top;
+            color: $white;
+            font-weight: 500;
+        }
+
+        p {
+            margin: 0;
+            font-size: 12px;
+            line-height: 18px;
+            vertical-align: top;
+            color: #adadad;
+        }
+    }
+}
+
+.deal-banner {
+    border: 1px solid $border-darkest;
+
+    .countdown li {
+        padding: 5px 12px;
+    }
+}
+
+.pgscore_banner {
+    .pgscore_banner-content .pgscore_banner-btn-wrap {
+        position: relative;
+        z-index: 9;
+        margin-top: 15px;
+    }
+
+    .deal-expire-message {
+        font-size: 18px;
+        color: $white;
+        background: $black;
+        padding: 10px 20px;
+        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+    }
+}
+
+.pgscore_banner-content-wrapper {
+    font-size: initial;
+
+    .countdown {
+        margin-top: 0 !important;
+        overflow: visible;
+    }
+}
+.pgscore_banner-style-deal-1{
+    margin-bottom: 30px;
+}
+.pgscore_countdown_wrapper {
+    .deal-counter-wrapper{
+        &.counter-style-style-1 {
+            .countdown {
+                li {
+                    background: 0 0;
+                    box-shadow: none;
+                    border: none;
+                    position: relative;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    margin-right: 35px;
+                    &:before {
+                        content: ":";
+                        position: absolute;
+                        top: 20px;
+                        right: -22px;
+                        font-size: 26px;
+                        color: $secondary;
+                        font-weight: 500;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                        &:before {
+                            content: normal;
+                        }
+                    }
+                    span {
+                        font-size: 38px;
+                        color: $secondary;
+                        line-height: 64px;
+                        font-weight: 600;
+                    }
+                    p {
+                        color: $muted;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        
+        &.counter-style-style-2 {
+            .countdown {
+                li {
+                    box-shadow: none;
+                    border: none;
+                    background: $secondary;
+                    min-width: 65px;
+                    padding: 5px 0;
+                    margin: 0;
+                    text-align: center;
+                    margin-right: 8px;
+                    -webkit-box-shadow: 0 5px 6px rgba(0, 0, 0, 0.07);
+                    -moz-box-shadow: 0 5px 6px rgba(0, 0, 0, 0.07);
+                    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.07);
+                    span {
+                        display: block;
+                        color: $white;
+                        font-size: 26px;
+                        line-height: 44px;
+                        font-weight: 600;
+                    }
+                    .days {
+                        min-width: auto;
+                        padding: 0 10px;
+                    }
+                    p {
+                        color: $white;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-weight: 600;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        
+        &.counter-style-style-3 {
+            .countdown {
+                li {
+                    background: 0 0;
+                    box-shadow: none;
+                    border: 2px solid $primary ;
+                    min-width: 65px;
+                    padding: 5px 0;
+                    margin: 0;
+                    text-align: center;
+                    margin-right: 8px;
+                    span {
+                        display: block;
+                        font-size: 24px;
+                        line-height: 40px;
+                        font-weight: 400;
+                        color: $primary ;
+                    }
+                    p {
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        line-height: 20px;
+                        font-weight: 500;
+                        letter-spacing: 2px;
+                        color: $secondary;
+                    }
+                    .days {
+                        min-width: auto;
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+        
+        &.counter-style-style-4 {
+            .countdown {
+                border: 3px solid $primary ;
+                padding: 0 10px;
+                li {
+                    background: 0 0;
+                    box-shadow: none;
+                    border: none;
+                    min-width: 60px;
+                    padding: 10px 12px;
+                    margin: 0;
+                    text-align: center;
+                    span {
+                        display: block;
+                        color: $secondary;
+                        font-size: 30px;
+                        line-height: 46px;
+                        font-weight: 500;
+                    }
+                    .days {
+                        min-width: auto;
+                    }
+                    p {
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        color: $secondary;
+                        font-weight: 600;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+        
+        &.counter-style-style-5 {
+            .countdown {
+                background: $white;
+                padding: 0 15px;
+                -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.04);
+                -moz-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.04);
+                box-shadow: 0 5px 30px rgba(0, 0, 0, 0.04);
+                li {
+                    box-shadow: none;
+                    background: 0 0;
+                    border: none;
+                    min-width: 75px;
+                    padding: 15px 0;
+                    margin: 0;
+                    text-align: center;
+                    span {
+                        display: block;
+                        font-size: 26px;
+                        line-height: 42px;
+                        font-weight: 500;
+                        color: $primary ;
+                    }
+                    p {
+                        color: $muted;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+        
+        &.counter-style-style-6 {
+            .countdown {
+                li {
+                    background: 0 0;
+                    box-shadow: none;
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    margin-right: 10px;
+                    span {
+                        display: block;
+                        font-size: 28px;
+                        color: $secondary;
+                        line-height: 40px;
+                        padding-bottom: 5px;
+                        font-weight: 600;
+                    }
+                    p {
+                        background: $secondary;
+                        color: $white;
+                        font-size: 13px;
+                        font-weight: 600;
+                        padding: 0 10px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        
+        &.counter-style-style-7 {
+            .countdown {
+                li {
+                    box-shadow: none;
+                    border: none;
+                    background: $white;
+                    width: 80px;
+                    height: 80px;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    margin-right: 5px;
+                    border-radius: 50px;
+                    -webkit-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.06);
+                    -moz-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.06);
+                    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.06);
+                    span {
+                        display: block;
+                        color: $secondary;
+                        font-size: 26px;
+                        line-height: 30px;
+                        font-weight: 600;
+                        padding-top: 16px;
+                    }
+                    p {
+                        color: $secondary;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+        
+        &.counter-style-style-8 {
+            .countdown {
+                li {
+                    background: 0 0;
+                    box-shadow: none;
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                    text-align: center;
+                    margin-right: 20px;
+                    &:before {
+                        content: ":";
+                        position: absolute;
+                        top: 18px;
+                        right: -13px;
+                        font-size: 26px;
+                        color: $secondary;
+                        font-weight: 500;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                        &:before {
+                            content: normal;
+                        }
+                    }
+                    span {
+                        display: block;
+                        background: $secondary;
+                        font-size: 28px;
+                        color: $white;
+                        line-height: 60px;
+                        font-weight: 600;
+                        letter-spacing: 3px;
+                        padding: 0 7px;
+                        border-radius: 5px;
+                        position: relative;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            background: $black;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: $secondary;
+                        padding-top: 8px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        
+        &.counter-style-style-9 {
+            .countdown {
+                border-left: 5px solid $primary ;
+                border-right: 5px solid $primary ;
+                padding: 0 25px;
+                border-radius: 10px;
+                li {
+                    background: 0 0;
+                    box-shadow: none;
+                    border: none;
+                    min-width: inherit;
+                    position: relative;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    margin-right: 40px;
+                    &:before {
+                        content: ":";
+                        position: absolute;
+                        top: 15px;
+                        right: -23px;
+                        font-size: 18px;
+                        color: $secondary;
+                        font-weight: 600;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                        &:before {
+                            content: normal;
+                        }
+                    }
+                    span {
+                        display: block;
+                        font-size: 28px;
+                        color: $secondary;
+                        line-height: 50px;
+                        font-weight: 500;
+                    }
+                    p {
+                        color: $muted;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+        }
+        
+        &.counter-style-style-10 {
+            .countdown {
+                li {
+                    box-shadow: none;
+                    border: none;
+                    background: $primary ;
+                    min-width: 65px;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    margin-right: 5px;
+                    border-radius: 3px;
+                    span {
+                        display: block;
+                        color: $white;
+                        font-size: 26px;
+                        line-height: 50px;
+                        font-weight: 600;
+                    }
+                    .days {
+                        min-width: auto;
+                    }
+                    p {
+                        color: $white;
+                        font-size: 13px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        background: rgba(0, 0, 0, 0.06);
+                        padding: 2px 0;
+                    }
+                }
+            }
+        }
+    }
+    .section-title {
+        h3 {
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .pgscore_banner-style-deal-1{
+        margin-bottom: 50px;
+    }
+    .pgscore_countdown_wrapper {
+        .deal-counter-wrapper{
+            &.counter-style-style-1 {
+                .countdown {
+                    li {
+                        span {
+                            font-size: 30px;
+                            line-height: 60px;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                        &:before {
+                            top: 18px;
+                            right: -15px;
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-2 {
+                .countdown {
+                    li {
+                        min-width: 55px;
+                        margin-right: 5px;
+                        span {
+                            font-size: 22px;
+                            line-height: 36px;
+                        }
+                        .days {
+                            min-width: 60px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-3 {
+                .countdown {
+                    li {
+                        min-width: 55px;
+                        margin-right: 5px;
+                        span {
+                            font-size: 22px;
+                            line-height: 36px;
+                        }
+                        .days {
+                            min-width: 60px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-4 {
+                .countdown {
+                    li {
+                        min-width: 50px;
+                        padding: 6px 12px;
+                        span {
+                            font-size: 24px;
+                            line-height: 40px;
+                        }
+                        .days{
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-5 {
+                .countdown {
+                    li {
+                        min-width: 65px;
+                        padding: 10px 0;
+                    }
+                }
+            }
+            &.counter-style-style-7 {
+                .countdown {
+                    li {
+                        width: 70px;
+                        height: 70px;
+                        span {
+                            font-size: 20px;
+                            line-height: 26px;
+                            padding-top: 13px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-8 {
+                .countdown {
+                    li {
+                        margin-right: 15px;
+                        span {
+                            font-size: 24px;
+                            letter-spacing: 1px;
+                            padding: 0 5px;
+                        }
+                        
+                    }
+                }
+            }
+            &.counter-style-style-9 {
+                .countdown {
+                    padding: 0 20px;
+                    li {
+                        margin-right: 25px;
+                        span {
+                            font-size: 24px;
+                            line-height: 48px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                        &:before {
+                            top: 12px;
+                            right: -13px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-10 {
+                .countdown {
+                    li {
+                        min-width: 55px;
+                        span {
+                            font-size: 24px;
+                            line-height: 48px;
+                        }
+                        .days{
+                            min-width: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .pgscore_banner-style-deal-1{
+        margin-bottom: 30px;
+    }
+    .pgscore_countdown_wrapper {
+        .deal-counter-wrapper{
+            &.counter-style-style-1 {
+                .countdown {
+                    li {
+                        margin-right: 10px;
+                        min-width: 45px;
+                        span {
+                            font-size: 22px;
+                            line-height: 40px;
+                        }
+                        p {
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                        &:before {
+                            top: 9px;
+                            right: -8px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-2 {
+                .countdown {
+                    li {
+                        min-width: 48px;
+                        margin-right: 3px;
+                        span {
+                            font-size: 20px;
+                            line-height: 32px;
+                        }
+                        .days {
+                            min-width: inherit;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-3 {
+                .countdown {
+                    li {
+                        min-width: 47px;
+                        margin-right: 3px;
+                        span {
+                            font-size: 20px;
+                            line-height: 32px;
+                        }
+                        .days {
+                            min-width: inherit;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-4 {
+                .countdown {
+                    li {
+                        min-width: 50px;
+                        padding: 4px 5px;
+                        span {
+                            font-size: 20px;
+                            line-height: 34px;
+                        }
+                        .days{
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-5 {
+                .countdown {
+                    li {
+                        min-width: 50px;
+                        span {
+                            font-size: 22px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-6 {
+                .countdown {
+                    li {
+                        margin-right: 5px;
+                        span {
+                            font-size: 22px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-7 {
+                .countdown {
+                    li {
+                        width: 60px;
+                        height: 60px;
+                        margin-right: 3px;
+                        span {
+                            font-size: 16px;
+                            line-height: 24px;
+                            padding-top: 10px;
+                        }
+                        p {
+                            font-size: 11px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-8 {
+                .countdown {
+                    li {
+                        min-width: 40px;
+                        margin-right: 10px;
+                        span {
+                            font-size: 20px;
+                            line-height: 50px;
+                            letter-spacing: 0;
+                            padding: 0 7px;
+                        }
+                        &:before{
+                            right: -8px;
+                            font-size: 22px;
+                        }
+                        p{
+                            font-size: 13px;
+                            padding-top: 2px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-9 {
+                .countdown {
+                    padding: 0 15px;
+                    border-width: 3px;
+                    li {
+                        margin-right: 20px;
+                        span {
+                            font-size: 20px;
+                            line-height: 40px;
+                        }
+                        p {
+                            font-size: 13px;
+                        }
+                        &:before {
+                            top: 9px;
+                            right: -11px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-10 {
+                .countdown {
+                    li {
+                        min-width: 45px;
+                        span {
+                            font-size: 20px;
+                            line-height: 44px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

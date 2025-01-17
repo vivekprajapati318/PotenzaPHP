@@ -1,0 +1,98 @@
+/*
+
+Template: Ciyastore - Responsive Multi-purpose eCommerce HTML5 Template
+Author: potenzaglobalsolutions.com
+Version: 1.0
+Design and Developed by: potenzaglobalsolutions.com
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template.
+
+*/
+
+
+/*================================================
+[  Table of contents  ]
+================================================
+:: Global
+ :: Utils
+ :: Typography
+ :: Forms
+ :: Header
+ :: Footer
+ :: Layout
+:: Elements
+ :: Info Box
+ :: Address Block
+ :: Banners
+ :: Category Box
+ :: Clients
+ :: Countdown
+ :: Image Slider
+ :: List
+ :: Newletter
+ :: Product Deals
+ :: Product Listings
+ :: Latest Post
+ :: Social Icons
+ :: Team
+ :: Testimonials
+ :: Instagram
+ :: Multi Tab
+:: Shop
+:: Pages
+ :: About Us
+ :: Contact Us
+ :: Error 404
+ :: Maintenance
+ :: Coming Soon
+ :: Wishlist
+ :: Cart
+ :: Checkout
+ :: Blog
+ :: Maintenance
+ :: My Account
+ :: Portfolio
+
+======================================
+[ End table content ]
+======================================*/
+
+@import "variables.scss";
+@import "functions.scss";
+@import "utils.scss";
+@import "typography.scss";
+@import "forms.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "base.scss";
+
+@import "elements/info-box";
+@import "elements/address-block";
+@import "elements/banners";
+@import "elements/category-box";
+@import "elements/clients";
+@import "elements/countdown";
+@import "elements/image-slider";
+@import "elements/list";
+@import "elements/newsletter";
+@import "elements/product-deals";
+@import "elements/product-listing";
+@import "elements/latest-post";
+@import "elements/social-icons";
+@import "elements/team";
+@import "elements/testimonials";
+@import "elements/instagram";
+@import "elements/multi-tab";
+@import "shop";
+
+@import "pages/about-us";
+@import "pages/contact-us";
+@import "pages/error-404";
+@import "pages/maintenance";
+@import "pages/coming-soon";
+@import "pages/wishlist";
+@import "pages/cart";
+@import "pages/checkout";
+@import "pages/blog";
+@import "pages/my-account.scss";
+@import "pages/portfolio.scss";

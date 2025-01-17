@@ -1,0 +1,62 @@
+btn, input, select, textarea {
+    outline: 0;
+}
+
+button.submit {
+    background: $primary;
+    border: none;
+    color: $white;
+    line-height: 38px;
+    padding: 0 18px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+}
+.form-control, input[type=email], input[type=password], input[type=search], input[type=text], textarea {
+    width: 100%;
+    padding: 0 15px;
+    height: 46px;
+    background: $white;
+    border: 1px solid $border-base;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: $muted;
+    font-size: 14px;
+    &:focus {
+        border-color:$primary;
+        box-shadow: none;
+    }
+}
+textarea.form-control {
+    height:auto;
+    padding: 13px;
+}
+input[type=submit] {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    background: $primary;
+    border: none;
+    color: $white;
+    line-height: 44px;
+    padding: 0 18px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover,&:focus {
+        background:$secondary;
+        color:$white;
+    }
+}
+textarea {
+    padding: 13px;
+    height: auto;
+}

@@ -1,0 +1,2554 @@
+@-webkit-keyframes ciyastore-social-toTopFromBottom {
+	49% {
+		-webkit-transform: translateY(-100%)
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translateY(100%)
+	}
+	51% {
+		opacity: 1
+	}
+}
+
+@-moz-keyframes ciyastore-social-toTopFromBottom {
+	49% {
+		-moz-transform: translateY(-100%)
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translateY(100%)
+	}
+	51% {
+		opacity: 1
+	}    
+}
+
+@keyframes ciyastore-social-toTopFromBottom {
+	49% {
+		transform: translateY(-100%)
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(100%)      
+	}
+	51% {   
+		opacity: 1
+	}
+}
+.ciyastore-social-icons{
+    ul {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+        li {
+            float: left;
+            list-style: none;
+            padding: 0;
+            margin: 4px 8px 4px 0;
+            a {
+                float: left;
+                height: 32px;
+                width: 32px;
+                line-height: 33px;
+                font-size: 16px;
+                text-align: center;
+                margin: 0;
+                border: 0;
+                background: 0 0;
+                color: $secondary;
+                overflow: hidden;
+                -webkit-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+            }
+            &:hover {
+                i {
+                    webkit-animation: ciyastore-social-toTopFromBottom .3s forwards;
+                    -moz-animation: ciyastore-social-toTopFromBottom .3s forwards;
+                    animation: ciyastore-social-toTopFromBottom .3s forwards;
+                }
+            }
+        }
+    }
+    &.ciyastore-social-size-medium {
+        ul {
+            li {
+                a {
+                    height: 42px;
+                    width: 42px;
+                    line-height: 42px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    &.ciyastore-social-size-large {
+        ul {
+            li {
+                a {
+                    height: 48px;
+                    width: 48px;
+                    line-height: 48px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    &.ciyastore-social-size-extra-large {
+        ul {
+            li {
+                a {
+                    height: 54px;
+                    width: 54px;
+                    line-height: 54px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    &.ciyastore-social-style-border {
+        ul {
+            li {
+                a {
+                    border: 1px solid $border-light;
+                    background: 0 0;
+                }
+            }
+        }
+    }
+}
+.bg-dark-gray {
+	.ciyastore-social-icons {
+		li {
+			a {
+				color: $white;
+			}
+		}
+	}
+}
+.ciyastore-social-icons.ciyastore-social-effect-color-hover {
+	a {
+		&:hover {
+			color: $white;
+			border: 0;
+			padding: 2px;
+		}
+	}
+	.ciyastore-social-color-rss {
+		a {
+			&:hover {
+				background-color: #faa33d;
+			}
+		}
+	}
+	.ciyastore-social-color-facebook {
+		a {
+			&:hover {
+				background-color: $facebook;
+			}
+		}
+	}
+	.ciyastore-social-color-facebook-square {
+		a {
+			&:hover {
+				background-color: $facebook;
+			}
+		}
+	}
+	.ciyastore-social-color-twitter {
+		a {
+			&:hover {
+				background-color: $twitter;
+			}
+		}
+	}
+	.ciyastore-social-color-vimeo {
+		a {
+			&:hover {
+				background-color: $vimeo;
+			}
+		}
+	}
+	.ciyastore-social-color-myspace {
+		a {
+			&:hover {
+				background-color: #008dde;
+			}
+		}
+	}
+	.ciyastore-social-color-youtube {
+		a {
+			&:hover {
+				background-color: $youtube;
+			}
+		}
+	}
+	.ciyastore-social-color-instagram {
+		a {
+			&:hover {
+				background-color: $instagram;
+			}
+		}
+	}
+	.ciyastore-social-color-gplus {
+		a {
+			&:hover {
+				background-color: #d68400;
+			}
+		}
+	}
+	.ciyastore-social-color-stumbleupon {
+		a {
+			&:hover {
+				background-color: $stumbleupon;
+			}
+		}
+	}
+	.ciyastore-social-color-lastfm {
+		a {
+			&:hover {
+				background-color: #f34320;
+				background-color: $lastfm;
+			}
+		}
+	}
+	.ciyastore-social-color-pinterest {
+		a {
+			&:hover {
+				background-color: $pinterest;
+			}
+		}
+	}
+	.ciyastore-social-color-google {
+		a {
+			&:hover {
+				background-color: $google;
+			}
+		}
+	}
+	.ciyastore-social-color-evernote {
+		a {
+			&:hover {
+				background-color: #9acf4f;
+			}
+		}
+	}
+	.ciyastore-social-color-dribbble {
+		a {
+			&:hover {
+				background-color: $dribbble;
+			}
+		}
+	}
+	.ciyastore-social-color-skype {
+		a {
+			&:hover {
+				background-color: $skype;
+			}
+		}
+	}
+	.ciyastore-social-color-forrst {
+		a {
+			&:hover {
+				background-color: #45ad76;
+			}
+		}
+	}
+	.ciyastore-social-color-linkedin {
+		a {
+			&:hover {
+				background-color: $linkedin;
+			}
+		}
+	}
+	.ciyastore-social-color-wordpress {
+		a {
+			&:hover {
+				background-color: #2592c3;
+			}
+		}
+	}
+	.ciyastore-social-color-grooveshark {
+		a {
+			&:hover {
+				background-color: #ffb21d;
+			}
+		}
+	}
+	.ciyastore-social-color-delicious {
+		a {
+			&:hover {
+				background-color: $delicious;
+			}
+		}
+	}
+	.ciyastore-social-color-behance {
+		a {
+			&:hover {
+				background-color: $behance;
+			}
+		}
+	}
+	.ciyastore-social-color-dropbox {
+		a {
+			&:hover {
+				background-color: $dropbox;
+			}
+		}
+	}
+	.ciyastore-social-color-soundcloud {
+		a {
+			&:hover {
+				background-color: #ff7e30;
+			}
+		}
+	}
+	.ciyastore-social-color-deviantart {
+		a {
+			&:hover {
+				background-color: $deviantart;
+			}
+		}
+	}
+	.ciyastore-social-color-yahoo {
+		a {
+			&:hover {
+				background-color: #ab47ac;
+				background-color: $yahoo;
+			}
+		}
+	}
+	.ciyastore-social-color-flickr {
+		a {
+			&:hover {
+				background-color: #ff48a3;
+			}
+		}
+	}
+	.ciyastore-social-color-digg {
+		a {
+			&:hover {
+				background-color: $digg;
+			}
+		}
+	}
+	.ciyastore-social-color-blogger {
+		a {
+			&:hover {
+				background-color: #ff9233;
+			}
+		}
+	}
+	.ciyastore-social-color-tumblr {
+		a {
+			&:hover {
+				background-color: $tumblr;
+			}
+		}
+	}
+	.ciyastore-social-color-quora {
+		a {
+			&:hover {
+				background-color: #ea3d23;
+			}
+		}
+	}
+	.ciyastore-social-color-github {
+		a {
+			&:hover {
+				background-color: #3f91cb;
+			}
+		}
+	}
+	.ciyastore-social-color-amazon {
+		a {
+			&:hover {
+				background-color: $amazon;
+			}
+		}
+	}
+	.ciyastore-social-color-xing {
+		a {
+			&:hover {
+				background-color: $xing;
+			}
+		}
+	}
+	.ciyastore-social-color-wikipedia {
+		a {
+			&:hover {
+				background-color: #b3b5b8;
+			}
+		}
+	}
+	.ciyastore-social-color-android {
+		a {
+			&:hover {
+				background-color: $android;
+			}
+		}
+	}
+	.ciyastore-social-color-googleplus {
+		a {
+			&:hover {
+				background-color: #d34836;
+			}
+		}
+	}
+	.ciyastore-social-color-apple {
+		a {
+			&:hover {
+				background-color: #999;
+			}
+		}
+	}
+	.ciyastore-social-color-twitter-square {
+		a {
+			&:hover {
+				background-color: $twitter;
+			}
+		}
+	}
+	.ciyastore-social-color-linkedin-square {
+		a {
+			&:hover {
+				background-color: $linkedin;
+			}
+		}
+	}
+	.ciyastore-social-color-github-square {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-pinterest-square {
+		a {
+			&:hover {
+				background-color: $pinterest;
+			}
+		}
+	}
+	.ciyastore-social-color-google-plus-square {
+		a {
+			&:hover {
+				background-color: $googlepluse;
+			}
+		}
+	}
+	.ciyastore-social-color-google-plus {
+		a {
+			&:hover {
+				background-color: $googlepluse;
+			}
+		}
+	}
+	.ciyastore-social-color-github-alt {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-maxcdn {
+		a {
+			&:hover {
+				background-color: $maxcdn;
+			}
+		}
+	}
+	.ciyastore-social-color-html5 {
+		a {
+			&:hover {
+				background-color: #e44d26;
+			}
+		}
+	}
+	.ciyastore-social-color-css3 {
+		a {
+			&:hover {
+				background-color: #0071bb;
+			}
+		}
+	}
+	.ciyastore-social-color-btc {
+		a {
+			&:hover {
+				background-color: $btc;
+			}
+		}
+	}
+	.ciyastore-social-color-youtube-square {
+		a {
+			&:hover {
+				background-color: $youtube-play;
+			}
+		}
+	}
+	.ciyastore-social-color-stack-overflow {
+		a {
+			&:hover {
+				background-color: #f48023;
+			}
+		}
+	}
+	.ciyastore-social-color-xing-square {
+		a {
+			&:hover {
+				background-color: #006567;
+			}
+		}
+	}
+	.ciyastore-social-color-youtube-play {
+		a {
+			&:hover {
+				background-color: $youtube-play;
+			}
+		}
+	}
+	.ciyastore-social-color-adn {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-bitbucket {
+		a {
+			&:hover {
+				background-color: #205081;
+			}
+		}
+	}
+	.ciyastore-social-color-bitbucket-square {
+		a {
+			&:hover {
+				background-color: #205081;
+			}
+		}
+	}
+	.ciyastore-social-color-tumblr-square {
+		a {
+			&:hover {
+				background-color: #395976;
+			}
+		}
+	}
+	.ciyastore-social-color-windows {
+		a {
+			&:hover {
+				background-color: $windows;
+			}
+		}
+	}
+	.ciyastore-social-color-linux {
+		a {
+			&:hover {
+				background-color: #fc0;
+			}
+		}
+	}
+	.ciyastore-social-color-foursquare {
+		a {
+			&:hover {
+				background-color: #fa4778;
+			}
+		}
+	}
+	.ciyastore-social-color-trello {
+		a {
+			&:hover {
+				background-color: #007cc3;
+			}
+		}
+	}
+	.ciyastore-social-color-gratipay {
+		a {
+			&:hover {
+				background-color: #630;
+			}
+		}
+	}
+	.ciyastore-social-color-vk {
+		a {
+			&:hover {
+				background-color: $vk;
+				background-color: $vk;
+			}
+		}
+	}
+	.ciyastore-social-color-weibo {
+		a {
+			&:hover {
+				background-color: $weibo;
+			}
+		}
+	}
+	.ciyastore-social-color-renren {
+		a {
+			&:hover {
+				background-color: $renren;
+			}
+		}
+	}
+	.ciyastore-social-color-pagelines {
+		a {
+			&:hover {
+				background-color: $pagelines;
+			}
+		}
+	}
+	.ciyastore-social-color-stack-exchange {
+		a {
+			&:hover {
+				background-color: #f48023;
+			}
+		}
+	}
+	.ciyastore-social-color-vimeo-square {
+		a {
+			&:hover {
+				background-color: #23b6ea;
+			}
+		}
+	}
+	.ciyastore-social-color-slack {
+		a {
+			&:hover {
+				background-color: $slack;
+			}
+		}
+	}
+	.ciyastore-social-color-reddit {
+		a {
+			&:hover {
+				background-color: $reddit-alien;
+			}
+		}
+	}
+	.ciyastore-social-color-reddit-square {
+		a {
+			&:hover {
+				background-color: $reddit-alien;
+			}
+		}
+	}
+	.ciyastore-social-color-stumbleupon-circle {
+		a {
+			&:hover {
+				background-color: #eb4924;
+			}
+		}
+	}
+	.ciyastore-social-color-pied-piper-pp {
+		a {
+			&:hover {
+				background-color: #388e3c;
+			}
+		}
+	}
+	.ciyastore-social-color-pied-piper-alt {
+		a {
+			&:hover {
+				background-color: #388e3c;
+			}
+		}
+	}
+	.ciyastore-social-color-drupal {
+		a {
+			&:hover {
+				background-color: $drupal;
+			}
+		}
+	}
+	.ciyastore-social-color-joomla {
+		a {
+			&:hover {
+				background-color: $joomla;
+			}
+		}
+	}
+	.ciyastore-social-color-behance-square {
+		a {
+			&:hover {
+				background-color: #005cff;
+			}
+		}
+	}
+	.ciyastore-social-color-steam {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-steam-square {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-spotify {
+		a {
+			&:hover {
+				background-color: #1dd069;
+			}
+		}
+	}
+	.ciyastore-social-color-openid {
+		a {
+			&:hover {
+				background-color: $openid;
+			}
+		}
+	}
+	.ciyastore-social-color-vine {
+		a {
+			&:hover {
+				background-color: $vine;
+			}
+		}
+	}
+	.ciyastore-social-color-codepen {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-jsfiddle {
+		a {
+			&:hover {
+				background-color: #4679a4;
+			}
+		}
+	}
+	.ciyastore-social-color-rebel {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-empire {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-git-square {
+		a {
+			&:hover {
+				background-color: $git;
+			}
+		}
+	}
+	.ciyastore-social-color-hacker-news {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-tencent-weibo {
+		a {
+			&:hover {
+				background-color: $tencent-weibo;
+			}
+		}
+	}
+	.ciyastore-social-color-qq {
+		a {
+			&:hover {
+				background-color: #4d97d4;
+			}
+		}
+	}
+	.ciyastore-social-color-weixin {
+		a {
+			&:hover {
+				background-color: #50b31b;
+			}
+		}
+	}
+	.ciyastore-social-color-share-alt {
+		a {
+			&:hover {
+				background-color: $share-alt;
+			}
+		}
+	}
+	.ciyastore-social-color-share-alt-square {
+		a {
+			&:hover {
+				background-color: $share-alt;
+			}
+		}
+	}
+	.ciyastore-social-color-slideshare {
+		a {
+			&:hover {
+				background-color: #42c0fb;
+			}
+		}
+	}
+	.ciyastore-social-color-twitch {
+		a {
+			&:hover {
+				background-color: #6441a4;
+			}
+		}
+	}
+	.ciyastore-social-color-yelp {
+		a {
+			&:hover {
+				background-color: $yelp;
+			}
+		}
+	}
+	.ciyastore-social-color-paypal {
+		a {
+			&:hover {
+				background-color: $paypal;
+			}
+		}
+	}
+	.ciyastore-social-color-google-wallet {
+		a {
+			&:hover {
+				background-color: $google-wallet;
+			}
+		}
+	}
+	.ciyastore-social-color-cc-visa {
+		a {
+			&:hover {
+				background-color: #3958a6;
+			}
+		}
+	}
+	.ciyastore-social-color-cc-mastercard {
+		a {
+			&:hover {
+				background-color: #003663;
+			}
+		}
+	}
+	.ciyastore-social-color-git {
+		a {
+			&:hover {
+				background-color: $git;
+			}
+		}
+	}
+	.ciyastore-social-color-cc-discover {
+		a {
+			&:hover {
+				background-color: #f60;
+			}
+		}
+	}
+	.ciyastore-social-color-cc-amex {
+		a {
+			&:hover {
+				background-color: #2f77bf;
+			}
+		}
+	}
+	.ciyastore-social-color-cc-paypal {
+		a {
+			&:hover {
+				background-color: #002f86;
+			}
+		}
+	}
+	.ciyastore-social-color-cc-stripe {
+		a {
+			&:hover {
+				background-color: #009cde;
+			}
+		}
+	}
+	.ciyastore-social-color-lastfm-square {
+		a {
+			&:hover {
+				background-color: $lastfm;
+			}
+		}
+	}
+	.ciyastore-social-color-ioxhost {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-angellist {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-meanpath {
+		a {
+			&:hover {
+				background-color: #538dd6;
+			}
+		}
+	}
+	.ciyastore-social-color-buysellads {
+		a {
+			&:hover {
+				background-color: $git;
+			}
+		}
+	}
+	.ciyastore-social-color-connectdevelop {
+		a {
+			&:hover {
+				background-color: #3b164a;
+			}
+		}
+	}
+	.ciyastore-social-color-dashcube {
+		a {
+			&:hover {
+				background-color: $dashcube;
+			}
+		}
+	}
+	.ciyastore-social-color-forumbee {
+		a {
+			&:hover {
+				background-color: $forumbee;
+			}
+		}
+	}
+	.ciyastore-social-color-leanpub {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-sellsy {
+		a {
+			&:hover {
+				background-color: #0075c8;
+			}
+		}
+	}
+	.ciyastore-social-color-shirtsinbulk {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-skyatlas {
+		a {
+			&:hover {
+				background-color: #4cc3c8;
+			}
+		}
+	}
+	.ciyastore-social-color-facebook-official {
+		a {
+			&:hover {
+				background-color: $facebook;
+			}
+		}
+	}
+	.ciyastore-social-color-pinterest-p {
+		a {
+			&:hover {
+				background-color: #cb2027;
+			}
+		}
+	}
+	.ciyastore-social-color-whatsapp {
+		a {
+			&:hover {
+				background-color: #29a71a;
+			}
+		}
+	}
+	.ciyastore-social-color-viacoin {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-medium {
+		a {
+			&:hover {
+				background-color: $medium;
+			}
+		}
+	}
+	.ciyastore-social-color-y-combinator {
+		a {
+			&:hover {
+				background-color: #f26522;
+			}
+		}
+	}
+	.ciyastore-social-color-optin-monster {
+		a {
+			&:hover {
+				background-color: #9cff00;
+			}
+		}
+	}
+	.ciyastore-social-color-opencart {
+		a {
+			&:hover {
+				background-color: #23c1f0;
+			}
+		}
+	}
+	.ciyastore-social-color-expeditedssl {
+		a {
+			&:hover {
+				background-color: #455a64;
+			}
+		}
+	}
+	.ciyastore-social-color-cc-jcb {
+		a {
+			&:hover {
+				background-color: #fba51a;
+			}
+		}
+	}
+	.ciyastore-social-color-cc-diners-club {
+		a {
+			&:hover {
+				background-color: #1b458e;
+			}
+		}
+	}
+	.ciyastore-social-color-gg {
+		a {
+			&:hover {
+				background-color: $openid;
+			}
+		}
+	}
+	.ciyastore-social-color-gg-circle {
+		a {
+			&:hover {
+				background-color: $openid;
+			}
+		}
+	}
+	.ciyastore-social-color-tripadvisor {
+		a {
+			&:hover {
+				background-color: #7db557;
+			}
+		}
+	}
+	.ciyastore-social-color-odnoklassniki {
+		a {
+			&:hover {
+				background-color: $odnoklassniki;
+			}
+		}
+	}
+	.ciyastore-social-color-odnoklassniki-square {
+		a {
+			&:hover {
+				background-color: $odnoklassniki;
+			}
+		}
+	}
+	.ciyastore-social-color-get-pocket {
+		a {
+			&:hover {
+				background-color: #ef4056;
+			}
+		}
+	}
+	.ciyastore-social-color-wikipedia-w {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-safari {
+		a {
+			&:hover {
+				background-color: #409ed4;
+			}
+		}
+	}
+	.ciyastore-social-color-chrome {
+		a {
+			&:hover {
+				background-color: $chrome;
+			}
+		}
+	}
+	.ciyastore-social-color-firefox {
+		a {
+			&:hover {
+				background-color: $firefox;
+			}
+		}
+	}
+	.ciyastore-social-color-opera {
+		a {
+			&:hover {
+				background-color: $opera;
+			}
+		}
+	}
+	.ciyastore-social-color-internet-explorer {
+		a {
+			&:hover {
+				background-color: $internet-exp;
+			}
+		}
+	}
+	.ciyastore-social-color-contao {
+		a {
+			&:hover {
+				background-color: #f47c00;
+			}
+		}
+	}
+	.ciyastore-social-color-500px {
+		a {
+			&:hover {
+				background-color: #1e88e5;
+			}
+		}
+	}
+	.ciyastore-social-color-houzz {
+		a {
+			&:hover {
+				background-color: $houzz;
+			}
+		}
+	}
+	.ciyastore-social-color-black-tie {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-fonticons {
+		a {
+			&:hover {
+				background-color: #109d58;
+			}
+		}
+	}
+	.ciyastore-social-color-reddit-alien {
+		a {
+			&:hover {
+				background-color: $reddit-alien;
+			}
+		}
+	}
+	.ciyastore-social-color-edge {
+		a {
+			&:hover {
+				background-color: $edge;
+			}
+		}
+	}
+	.ciyastore-social-color-codiepie {
+		a {
+			&:hover {
+				background-color: $codiepie;
+			}
+		}
+	}
+	.ciyastore-social-color-modx {
+		a {
+			&:hover {
+				background-color: $modx;
+			}
+		}
+	}
+	.ciyastore-social-color-fort-awesome {
+		a {
+			&:hover {
+				background-color: #1d9e74;
+			}
+		}
+	}
+	.ciyastore-social-color-usb {
+		a {
+			&:hover {
+				background-color: #0054a6;
+			}
+		}
+	}
+	.ciyastore-social-color-product-hunt {
+		a {
+			&:hover {
+				background-color: #da542f;
+			}
+		}
+	}
+	.ciyastore-social-color-mixcloud {
+		a {
+			&:hover {
+				background-color: #27394d;
+			}
+		}
+	}
+	.ciyastore-social-color-scribd {
+		a {
+			&:hover {
+				background-color: $scribd;
+			}
+		}
+	}
+	.ciyastore-social-color-bluetooth {
+		a {
+			&:hover {
+				background-color: #0a3c91;
+			}
+		}
+	}
+	.ciyastore-social-color-bluetooth-b {
+		a {
+			&:hover {
+				background-color: #0a3c91;
+			}
+		}
+	}
+	.ciyastore-social-color-gitlab {
+		a {
+			&:hover {
+				background-color: #30353e;
+			}
+		}
+	}
+	.ciyastore-social-color-wpbeginner {
+		a {
+			&:hover {
+				background-color: #f60;
+			}
+		}
+	}
+	.ciyastore-social-color-wpforms {
+		a {
+			&:hover {
+				background-color: #b85a1b;
+			}
+		}
+	}
+	.ciyastore-social-color-envira {
+		a {
+			&:hover {
+				background-color: $envira;
+			}
+		}
+	}
+	.ciyastore-social-color-glide {
+		a {
+			&:hover {
+				background-color: #00a7ff;
+			}
+		}
+	}
+	.ciyastore-social-color-glide-g {
+		a {
+			&:hover {
+				background-color: #00a7ff;
+			}
+		}
+	}
+	.ciyastore-social-color-viadeo {
+		a {
+			&:hover {
+				background-color: #ff7e00;
+			}
+		}
+	}
+	.ciyastore-social-color-viadeo-square {
+		a {
+			&:hover {
+				background-color: #ff7e00;
+			}
+		}
+	}
+	.ciyastore-social-color-pied-piper {
+		a {
+			&:hover {
+				background-color: #2e9e48;
+			}
+		}
+	}
+	.ciyastore-social-color-first-order {
+		a {
+			&:hover {
+				background-color: maroon;
+			}
+		}
+	}
+	.ciyastore-social-color-yoast {
+		a {
+			&:hover {
+				background-color: #9d2563;
+			}
+		}
+	}
+	.ciyastore-social-color-themeisle {
+		a {
+			&:hover {
+				background-color: #1599c4;
+			}
+		}
+	}
+	.ciyastore-social-color-google-plus-official {
+		a {
+			&:hover {
+				background-color: #dd5044;
+			}
+		}
+	}
+	.ciyastore-social-color-font-awesome {
+		a {
+			&:hover {
+				background-color: #1d9e74;
+			}
+		}
+	}
+}
+.ciyastore-social-icons.ciyastore-social-style-flat-color {
+	a {
+		color: $white;
+		border: 0;
+		padding: 2px;
+	}
+	.ciyastore-social-color-rss {
+		a {
+			background-color: #faa33d;
+		}
+	}
+	.ciyastore-social-color-facebook {
+		a {
+			background-color: $facebook;
+		}
+	}
+	.ciyastore-social-color-facebook-square {
+		a {
+			background-color: $facebook;
+		}
+	}
+	.ciyastore-social-color-twitter {
+		a {
+			background-color: $twitter;
+		}
+	}
+	.ciyastore-social-color-vimeo {
+		a {
+			background-color: $vimeo;
+		}
+	}
+	.ciyastore-social-color-myspace {
+		a {
+			background-color: #008dde;
+		}
+	}
+	.ciyastore-social-color-youtube {
+		a {
+			background-color: $youtube;
+		}
+	}
+	.ciyastore-social-color-instagram {
+		a {
+			background-color: $instagram;
+		}
+	}
+	.ciyastore-social-color-gplus {
+		a {
+			background-color: #d68400;
+		}
+	}
+	.ciyastore-social-color-stumbleupon {
+		a {
+			background-color: $stumbleupon;
+		}
+	}
+	.ciyastore-social-color-lastfm {
+		a {
+			background-color: #f34320;
+			background-color: $lastfm;
+		}
+	}
+	.ciyastore-social-color-pinterest {
+		a {
+			background-color: $pinterest;
+		}
+	}
+	.ciyastore-social-color-google {
+		a {
+			background-color: $google;
+		}
+	}
+	.ciyastore-social-color-evernote {
+		a {
+			background-color: #9acf4f;
+		}
+	}
+	.ciyastore-social-color-dribbble {
+		a {
+			background-color: $dribbble;
+		}
+	}
+	.ciyastore-social-color-skype {
+		a {
+			background-color: $skype;
+		}
+	}
+	.ciyastore-social-color-forrst {
+		a {
+			background-color: #45ad76;
+		}
+	}
+	.ciyastore-social-color-linkedin {
+		a {
+			background-color: $linkedin;
+		}
+	}
+	.ciyastore-social-color-wordpress {
+		a {
+			background-color: #2592c3;
+		}
+	}
+	.ciyastore-social-color-grooveshark {
+		a {
+			background-color: #ffb21d;
+		}
+	}
+	.ciyastore-social-color-delicious {
+		a {
+			background-color: $delicious;
+		}
+	}
+	.ciyastore-social-color-behance {
+		a {
+			background-color: $behance;
+		}
+	}
+	.ciyastore-social-color-dropbox {
+		a {
+			background-color: $dropbox;
+		}
+	}
+	.ciyastore-social-color-soundcloud {
+		a {
+			background-color: #ff7e30;
+		}
+	}
+	.ciyastore-social-color-deviantart {
+		a {
+			background-color: $deviantart;
+		}
+	}
+	.ciyastore-social-color-yahoo {
+		a {
+			background-color: #ab47ac;
+			background-color: $yahoo;
+		}
+	}
+	.ciyastore-social-color-flickr {
+		a {
+			background-color: #ff48a3;
+		}
+	}
+	.ciyastore-social-color-digg {
+		a {
+			background-color: $digg;
+		}
+	}
+	.ciyastore-social-color-blogger {
+		a {
+			background-color: #ff9233;
+		}
+	}
+	.ciyastore-social-color-tumblr {
+		a {
+			background-color: $tumblr;
+		}
+	}
+	.ciyastore-social-color-quora {
+		a {
+			background-color: #ea3d23;
+		}
+	}
+	.ciyastore-social-color-github {
+		a {
+			background-color: #3f91cb;
+		}
+	}
+	.ciyastore-social-color-amazon {
+		a {
+			background-color: $amazon;
+		}
+	}
+	.ciyastore-social-color-xing {
+		a {
+			background-color: $xing;
+		}
+	}
+	.ciyastore-social-color-wikipedia {
+		a {
+			background-color: #b3b5b8;
+		}
+	}
+	.ciyastore-social-color-android {
+		a {
+			background-color: $android;
+		}
+	}
+	.ciyastore-social-color-googleplus {
+		a {
+			background-color: #d34836;
+		}
+	}
+	.ciyastore-social-color-apple {
+		a {
+			background-color: #999;
+		}
+	}
+	.ciyastore-social-color-twitter-square {
+		a {
+			background-color: $twitter;
+		}
+	}
+	.ciyastore-social-color-linkedin-square {
+		a {
+			background-color: $linkedin;
+		}
+	}
+	.ciyastore-social-color-github-square {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-pinterest-square {
+		a {
+			background-color: $pinterest;
+		}
+	}
+	.ciyastore-social-color-google-plus-square {
+		a {
+			background-color: $googlepluse;
+		}
+	}
+	.ciyastore-social-color-google-plus {
+		a {
+			background-color: $googlepluse;
+		}
+	}
+	.ciyastore-social-color-github-alt {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-maxcdn {
+		a {
+			background-color: $maxcdn;
+		}
+	}
+	.ciyastore-social-color-html5 {
+		a {
+			background-color: #e44d26;
+		}
+	}
+	.ciyastore-social-color-css3 {
+		a {
+			background-color: #0071bb;
+		}
+	}
+	.ciyastore-social-color-btc {
+		a {
+			background-color: $btc;
+		}
+	}
+	.ciyastore-social-color-youtube-square {
+		a {
+			background-color: $youtube-play;
+		}
+	}
+	.ciyastore-social-color-stack-overflow {
+		a {
+			background-color: #f48023;
+		}
+	}
+	.ciyastore-social-color-xing-square {
+		a {
+			background-color: #006567;
+		}
+	}
+	.ciyastore-social-color-youtube-play {
+		a {
+			background-color: $youtube-play;
+		}
+	}
+	.ciyastore-social-color-adn {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-bitbucket {
+		a {
+			background-color: #205081;
+		}
+	}
+	.ciyastore-social-color-bitbucket-square {
+		a {
+			background-color: #205081;
+		}
+	}
+	.ciyastore-social-color-tumblr-square {
+		a {
+			background-color: #395976;
+		}
+	}
+	.ciyastore-social-color-windows {
+		a {
+			background-color: $windows;
+		}
+	}
+	.ciyastore-social-color-linux {
+		a {
+			background-color: #fc0;
+		}
+	}
+	.ciyastore-social-color-foursquare {
+		a {
+			background-color: #fa4778;
+		}
+	}
+	.ciyastore-social-color-trello {
+		a {
+			background-color: #007cc3;
+		}
+	}
+	.ciyastore-social-color-gratipay {
+		a {
+			background-color: #630;
+		}
+	}
+	.ciyastore-social-color-vk {
+		a {
+			background-color: $vk;
+			background-color: $vk;
+		}
+	}
+	.ciyastore-social-color-weibo {
+		a {
+			background-color: $weibo;
+		}
+	}
+	.ciyastore-social-color-renren {
+		a {
+			background-color: $renren;
+		}
+	}
+	.ciyastore-social-color-pagelines {
+		a {
+			background-color: $pagelines;
+		}
+	}
+	.ciyastore-social-color-stack-exchange {
+		a {
+			background-color: #f48023;
+		}
+	}
+	.ciyastore-social-color-vimeo-square {
+		a {
+			background-color: #23b6ea;
+		}
+	}
+	.ciyastore-social-color-slack {
+		a {
+			background-color: $slack;
+		}
+	}
+	.ciyastore-social-color-reddit {
+		a {
+			background-color: $reddit-alien;
+		}
+	}
+	.ciyastore-social-color-reddit-square {
+		a {
+			background-color: $reddit-alien;
+		}
+	}
+	.ciyastore-social-color-stumbleupon-circle {
+		a {
+			background-color: #eb4924;
+		}
+	}
+	.ciyastore-social-color-pied-piper-pp {
+		a {
+			background-color: #388e3c;
+		}
+	}
+	.ciyastore-social-color-pied-piper-alt {
+		a {
+			background-color: #388e3c;
+		}
+	}
+	.ciyastore-social-color-drupal {
+		a {
+			background-color: $drupal;
+		}
+	}
+	.ciyastore-social-color-joomla {
+		a {
+			background-color: $joomla;
+		}
+	}
+	.ciyastore-social-color-behance-square {
+		a {
+			background-color: #005cff;
+		}
+	}
+	.ciyastore-social-color-steam {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-steam-square {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-spotify {
+		a {
+			background-color: #1dd069;
+		}
+	}
+	.ciyastore-social-color-openid {
+		a {
+			background-color: $openid;
+		}
+	}
+	.ciyastore-social-color-vine {
+		a {
+			background-color: $vine;
+		}
+	}
+	.ciyastore-social-color-codepen {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-jsfiddle {
+		a {
+			background-color: #4679a4;
+		}
+	}
+	.ciyastore-social-color-rebel {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-empire {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-git-square {
+		a {
+			background-color: $git;
+		}
+	}
+	.ciyastore-social-color-hacker-news {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-tencent-weibo {
+		a {
+			background-color: $tencent-weibo;
+		}
+	}
+	.ciyastore-social-color-qq {
+		a {
+			background-color: #4d97d4;
+		}
+	}
+	.ciyastore-social-color-weixin {
+		a {
+			background-color: #50b31b;
+		}
+	}
+	.ciyastore-social-color-share-alt {
+		a {
+			background-color: $share-alt;
+		}
+	}
+	.ciyastore-social-color-share-alt-square {
+		a {
+			background-color: $share-alt;
+		}
+	}
+	.ciyastore-social-color-slideshare {
+		a {
+			background-color: #42c0fb;
+		}
+	}
+	.ciyastore-social-color-twitch {
+		a {
+			background-color: #6441a4;
+		}
+	}
+	.ciyastore-social-color-yelp {
+		a {
+			background-color: $yelp;
+		}
+	}
+	.ciyastore-social-color-paypal {
+		a {
+			background-color: $paypal;
+		}
+	}
+	.ciyastore-social-color-google-wallet {
+		a {
+			background-color: $google-wallet;
+		}
+	}
+	.ciyastore-social-color-cc-visa {
+		a {
+			background-color: #3958a6;
+		}
+	}
+	.ciyastore-social-color-cc-mastercard {
+		a {
+			background-color: #003663;
+		}
+	}
+	.ciyastore-social-color-git {
+		a {
+			background-color: $git;
+		}
+	}
+	.ciyastore-social-color-cc-discover {
+		a {
+			background-color: #f60;
+		}
+	}
+	.ciyastore-social-color-cc-amex {
+		a {
+			background-color: #2f77bf;
+		}
+	}
+	.ciyastore-social-color-cc-paypal {
+		a {
+			background-color: #002f86;
+		}
+	}
+	.ciyastore-social-color-cc-stripe {
+		a {
+			background-color: #009cde;
+		}
+	}
+	.ciyastore-social-color-lastfm-square {
+		a {
+			background-color: $lastfm;
+		}
+	}
+	.ciyastore-social-color-ioxhost {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-angellist {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-meanpath {
+		a {
+			background-color: #538dd6;
+		}
+	}
+	.ciyastore-social-color-buysellads {
+		a {
+			background-color: $git;
+		}
+	}
+	.ciyastore-social-color-connectdevelop {
+		a {
+			background-color: #3b164a;
+		}
+	}
+	.ciyastore-social-color-dashcube {
+		a {
+			background-color: $dashcube;
+		}
+	}
+	.ciyastore-social-color-forumbee {
+		a {
+			background-color: $forumbee;
+		}
+	}
+	.ciyastore-social-color-leanpub {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-sellsy {
+		a {
+			background-color: #0075c8;
+		}
+	}
+	.ciyastore-social-color-shirtsinbulk {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-skyatlas {
+		a {
+			background-color: #4cc3c8;
+		}
+	}
+	.ciyastore-social-color-facebook-official {
+		a {
+			background-color: $facebook;
+		}
+	}
+	.ciyastore-social-color-pinterest-p {
+		a {
+			background-color: #cb2027;
+		}
+	}
+	.ciyastore-social-color-whatsapp {
+		a {
+			background-color: #29a71a;
+		}
+	}
+	.ciyastore-social-color-viacoin {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-medium {
+		a {
+			background-color: $medium;
+		}
+	}
+	.ciyastore-social-color-y-combinator {
+		a {
+			background-color: #f26522;
+		}
+	}
+	.ciyastore-social-color-optin-monster {
+		a {
+			background-color: #9cff00;
+		}
+	}
+	.ciyastore-social-color-opencart {
+		a {
+			background-color: #23c1f0;
+		}
+	}
+	.ciyastore-social-color-expeditedssl {
+		a {
+			background-color: #455a64;
+		}
+	}
+	.ciyastore-social-color-cc-jcb {
+		a {
+			background-color: #fba51a;
+		}
+	}
+	.ciyastore-social-color-cc-diners-club {
+		a {
+			background-color: #1b458e;
+		}
+	}
+	.ciyastore-social-color-gg {
+		a {
+			background-color: $openid;
+		}
+	}
+	.ciyastore-social-color-gg-circle {
+		a {
+			background-color: $openid;
+		}
+	}
+	.ciyastore-social-color-tripadvisor {
+		a {
+			background-color: #7db557;
+		}
+	}
+	.ciyastore-social-color-odnoklassniki {
+		a {
+			background-color: $odnoklassniki;
+		}
+	}
+	.ciyastore-social-color-odnoklassniki-square {
+		a {
+			background-color: $odnoklassniki;
+		}
+	}
+	.ciyastore-social-color-get-pocket {
+		a {
+			background-color: #ef4056;
+		}
+	}
+	.ciyastore-social-color-wikipedia-w {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-safari {
+		a {
+			background-color: #409ed4;
+		}
+	}
+	.ciyastore-social-color-chrome {
+		a {
+			background-color: $chrome;
+		}
+	}
+	.ciyastore-social-color-firefox {
+		a {
+			background-color: $firefox;
+		}
+	}
+	.ciyastore-social-color-opera {
+		a {
+			background-color: $opera;
+		}
+	}
+	.ciyastore-social-color-internet-explorer {
+		a {
+			background-color: $internet-exp;
+		}
+	}
+	.ciyastore-social-color-contao {
+		a {
+			background-color: #f47c00;
+		}
+	}
+	.ciyastore-social-color-500px {
+		a {
+			background-color: #1e88e5;
+		}
+	}
+	.ciyastore-social-color-houzz {
+		a {
+			background-color: $houzz;
+		}
+	}
+	.ciyastore-social-color-black-tie {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-fonticons {
+		a {
+			background-color: #109d58;
+		}
+	}
+	.ciyastore-social-color-reddit-alien {
+		a {
+			background-color: $reddit-alien;
+		}
+	}
+	.ciyastore-social-color-edge {
+		a {
+			background-color: $edge;
+		}
+	}
+	.ciyastore-social-color-codiepie {
+		a {
+			background-color: $codiepie;
+		}
+	}
+	.ciyastore-social-color-modx {
+		a {
+			background-color: $modx;
+		}
+	}
+	.ciyastore-social-color-fort-awesome {
+		a {
+			background-color: #1d9e74;
+		}
+	}
+	.ciyastore-social-color-usb {
+		a {
+			background-color: #0054a6;
+		}
+	}
+	.ciyastore-social-color-product-hunt {
+		a {
+			background-color: #da542f;
+		}
+	}
+	.ciyastore-social-color-mixcloud {
+		a {
+			background-color: #27394d;
+		}
+	}
+	.ciyastore-social-color-scribd {
+		a {
+			background-color: $scribd;
+		}
+	}
+	.ciyastore-social-color-bluetooth {
+		a {
+			background-color: #0a3c91;
+		}
+	}
+	.ciyastore-social-color-bluetooth-b {
+		a {
+			background-color: #0a3c91;
+		}
+	}
+	.ciyastore-social-color-gitlab {
+		a {
+			background-color: #30353e;
+		}
+	}
+	.ciyastore-social-color-wpbeginner {
+		a {
+			background-color: #f60;
+		}
+	}
+	.ciyastore-social-color-wpforms {
+		a {
+			background-color: #b85a1b;
+		}
+	}
+	.ciyastore-social-color-envira {
+		a {
+			background-color: $envira;
+		}
+	}
+	.ciyastore-social-color-glide {
+		a {
+			background-color: #00a7ff;
+		}
+	}
+	.ciyastore-social-color-glide-g {
+		a {
+			background-color: #00a7ff;
+		}
+	}
+	.ciyastore-social-color-viadeo {
+		a {
+			background-color: #ff7e00;
+		}
+	}
+	.ciyastore-social-color-viadeo-square {
+		a {
+			background-color: #ff7e00;
+		}
+	}
+	.ciyastore-social-color-pied-piper {
+		a {
+			background-color: #2e9e48; 
+		}
+	}
+	.ciyastore-social-color-first-order {
+		a {
+			background-color: maroon;
+		}
+	}
+	.ciyastore-social-color-yoast {
+		a {
+			background-color: #9d2563;
+		}
+	}
+	.ciyastore-social-color-themeisle {
+		a {
+			background-color: #1599c4;
+		}
+	}
+	.ciyastore-social-color-google-plus-official {
+		a {
+			background-color: #dd5044;
+		}
+	}
+	.ciyastore-social-color-font-awesome {
+		a {
+			background-color: #1d9e74;
+		}
+	}
+}
+.ciyastore-social-icons.ciyastore-social-shape-rounded {
+	li {
+		a {
+			border-radius: 3px;
+		}
+	}
+}
+.ciyastore-social-icons.ciyastore-social-shape-round {
+	li {
+		a {
+			border-radius: 100%;
+		}
+	}
+}
+.ciyastore-social-icons.ciyastore-social-style-flat-color {
+	.ciyastore-social-color-houzz {
+		a {
+			background-color: $houzz;
+		}
+	}
+	.ciyastore-social-color-black-tie {
+		a {
+			background-color: $black;
+		}
+	}
+	.ciyastore-social-color-fonticons {
+		a {
+			background-color: #109d58;
+		}
+	}
+	.ciyastore-social-color-reddit-alien {
+		a {
+			background-color: $reddit-alien;
+		}
+	}
+	.ciyastore-social-color-edge {
+		a {
+			background-color: $edge;
+		}
+	}
+	.ciyastore-social-color-codiepie {
+		a {
+			background-color: $codiepie;
+		}
+	}
+	.ciyastore-social-color-modx {
+		a {
+			background-color: $modx;
+		}
+	}
+	.ciyastore-social-color-fort-awesome {
+		a {
+			background-color: #1d9e74;
+		}
+	}
+	.ciyastore-social-color-usb {
+		a {
+			background-color: #0054a6;
+		}
+	}
+	.ciyastore-social-color-product-hunt {
+		a {
+			background-color: #da542f;
+		}
+	}
+	.ciyastore-social-color-mixcloud {
+		a {
+			background-color: #27394d;
+		}
+	}
+	.ciyastore-social-color-scribd {
+		a {
+			background-color: $scribd;
+		}
+	}
+	.ciyastore-social-color-bluetooth {
+		a {
+			background-color: #0a3c91;
+		}
+	}
+	.ciyastore-social-color-bluetooth-b {
+		a {
+			background-color: #0a3c91;
+		}
+	}
+	.ciyastore-social-color-gitlab {
+		a {
+			background-color: #30353e;
+		}
+	}
+	.ciyastore-social-color-wpbeginner {
+		a {
+			background-color: #f60;
+		}
+	}
+	.ciyastore-social-color-wpforms {
+		a {
+			background-color: #b85a1b;
+		}
+	}
+	.ciyastore-social-color-envira {
+		a {
+			background-color: $envira;
+		}
+	}
+	.ciyastore-social-color-glide {
+		a {
+			background-color: #00a7ff;
+		}
+	}
+	.ciyastore-social-color-glide-g {
+		a {
+			background-color: #00a7ff;
+		}
+	}
+	.ciyastore-social-color-viadeo {
+		a {
+			background-color: #ff7e00;
+		}
+	}
+	.ciyastore-social-color-viadeo-square {
+		a {
+			background-color: #ff7e00;
+		}
+	}
+	.ciyastore-social-color-pied-piper {
+		a {
+			background-color: #2e9e48;
+		}
+	}
+	.ciyastore-social-color-first-order {
+		a {
+			background-color: maroon;
+		}
+	}
+	.ciyastore-social-color-yoast {
+		a {
+			background-color: #9d2563;
+		}
+	}
+	.ciyastore-social-color-themeisle {
+		a {
+			background-color: #1599c4;
+		}
+	}
+	.ciyastore-social-color-google-plus-official {
+		a {
+			background-color: #dd5044;
+		}
+	}
+	.ciyastore-social-color-font-awesome {
+		a {
+			background-color: #1d9e74;
+		}
+	}
+}
+.ciyastore-social-icons.ciyastore-social-effect-color-hover {
+	.ciyastore-social-color-black-tie {
+		a {
+			&:hover {
+				background-color: $black;
+			}
+		}
+	}
+	.ciyastore-social-color-fonticons {
+		a {
+			&:hover {
+				background-color: #109d58;
+			}
+		}
+	}
+	.ciyastore-social-color-reddit-alien {
+		a {
+			&:hover {
+				background-color: $reddit-alien;
+			}
+		}
+	}
+	.ciyastore-social-color-edge {
+		a {
+			&:hover {
+				background-color: $edge;
+			}
+		}
+	}
+	.ciyastore-social-color-codiepie {
+		a {
+			&:hover {
+				background-color: $codiepie;
+			}
+		}
+	}
+	.ciyastore-social-color-modx {
+		a {
+			&:hover {
+				background-color: $modx;
+			}
+		}
+	}
+	.ciyastore-social-color-fort-awesome {
+		a {
+			&:hover {
+				background-color: #1d9e74;
+			}
+		}
+	}
+	.ciyastore-social-color-usb {
+		a {
+			&:hover {
+				background-color: #0054a6;
+			}
+		}
+	}
+	.ciyastore-social-color-product-hunt {
+		a {
+			&:hover {
+				background-color: #da542f;
+			}
+		}
+	}
+	.ciyastore-social-color-mixcloud {
+		a {
+			&:hover {
+				background-color: #27394d;  
+			}
+		}
+	}
+	.ciyastore-social-color-scribd {
+		a {
+			&:hover {
+				background-color: $scribd;
+			}
+		}
+	}
+	.ciyastore-social-color-bluetooth {
+		a {
+			&:hover {
+				background-color: #0a3c91;
+			}
+		}
+	}
+	.ciyastore-social-color-bluetooth-b {
+		a {
+			&:hover {
+				background-color: #0a3c91;
+			}
+		}
+	}
+	.ciyastore-social-color-gitlab {
+		a {
+			&:hover {
+				background-color: #30353e;
+			}
+		}
+	}
+	.ciyastore-social-color-wpbeginner {
+		a {
+			&:hover {
+				background-color: #f60;
+			}
+		}
+	}
+	.ciyastore-social-color-wpforms {
+		a {
+			&:hover {
+				background-color: #b85a1b;
+			}
+		}
+	}
+	.ciyastore-social-color-envira {
+		a {
+			&:hover {
+				background-color: $envira;
+			}
+		}
+	}
+	.ciyastore-social-color-glide {
+		a {
+			&:hover {
+				background-color: #00a7ff;
+			}
+		}
+	}
+	.ciyastore-social-color-glide-g {
+		a {
+			&:hover {
+				background-color: #00a7ff;
+			}
+		}
+	}
+	.ciyastore-social-color-viadeo {
+		a {
+			&:hover {
+				background-color: #ff7e00;
+			}
+		}
+	}
+	.ciyastore-social-color-viadeo-square {
+		a {
+			&:hover {
+				background-color: #ff7e00;
+			}
+		}
+	}
+	.ciyastore-social-color-pied-piper {
+		a {
+			&:hover {
+				background-color: #2e9e48;
+			}
+		}
+	}
+	.ciyastore-social-color-first-order {
+		a {
+			&:hover {
+				background-color: maroon;
+			}
+		}
+	}
+	.ciyastore-social-color-yoast {
+		a {
+			&:hover {
+				background-color: #9d2563;
+			}
+		}
+	}
+	.ciyastore-social-color-themeisle {
+		a {
+			&:hover {
+				background-color: #1599c4;
+			}
+		}
+	}
+	.ciyastore-social-color-google-plus-official {
+		a {
+			&:hover {
+				background-color: #dd5044;
+			}
+		}
+	}
+	.ciyastore-social-color-font-awesome {
+		a {
+			&:hover {
+				background-color: #1d9e74;
+			}
+		}
+	}
+}
+.ciyastore-social-icons.ciyastore-social-shape-rounded {
+	li {
+		a {
+			border-radius: 3px;
+		}
+	}
+}
+.ciyastore-social-icons.ciyastore-social-shape-round {
+	li {
+		a {
+			border-radius: 100%;
+		}
+	}
+}
+

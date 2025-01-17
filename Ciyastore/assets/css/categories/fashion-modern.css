@@ -1,0 +1,839 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 44px;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 38px;
+    font-size: 30px;
+}
+
+.deal-banner .caption h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 38px;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 34px;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 22px;
+}
+
+h5 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.testimonials h5 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+h6 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.share h5 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.share ul {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.sidebar .widget .item-detail h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+header.site-header {
+    background: #fff;
+}
+
+header.site-header .topbar .topbar-link ul li a:hover {
+    color: #f1dc00;
+}
+
+header.site-header .topbar .topbar-right .topbar-link>ul>li a:hover {
+    color: #f1dc00;
+}
+
+header.site-header .topbar .topbar-right .topbar-link>ul>li a:hover i {
+    color: #f1dc00;
+}
+
+header.site-header .ciya-tools-actions>li i {
+    color: #323232;
+}
+
+header.site-header .ciya-tools-actions>li:hover i {
+    color: #f1dc00;
+}
+
+header.site-header .ciya-tools-actions>li:focus i {
+    color: #f1dc00;
+}
+
+header.site-header .ciya-tools-actions>li a:hover {
+    color: #f1dc00;
+}
+
+header.site-header .ciya-tools-actions>li a:hover i {
+    color: #f1dc00;
+}
+
+header.site-header .ciya-tools-cart a .count {
+    background: #f1dc00;
+}
+
+header.site-header .ciya-tools-cart .cart-link .count {
+    background: #f1dc00;
+}
+
+header.site-header .ciya-tools-wishlist a .ciyastore-wishlist-count {
+    background: #f1dc00;
+}
+
+header.site-header .logo-wrapper img {
+    max-height: 50px;
+    width: 100%;
+    max-width: initial;
+}
+
+header.site-header.is-sticky .mega-menu .menu-links>li>a:hover {
+    color: #f1dc00;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .quantity .amount {
+    color: #f1dc00;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__total .amount {
+    color: #f1dc00;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button {
+    background: #f1dc00;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button:last-child:hover {
+    background: #f1dc00;
+}
+
+.header-style-menu-center .mega-menu .menu-links>li>a {
+    color: #969696;
+    font-size: 14px;
+}
+
+.header-style-menu-center .mega-menu .menu-links>li:hover>a {
+    color: #f1dc00;
+}
+
+.header-style-menu-center .mega-menu .menu-links>li:focus>a {
+    color: #f1dc00;
+}
+
+.header-style-menu-center .header-search-wrap .search-button-wrap .search-button {
+    color: #323232;
+}
+
+.header-style-menu-center .header-search-wrap .search-button-wrap .search-button:hover {
+    color: #f1dc00;
+}
+
+.mega-menu * {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+footer.site-footer {
+    background: #232323;
+    color: #999;
+}
+
+footer.site-footer .site-info {
+    background: #f1dc00;
+    color: #323232;
+}
+
+footer.site-footer .site-info .footer-widget p {
+    color: #323232;
+}
+
+footer.site-footer .site-info .footer-widget p a {
+    color: #323232;
+}
+
+footer.site-footer .site-info .footer-widget p a:hover {
+    color: #fff;
+}
+
+footer.site-footer .site-info a {
+    color: #323232;
+}
+
+footer.site-footer .site-info a:hover {
+    color: #999;
+}
+
+footer.site-footer .footer-title {
+    color: #fff;
+}
+
+footer.site-footer .footer-nav-menu ul li:hover a {
+    color: #f1dc00;
+}
+
+footer.site-footer .widget ul li a {
+    color: #999;
+}
+
+footer.site-footer .pgs-social-profiles .social-profiles ul li a i {
+    color: #999;
+    border: 1px solid rgba(173, 173, 173, 0.5);
+}
+
+footer.site-footer .pgs-social-profiles .social-profiles ul li a:hover i {
+    background-color: #f1dc00;
+    border-color: #f1dc00;
+    color: #fff;
+}
+
+footer.site-footer .pgs-contact-widget ul li i {
+    color: #f1dc00;
+}
+
+footer.site-footer .pgs-recent-entries .recent-post .recent-post-info a {
+    color: #999;
+}
+
+footer.site-footer .pgs-recent-entries .recent-post .recent-post-info a:hover {
+    color: #f1dc00;
+}
+
+footer.site-footer .pgs-recent-entries .recent-post .recent-post-info .post-date i {
+    color: #f1dc00;
+}
+
+footer.site-footer .product-tag-cloud .tagcloud a {
+    border: 1px solid rgba(150, 150, 150, 0.25);
+    color: #999;
+}
+
+footer.site-footer .product-tag-cloud .tagcloud a:hover {
+    border-color: #f1dc00;
+    background-color: #f1dc00;
+}
+
+footer.site-footer .product-tag-cloud .tagcloud a:focus {
+    border-color: #f1dc00;
+    background-color: #f1dc00;
+}
+
+footer.site-footer .pgs-newsletter-widget .newsletter_form .button-area .input-group-btn>.btn {
+    border-color: #f1dc00;
+    background-color: #f1dc00;
+}
+
+.s-text-shadow {
+    text-shadow: -5px 2px 1px #fec83e;
+}
+
+#back-to-top .top {
+    background: #f1dc00;
+}
+
+.section-title h3.title {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #969696;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.ciyastore_banner {
+    font-family: "Gloria Hallelujah";
+}
+
+.ciyastore-info-box-main {
+    background-image: url(../../images/categories/fashion-modern/pattern-1.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.ciyastore-info-box {
+    padding: 15px 10px;
+    border: 3px solid rgba(241, 220, 0, 0.2);
+}
+
+.ciyastore-info-box .ciyastore-info-box-icon.ciya-shop-info-box-size-md {
+    width: 35px;
+    height: 35px;
+    font-size: 28px;
+    height: 28px;
+}
+
+.ciyastore-info-box .ciyastore-info-box-icon {
+    color: #f1dc00;
+}
+
+.ciyastore-info-box .ciyastore-info-box-title {
+    color: #888888;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.ciyastore_banner.fashion-modern-banner-1 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-1 .ciyastore_banner-text {
+    font-family: Glegoo;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.26em;
+    color: #323232;
+    line-height: 0.5em;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ciyastore_banner.fashion-modern-banner-1 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-2 .ciyastore_banner-text {
+    font-family: Gloria Hallelujah;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+    color: #323232;
+    line-height: 0.5em;
+}
+
+.ciyastore_banner.fashion-modern-banner-1 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-3 .ciyastore_banner-text {
+    font-family: Glegoo;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7em;
+    color: #323232;
+    line-height: 1.8em;
+}
+
+.ciyastore_banner.fashion-modern-banner-1 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-4 .ciyastore_banner-text {
+    font-family: Oswald;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #323232;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.ciyastore_banner.fashion-modern-banner-1 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-5 .ciyastore_banner-text {
+    font-family: Gloria Hallelujah;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.4em;
+    color: #323232;
+    line-height: 2em;
+}
+
+.ciyastore_banner.fashion-modern-banner-2 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-1 .ciyastore_banner-text {
+    font-family: Glegoo;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.5em;
+    color: #ffffff;
+    line-height: 1em;
+}
+
+.ciyastore_banner.fashion-modern-banner-2 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-2 .ciyastore_banner-text {
+    font-family: Oswald;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.8em;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+.image-slider-items.image-slider-style-2 .about-details {
+    background: rgba(241, 220, 0, 0.8);
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.image-slider-items.image-slider-style-2 .about-details .title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #323232;
+}
+
+.image-slider-items.image-slider-style-2 .about-details .title:hover {
+    color: #fff;
+}
+
+.fashion-collection {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: url(../../images/categories/fashion-modern/section-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.fashion-collection .box-shadow {
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.2);
+}
+
+.fashion-collection .section-title h5.title {
+    text-align: center;
+    font-family: Glegoo;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fashion-collection .section-title h2.title {
+    font-size: 3.7em;
+    line-height: 1.2em;
+    text-align: center;
+    font-family: Gloria Hallelujah;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fashion-collection .section-title h3.title {
+    font-size: 2.5em;
+    color: #ef4877;
+    line-height: 1.2em;
+    text-align: center;
+    font-family: Oswald;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fashion-collection .ciyastore_button_default a {
+    font-size: 12px;
+    padding: 8px 18px;
+    line-height: 16px;
+    border-radius: 3px;
+    background-color: #323232;
+    color: #fff;
+}
+
+.fashion-collection .ciyastore_button_default a:hover {
+    background-color: #f1dc00;
+}
+
+.fashion-collection-bg {
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+.fashion-collection-border {
+    border: 2px dashed #323232;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.tab-content {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.nav-tabs {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border: 0px solid;
+}
+
+.nav-tabs li {
+    list-style-type: none;
+    margin: 2px;
+    display: inline-block;
+}
+
+.nav-tabs li a {
+    font-size: 15px;
+    font-weight: 600;
+    background: #323232;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 45px;
+    border-radius: 0;
+    display: inline-block;
+}
+
+.nav-tabs li:hover a {
+    background: #f1dc00;
+}
+
+.nav-tabs li:hover a::before {
+    background-color: #f1dc00;
+}
+
+.nav-tabs li.active a {
+    background: #f1dc00;
+}
+
+.products .product-hover-style-image-center .product-actions {
+    padding-left: 0;
+    padding-right: 0;
+    bottom: 0px;
+    color: #323233;
+    border: 0px none;
+}
+
+.products .product-hover-style-image-center .product-actions a {
+    color: #323233;
+}
+
+.products .product-hover-style-image-center .product-actions a:hover {
+    color: #f1dc00;
+}
+
+.products .product-hover-style-image-center .product-actions .product-action-add-to-cart a:hover {
+    color: #f1dc00;
+}
+
+.products .open-quick-view {
+    color: #fff;
+    background-color: #f1dc00;
+}
+
+.products .open-quick-view:hover {
+    background-color: #323233;
+    color: #fff;
+}
+
+.products .product-info .product-name a:hover {
+    color: #f1dc00;
+}
+
+.products .product-info .product-name a:focus {
+    color: #f1dc00;
+}
+
+.products .product .price {
+    float: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.product-deals-items-column .product-deals-item {
+    border: 0px solid;
+    min-height: 100px;
+}
+
+.product-deals-items-column .product-deals-item .product-deals-item-right {
+    padding: 10px 20px;
+    text-align: left;
+    color: #777777;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.product-deals-items-column .product-deals-item .product-deals-item-right .product-deal-content .product-deal-title {
+    color: #323232;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.product-deals-items-column .product-deals-item .product-deals-item-right .product-deal-content .product-deal-title a:hover {
+    color: #f1dc00;
+}
+
+.product-deals-items-column .product-deals-item .product-deals-item-right .product-deal-content .product-deal-title a:focus {
+    color: #f1dc00;
+}
+
+.product-deals-items-column .product-deals-item .product-deals-item-right .product-deal-content .product-deal-content-price ins {
+    color: #04d39f;
+    font-size: 15px;
+    font-weight: 500;
+    color: #f1dc00;
+    color: #f1dc00;
+    color: #f1dc00;
+}
+
+.product-deals-items-column .product-deals-item .product-deals-item-left {
+    width: auto;
+}
+
+.insta-images {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 50px;
+}
+
+.product-deal-image {
+    width: 70px;
+}
+
+.product-multi-item-title h4 {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8ebf1;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+/*** Modal ***/
+
+#compare,
+#search-popup {
+    -webkit-overflow-scrolling: touch;
+}
+
+.table.compare-list {
+    border: none;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.table.compare-list th {
+    background: #fff;
+    color: #323232;
+    border-left-color: #e7e7e7;
+}
+
+.compare-modal .compare-content table tbody tr th {
+    font-weight: 600;
+}
+
+.compare-modal .compare-content .compare-title h1 {
+    color: #f1dc00;
+    border: none;
+}
+
+.compare-modal .compare-wrapper {
+    background: #fff;
+    color: #323232;
+}
+
+table.compare-list td,
+table.compare-list th {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    border-right-color: #e7e7e7;
+    border-bottom-color: #e7e7e7;
+}
+
+.compare-modal .compare-content table tbody tr td:nth-of-type(odd) {
+    background: #F7F7F7;
+    color: #323232;
+}
+
+.compare-modal .compare-content table tbody tr.title td {
+    color: #323232;
+}
+
+.compare-modal .compare-content table tbody tr.price .ciya-Price-amount.amount,
+.compare-modal .compare-content table tbody tr.stock span,
+.compare-modal .compare-content table tbody tr.price .ciya-Price-amount.amount {
+    color: #f1dc00;
+}
+
+.compare-modal .compare-content table tbody tr.add-to-cart a {
+    background: #f1dc00;
+}
+
+.compare-modal .compare-content table tbody tr.add-to-cart a:hover {
+    background: #323232;
+}
+
+.compare-modal .compare-content .compare-title button.close {
+    opacity: 1;
+}
+
+.compare-modal .compare-content .compare-title button.close span {
+    color: #323232;
+}
+
+.search-modal {
+    background: transparent;
+}
+
+.search-modal .search-wrapper .search-modal-content {
+    background: #fff;
+}
+
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner {
+    background: rgba(255, 255, 255, .01);
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-search-button:before {
+    color: #f1dc00;
+}
+
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner input.form-control {
+    color: #969696;
+}
+
+.search-modal .search-wrapper .search-modal-content .search-modal-content-inner .search_form-keywords-list li a:hover {
+    background: #f1dc00;
+    color: #fff;
+}
+
+.search-modal .search-wrapper .search-modal-content .search-modal-content-inner .search_form-keywords-list {
+    padding-left: 0;
+}
+
+.modal-header .close {
+    color: #323232;
+    opacity: 1;
+}
+
+.modal-header .close:focus {
+    outline: none;
+}
+
+.select2-container--default .select2-results__option[aria-selected="true"] {
+    background-color: #f1dc00;
+}
+
+.select2-container--default .select2-results__option:hover {
+    background-color: #f1dc00;
+    color: #fff;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .ciyastore_banner .ciyastore_banner-image {
+        display: none;
+    }
+    .ciyastore_banner .ciyastore_banner-content-inner-wrapper {
+        font-size: 50px;
+    }
+    .ciyastore_banner .ciyastore_banner-content {
+        background-position: center;
+        width: 100%;
+        position: relative;
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+    .ciyastore_banner_wrapper {
+        width: 100%;
+    }
+    .product-multi-item-title {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner .search_form-input-wrap {
+        margin-bottom: 0;
+    }
+    .search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner .search_form-category-wrap {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .search-modal .search-wrapper .search-modal-content {
+        vertical-align: middle;
+        padding-top: 0;
+    }
+    .search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner .search_form-category-wrap {
+        margin-bottom: 20px;
+    }
+    .search-modal .search-wrapper .search-modal-content .search-modal-content-inner .search_form-keywords-title {
+        padding: 20px 0 10px 0;
+    }
+    .compare-modal .compare-content .compare-title button.close {
+        opacity: 1;
+        right: 5px;
+        top: 15px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .products .nav-tabs li a {
+        padding: 13px 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .products .nav-tabs li a {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+    .fashion-collection-bg {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .fashion-collection .section-title h3.title {
+        font-size: 1.8em;
+    }
+}

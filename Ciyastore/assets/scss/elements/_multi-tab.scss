@@ -1,0 +1,29 @@
+.multi-tab-products {
+    .nav {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        border:0;
+        &.mtpl-tabs--tabs_style-style-1 {
+            position: relative;
+            li {
+                position: relative;
+                margin: 2px 8px;
+                a {
+                    padding: 0 8px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color:$secondary;
+                    border: 0;
+                    &:hover {
+                        color:$primary;
+                    }
+                    &.active {
+                        color:$primary;
+                    }
+                }
+            }
+        }
+    }
+}

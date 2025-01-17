@@ -1,0 +1,406 @@
+/*================================================
+[  Home Classic  ]
+================================================*/
+
+@import "../variables.scss";
+@import "../functions.scss";
+@media (min-width:1200px) {
+    .container {
+        max-width: 1300px
+    }
+}
+
+
+/***************************
+    REVOLUTION SLIDER
+***************************/
+
+.hades.tparrows {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.25);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    z-index: 100
+}
+
+.hades.tparrows:before {
+    font-family: "revicons";
+    font-size: 30px;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    transition: background 0.3s, color 0.3s
+}
+
+.hades.tparrows.tp-leftarrow:before {
+    content: "\e824"
+}
+
+.hades.tparrows.tp-rightarrow:before {
+    content: "\e825"
+}
+
+.hades.tparrows:hover:before {
+    color: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 1)
+}
+
+.hades .tp-arr-allwrapper {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    background: #888;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -ms-filter: "progid:dximagetransform.microsoft.alpha(opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0.0;
+    -khtml-opacity: 0.0;
+    opacity: 0.0;
+    -webkit-transform: rotatey(-90deg);
+    transform: rotatey(-90deg);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%
+}
+
+.hades.tp-rightarrow .tp-arr-allwrapper {
+    left: auto;
+    right: 100%;
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transform: rotatey(90deg);
+    transform: rotatey(90deg)
+}
+
+.hades:hover .tp-arr-allwrapper {
+    -ms-filter: "progid:dximagetransform.microsoft.alpha(opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    -webkit-transform: rotatey(0deg);
+    transform: rotatey(0deg)
+}
+
+.hades .tp-arr-imgholder {
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%
+}
+
+.ciyastore_banner {
+    .ciyastore_banner-content {
+        .ciyastore_banner-content-inner-wrapper {
+            font-size: 70px;
+        }
+    }
+    .ciyastore_banner-badge.ciyastore_banner-badge_type-flat {
+        color: $primary;
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: $white;
+    }
+}
+
+.ciyastore_banner {
+    &.ciyastore-banner-1 {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                .ciyastore_banner-text {
+                    font-family: Montserrat;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 0.5em;
+                    color: $white;
+                    background-color: $secondary;
+                    padding: 7px 15px;
+                    margin-bottom: 5px;
+                }
+                .ciyastore_banner-btn-wrap {
+                    &.ciyastore_banner-btn-style-flat {
+                        .ciyastore_banner-btn {
+                            font-size: 14px;
+                            line-height: 44px;
+                            padding: 0 25px;
+                            color: $white;
+                            text-transform: uppercase;
+                            background-color: $secondary;
+                            &:hover {
+                                color: $white;
+                                background-color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.ciyastore-banner-2 {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                .ciyastore_banner-text {
+                    font-size: 0.6em;
+                    color: $secondary;
+                    font-weight: 700;
+                }
+                .ciyastore_banner-btn-wrap {
+                    &.ciyastore_banner-btn-style-link {
+                        .ciyastore_banner-btn {
+                            color: $secondary;
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner-title {
+    font-size: 16px;
+    color: $secondary;
+    margin-bottom: 25px;
+}
+
+.banner-link {
+    font-weight: bold;
+    color: $muted;
+    &:hover {
+        color: $muted;
+    }
+}
+
+.newsletter-bg {
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    background-image: url(../../images/newsletter/home-classic-newsletter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    .ciyastore_info_box_2 {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+h4.ciyastore_newsletter-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 10px;
+    color: $secondary;
+}
+
+.newsletter-wrapper {
+    &.newsletter-style-1 {
+        &.newsletter-design-1 {
+            .button-area {
+                .btn.submit {
+                    background: $secondary;
+                    color: $white;
+                    &:hover {
+                        background: $primary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .input-area {
+        margin-bottom: 0px;
+    }
+}
+
+.insta-feeds {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.latest-post-wrapper {
+    .latest-post-item {
+        .avatar-20 {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 50px;
+        }
+    }
+}
+
+
+/*--------------------  Responsive Start  -------------------*/
+
+@media only screen and (max-width: 1200px) {
+    .ciyastore_banner {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                font-size: 60px;
+            }
+            padding-bottom: 80px;
+            padding-top: 80px;
+        }
+    }
+    .ciyastore_banner.ciyastore-banner-1 {
+        .ciyastore_banner-content-wrapper {
+            margin-top: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .banner-title {
+        margin-top: 20px;
+    }
+    .ciyastore_banner {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                font-size: 50px;
+            }
+        }
+        .ciyastore_banner-badge.ciyastore_banner-badge_type-flat {
+            display: none;
+        }
+        &.ciyastore-banner-2 {
+            min-height: unset;
+            margin-bottom: 0px;
+        }
+    }
+    .newsletter-bg {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ciyastore_banner {
+        .ciyastore_banner-content {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+    .ciyastore_banner.ciyastore-banner-1 {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                .ciyastore_banner-btn-wrap.ciyastore_banner-btn-style-flat {
+                    .ciyastore_banner-btn {
+                        line-height: 40px;
+                        padding: 0 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ciyastore_banner {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .newsletter-bg {
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+    }
+    .newsletter-wrapper {
+        &.newsletter-style-1 {
+            &.newsletter-design-1 {
+                .button-area {
+                    position: relative;
+                    width: 100%;
+                    margin-top: 20px;
+                    .btn.submit {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .newsletter-wrapper.newsletter-style-1.newsletter-design-1 {
+        .input-group-btn {
+            &:before {
+                display: none;
+            }
+        }
+        .button-area {
+            .btn.submit {
+                font-size: 14px;
+            }
+        }
+    }
+    .ciyastore_banner {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                font-size: 30px;
+            }
+        }
+    }
+    .ciyastore_banner.ciyastore-banner-1 {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                .ciyastore_banner-btn-wrap.ciyastore_banner-btn-style-flat {
+                    .ciyastore_banner-btn {
+                        line-height: 26px;
+                        padding: 0 20px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .ciyastore_banner.ciyastore-banner-1 {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                .ciyastore_banner-btn-wrap.ciyastore_banner-btn-style-flat {
+                    .ciyastore_banner-btn {
+                        line-height: 30px;
+                        padding: 0 16px;
+                    }
+                }
+            }
+        }
+    }
+    .latest-post-wrapper {
+        .latest-post-item {
+            .latest-post-item-inner {
+                display: block;
+            }
+            .latest-post-image {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: $gray-light;
+                margin-bottom: 15px;
+            }
+        }
+        &.latest-post-style-1 {
+            .latest-post-item {
+                .latest-post-content {
+                    padding-left: 0px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,648 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+
+body,
+html {
+  font-family: "Patua One", sans-serif;
+  color: #969696;}
+
+h1 {
+  font-family: "Inika", sans-serif; }
+
+h2,
+.deal-banner .caption h2 {
+  font-family: 'Fredericka the Great', cursive; }
+
+h3 {
+  font-family: "Inika", sans-serif; }
+
+h4 {
+  font-family: "Inika", sans-serif; }
+
+h5,
+.testimonials h5 {
+  font-family: "Inika", sans-serif; }
+
+h6,
+.share h5,
+.share ul,
+.sidebar .widget .item-detail h4 {
+  font-family: "Inika", sans-serif; }
+
+/*--------------------  Header Start  -------------------*/
+header.site-header {
+  box-shadow: none; }
+  header.site-header .header-nav {
+    background: #fff; }
+
+header.site-header .sticky-logo { display: none; }
+header.site-header.is-sticky .sticky-logo { display: inline-block; }
+.header-nav-bg-color-default.sticky-menu { display: none; }
+header.site-header.is-sticky .logo-wrapper { display: none; }
+header.site-header.is-sticky .header-nav-bg-color-default.sticky-menu { display: block;text-align: center;}
+header.site-header .header-search-wrap.search-mobile{ display: none; }
+header.site-header .header-search-wrap .btn-primary { box-shadow: none !important;background: inherit !important;border-color: inherit !important;color: #323232 !important;}
+header.site-header.is-sticky .nonesticky{ display: none; }
+header.site-header.is-sticky .header-nav{ display: none; } 
+  header.site-header .ciya-tools-cart a .count {
+    background: #c8833f; }
+  header.site-header .ciya-tools-cart .cart-link .count {
+    background: #c8833f; }
+  header.site-header .ciya-tools-wishlist a .ciyastore-wishlist-count {
+    background: #c8833f; }
+  header.site-header .logo-wrapper img {
+    max-height: 65px;
+    max-width: initial; }
+  header.site-header .ciya-tools-actions > li a:hover i {
+    color: #c8833f; }
+  header.site-header .ciya-tools-actions > li a:focus i {
+    color: #c8833f; }
+  header.site-header .ciya-tools-actions li .widget-shopping-cart .product-list-widget-container .ciyastore-mini-cart .ciya-mini-cart-item a.product-title{
+    color: #323232; }
+    header.site-header .ciya-tools-actions li .widget-shopping-cart .product-list-widget-container .ciyastore-mini-cart .ciya-mini-cart-item a.product-title:hover {
+      color: #c8833f; }
+  header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button {
+    background: #c8833f; }
+   header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button:hover {
+      background: #323232; }
+    header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button:last-child {
+      background: #323232;
+      margin-right: 0; }
+     header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button:last-child:hover {
+        background: #c8833f;
+        color: #ffffff !important; }
+  header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__total .amount {
+    color: #c8833f; }
+  header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__total strong {
+    color: #323232;
+    min-width: 40px;
+    display: inline-block; }
+  header.site-header .ciya-tools-actions li .widget-shopping-cart .quantity .amount {
+    color: #c8833f; }
+
+header.site-header .header-nav-wrapper{     border-top: 1px solid #eaeaea; }
+
+
+.mega-menu .menu-links > li > a {
+  color: #323233; padding: 0 11px 0 11px;}
+header.site-header.is-sticky .mega-menu .menu-links>li>a:hover{color: #c8833f;}
+.mega-menu * {
+  font-family: "Patua One", sans-serif; }
+
+.header-style-logo-center .header-mobile {
+  box-shadow: none; }
+
+.header-style-logo-center .mega-menu .menu-links > li:hover > a {
+  color: #c8833f; }
+
+.header-style-logo-center .mega-menu .menu-links > li:focus > a {
+  color: #c8833f; }
+
+.header-style-logo-center .header-search-wrap .search-button-wrap .search-button:hover {
+  color: #c8833f; }
+
+footer.site-footer {
+  position: relative;
+  border: none;
+  box-shadow: none; }
+  footer.site-footer:after {
+    background-image: url(../../images/categories/bakery/top-pattern.png);
+    top: 100%; }
+
+.top-pattern {
+  position: relative; }
+  .top-pattern:before {
+    content: "" !important;
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    background-repeat: repeat-x;
+    background-position: 22px;
+    background-image: url(../../images/categories/bakery/top-pattern.png);
+    top: 100%; }
+
+.bottom-pattern:after {
+  content: "" !important;
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 99;
+  background-repeat: repeat-x;
+  background-position: 22px;
+  background-image: url(../../images/categories/bakery/bottom-pattern.png);
+  bottom: 0px; }
+
+.inner-intro.header_intro {
+  box-shadow: none; }
+  .inner-intro.header_intro:before {
+    content: "" !important;
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 99999;
+    background-repeat: repeat-x;
+    background-position: 22px;
+    background-image: url(../../images/categories/bakery/top-pattern.png);
+    top: 100%; }
+  .inner-intro.header_intro:after {
+    content: "" !important;
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 99999;
+    background-repeat: repeat-x;
+    background-position: 22px; }
+
+/*--------------------  Footer Start  -------------------*/
+footer.site-footer {
+  background: #c8833f;
+  color: #fff; }
+  footer.site-footer .site-info {
+    background: #B77433; }
+    footer.site-footer .site-info .footer-widget p {
+      color: #fff; }
+      footer.site-footer .site-info .footer-widget p a {
+        color: #fff; }
+        footer.site-footer .site-info .footer-widget p a:hover {
+          color: #fff; }
+  footer.site-footer p {
+    color: #fff; }
+  footer.site-footer a {
+    color: #fff; }
+  footer.site-footer .pgs-contact-widget ul li span {
+    color: #fff; }
+  footer.site-footer .pgs-contact-widget ul li i {
+    color: #fff; }
+  footer.site-footer .footer-title {
+    color: #fff; font-weight: 700;}
+  footer.site-footer .widget ul li a {
+    color: #fff; }
+  footer.site-footer .footer-nav-menu ul li a:after, 
+  footer.site-footer .footer-nav-menu ul li a:before{font-weight: bold;}
+  footer.site-footer .widget ul li:hover a {
+    color: #323232; }
+  footer.site-footer .pgs-social-profiles .social-profiles ul li a i {
+    color: #fff;
+    border: 1px solid rgba(173, 173, 173, 0.5); }
+  footer.site-footer .pgs-social-profiles .social-profiles ul li a:hover i {
+    background-color: #c8833f;
+    border-color: #c8833f;
+    color: #fff; }
+
+.site-footer .footer-wrapper.footer_opacity_custom {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/*-------------------- Back to top Start  -------------------*/
+#back-to-top .top {
+  background: #B77433; }
+#back-to-top .top:hover {
+    background: #323232;
+}
+#back-to-top .top i{ font-weight: bold; }
+/*--------------------  Revolution Layer Style Start  -------------------*/
+.erinyen.tparrows {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 70px;
+  min-height: 70px;
+  position: absolute;
+  display: block;
+  z-index: 100;
+  border-radius: 50%; }
+
+.erinyen.tparrows:before {
+  font-family: "revicons";
+  font-size: 20px;
+  color: white;
+  display: block;
+  line-height: 70px;
+  text-align: center;
+  z-index: 2;
+  position: relative; }
+
+.erinyen.tparrows.tp-leftarrow:before {
+  content: "\e824"; }
+
+.erinyen.tparrows.tp-rightarrow:before {
+  content: "\e825"; }
+
+.erinyen .tp-title-wrap {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 70px;
+  line-height: 70px;
+  top: 0px;
+  margin-left: 0px;
+  border-radius: 35px;
+  overflow: hidden;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  visibility: hidden;
+  opacity: 0; }
+
+.erinyen.tparrows:hover .tp-title-wrap {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible; }
+
+.erinyen.tp-rightarrow .tp-title-wrap {
+  right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  -webkit-transform-origin: 100% 50%;
+  border-radius: 35px;
+  padding-right: 20px;
+  padding-left: 10px; }
+
+.erinyen.tp-leftarrow .tp-title-wrap {
+  padding-left: 20px;
+  padding-right: 10px; }
+
+.erinyen .tp-arr-titleholder {
+  letter-spacing: 3px;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transform: translatex(200px);
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 70px;
+  white-space: nowrap;
+  padding: 0px 20px;
+  margin-left: 11px;
+  opacity: 0; }
+
+.erinyen .tp-arr-imgholder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-position: center center;
+  background-size: cover; }
+
+.erinyen .tp-arr-img-over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.51); }
+
+.erinyen.tp-rightarrow .tp-arr-titleholder {
+  transform: translatex(-200px);
+  margin-left: 0px;
+  margin-right: 11px; }
+
+.erinyen.tparrows:hover .tp-arr-titleholder {
+  transform: translatex(0px);
+  -webkit-transform: translatex(0px);
+  transition-delay: 0.1s;
+  opacity: 1; }
+
+/*-------------------- category box Start  -------------------*/
+.ciyastore_categorybox_wrapper {
+  margin-bottom: 0px; }
+  .ciyastore_categorybox_wrapper .category-box {
+    background-color: #ede9e3; }
+    .ciyastore_categorybox_wrapper .category-box .category-box-link ul li{    line-height: 33px;}
+    .ciyastore_categorybox_wrapper .category-box h2 {
+      text-transform: none;
+      margin-bottom: 10px;
+      font-weight: 400;
+      color: #c8833f;    font-size: 38px; }
+    .ciyastore_categorybox_wrapper .category-box .category-box-link ul li a {
+      color: #969696; }
+      .ciyastore_categorybox_wrapper .category-box .category-box-link ul li a:hover, 
+      .ciyastore_categorybox_wrapper .category-box .category-box-link ul li a:focus:{color: #c8833f;}
+      .ciyastore_categorybox_wrapper .category-box .category-box-link ul li a i{font-weight: bold;}
+    .ciyastore_categorybox_wrapper .category-box .category-box-link ul li.view-all a {
+      color: #c8833f; }
+
+/*-------------------- Section title Start  -------------------*/
+.section-title h2.title {
+  font-family: 'Fredericka the Great', sans-serif;
+  color: #c8833f;font-size: 38px;line-height: 48px; font-weight: 400;}
+
+.sub-title p {
+  color: #969696; }
+
+/*--------------------  Slider-hover Start  -------------------*/
+.owl-carousel:hover .owl-nav .owl-next:hover i {
+  background: #c8833f; }
+
+.owl-carousel:hover .owl-nav .owl-prev:hover i {
+  background: #c8833f; }
+
+/*-------------------- bakery bg Start  -------------------*/
+.bg-make-celebration {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .bg-make-celebration .section-title h2.title {
+    font-family: "Fredericka the Great", sans-serif;
+    font-weight: 400;
+  
+    
+    color: #c8833f; }
+  .bg-make-celebration .sub-title p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffffff; }
+
+.ciyastore_button_default a {
+  color: #c8833f;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 12px 26px;
+  line-height: 18px;
+  margin-top: 35px;
+  display: inline-block; }
+  .ciyastore_button_default a:hover {
+    color: #fff;
+    background: #c8833f;
+    border-radius: 3px; }
+
+/*--------------------  Product action Start  -------------------*/
+.products .product-hover-style-image-center .product-actions {
+  padding-left: 0;
+  padding-right: 0;
+  bottom: 0px;
+  color: #323233;
+  border: 0px none; }
+  .products .product-hover-style-image-center .product-actions a {
+    color: #323233; }
+    .products .product-hover-style-image-center .product-actions a:hover {
+      color: #fff;
+      background-color: #c8833f; }
+  .products .product-hover-style-image-center .product-actions .product-action-add-to-cart a:hover {
+    color: #fff;
+    background-color: #c8833f; }
+
+.products .open-quick-view {
+  color: #fff;
+  background-color: #c8833f; }
+  .products .open-quick-view:hover {
+    background-color: #323233;
+    color: #fff; }
+
+.products .product-info .product-name a:hover {
+  color: #c8833f; }
+
+.products .product-info .product-name a:focus {
+  color: #c8833f; }
+
+.products .product_icon_type-line-icon .product-actions .product-action-add-to-cart a:before {
+  content: "\f07a";
+  font-family: FontAwesome; }
+
+.products .product_icon_type-line-icon .product-actions .product-action-wishlist a:before {
+  content: "\f08a";
+  font-family: FontAwesome; }
+
+.products .product_icon_type-line-icon .product-actions .product-action-compare a:before {
+  content: "\f066";
+  font-family: FontAwesome; }
+
+.products .product_icon_type-line-icon .product-actions .product-action-quick-view a:before {
+  content: "\f06e";
+  font-family: FontAwesome; }
+
+/*--------------------  Video Section Start  -------------------*/
+.bg-video-bakery {
+  padding-top: 80px;
+  padding-bottom: 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .bg-video-bakery .bakery_info_box_2-title {
+    color: #c8833f;
+    margin-bottom: 10px;
+    font-family: "Fredericka the Great", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 20px; }
+
+.bg-video-bakery.top-pattern:before {
+  top: 0px; }
+
+.bakery-video-section {
+  margin-top: -180px;
+  position: relative;
+  justify-content: center; }
+  .bakery-video-section .product-video {
+    border-top-width: 15px;
+    border-right-width: 15px;
+    border-bottom-width: 15px;
+    border-left-width: 15px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left-color: #ffffff;
+    border-left-style: solid;
+    border-right-color: #ffffff;
+    border-right-style: solid;
+    border-top-color: #ffffff;
+    border-top-style: solid;
+    border-bottom-color: #ffffff;
+    border-bottom-style: solid;
+    box-shadow: 0 3px 10px 0 rgba(50, 50, 50, 0.3); }
+  .bakery-video-section .product-video-content {
+    width: 90%;
+    margin: 0 auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    z-index: 999;
+    text-align: center; }
+    .bakery-video-section .product-video-content .video-popup-btn.btn-style-type-border {
+      border: 2px solid #fff;
+      background: 0 0;
+      color: #fff;
+      font-size: 18px;
+      padding: 14px 30px;
+      line-height: 16px;
+      margin: 0;
+      display: inline-block; }
+      .bakery-video-section .product-video-content .video-popup-btn.btn-style-type-border:hover{ border-color: #c8833f;background: #c8833f; }
+
+.bakery_info_box {
+  margin-top: 60px; }
+
+.service-icon {
+  border-color: #c8833f;
+  width: 85px;
+  height: 85px;
+  font-size: 38px;
+  border-radius: 75px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+  .service-icon i {
+    font-size: 38px;
+    color: #c8833f; }
+
+/*--------------------  Latest post Start  -------------------*/
+.latest-post-wrapper.latest-post-style-3 .latest-post-item .post-date {
+  background-color: #c8833f; }
+
+.latest-post-wrapper.latest-post-style-3 .latest-post-item .latest-post-entry-footer a {
+  color: #c8833f; }
+
+.gutters-insta > .col,
+.gutters-insta > [class*=col-] {
+  padding: 10px 10px 0px 0px; }
+
+/*** Modal ***/
+#compare,#search-popup{ -webkit-overflow-scrolling: touch;}
+.table.compare-list{ border:none;font-size: 15px;     font-family: "Patua One", sans-serif;}
+.table.compare-list th{background: #fff; color: #323232;border-left-color: #e7e7e7;}
+.compare-modal .compare-content table tbody tr th{font-weight: 600;}
+.compare-modal .compare-content .compare-title h1{color: #c8833f;border:none;font-family: "Fredericka the Great", sans-serif;}
+.compare-modal .compare-wrapper{    background: #fff;    color: #323232;}
+.compare-modal .compare-content table tbody .remove th, .compare-modal .compare-content table tbody .remove td{border-top: 1px solid #dee2e6;}
+table.compare-list td, table.compare-list th{    padding: 10px 15px;border-bottom: 1px solid #f1f1f1;border-right: 1px solid #f1f1f1;    border-right-color:#e7e7e7;border-bottom-color:#e7e7e7;}
+.compare-modal .compare-content table tbody tr td:nth-of-type(odd){     background: #F7F7F7;color: #323232;  }
+.compare-modal .compare-content table tbody tr.title td { color: #323232; }
+.compare-modal .compare-content table tbody tr.price .ciya-Price-amount.amount,.compare-modal .compare-content table tbody tr.stock span,.compare-modal .compare-content table tbody tr.price .ciya-Price-amount.amount{color: #c8833f;}
+.compare-modal .compare-content table tbody tr.add-to-cart a { background: #c8833f; }
+.compare-modal .compare-content table tbody tr.add-to-cart a:hover{ background: #323232; }
+.compare-modal .compare-content .compare-title button.close{opacity: 1;right: 5px;}
+.compare-modal .compare-content .compare-title button.close span{ color:#323232; }
+.search-modal { background: transparent; }
+.search-modal .search-wrapper .search-modal-content { background: #fff; }
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner{    background: rgba(255,255,255,.01);border: 1px solid rgba(255,255,255,.1);}
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-search-button:before{ color: #c8833f;}
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner input.form-control{color: #969696;}
+.modal-header .close { color: #323232;opacity: 1;}
+.modal-header .close:focus{ outline: none; }
+.select2-container--default .select2-results__option[aria-selected="true"] {     background-color: #c8833f; }
+.select2-container--default .select2-results__option:hover { background-color: #c8833f; color: #fff;  }
+
+
+
+/*--------------------  Responsive Start  -------------------*/
+@media only screen and (max-width: 1600px) {
+  .category-box {
+    background-position: 100px 100%; } }
+
+@media only screen and (max-width: 1199px) {
+  .bg-make-celebration {
+    padding-top: 120px !important;
+    padding-bottom: 120px !important; }
+
+   .category-box {
+    background-position: right 100%;
+    background-size: 270px auto; }
+    .section-title h2.title {font-size: 32px;line-height: 42px;  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .bg-make-celebration {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important; }
+    .section-title h2.title {font-size: 30px;line-height: 40px;  }
+    .header-search-wrap.nonesticky{ display: none; }
+    header.site-header .stickyhide {
+        display: none;
+    }
+    header.site-header .sticky-logo {
+    display: block;
+    padding: 15px 0;
+}
+header.site-header .sticky-logo img{ max-height: 65px; }
+.mobile-button-menu {
+    float: right;
+    margin-top: 10px;    padding-left: 4px;
+}
+header.site-header .header-search-wrap.search-mobile{    float: right;
+    display: block;padding-left: 5px;}
+header.site-header .header-nav-wrapper { display: none; }
+header.site-header .ciya-tools-actions>li { width: 32px; }
+header.site-header.is-sticky.top-pattern:before{display: none;}
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+  .bg-make-celebration {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important; }
+
+.ciyastore_categorybox_wrapper .category-box h2 {
+      font-size: 26px; line-height: 34px;}
+ .section-title h2.title {font-size: 26px;line-height: 34px;  }
+.ciyastore_categorybox_wrapper {
+    margin-bottom: 30px;
+}
+.site-info .row>div {
+    margin: 5px 0;
+}
+
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner .search_form-input-wrap { margin-bottom: 0; }
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner .search_form-category-wrap{ margin-bottom: 0; }
+
+}
+
+
+
+@media only screen and (max-width: 575px) {
+  .category-box {
+    background-size: 300px auto; }
+.search-modal .search-wrapper .search-modal-content {vertical-align: middle;   padding-top: 0;}
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner .search_form-category-wrap{ margin-bottom: 20px; }
+.compare-modal .compare-content .compare-title button.close{opacity: 1;right: 5px;top: 15px;}
+
+
+
+
+     }
+
+@media only screen and (max-width: 479px) {
+ .section-title h2.title {font-size: 22px;line-height: 26px;  }
+}
+
+@media only screen and (max-width: 400px) {
+header.site-header .ciya-tools .ciya-tools-actions li{    width: 26px;}
+header.site-header .header-search-wrap.search-mobile{padding-left: 0;}
+header.site-header .ciya-tools { margin-left: -15px; }
+}

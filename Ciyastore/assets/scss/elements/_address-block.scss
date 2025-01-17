@@ -1,0 +1,73 @@
+/* Address Block */
+.address-block {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top:20px;
+    display: flex;
+    &.default {
+        i {
+            &:before {
+                font-size:40px;
+            }
+        }
+        .address-block-data {
+            margin-left: 10px;  
+        }
+    }
+    .address-block-data {
+        margin-left: 20px;
+    }
+    i {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        line-height: 54px;
+        color:$primary;
+        &:before {
+            font-size: 26px;
+        }
+    }
+    .title {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+    span {
+        display: block;
+        line-height: 20px;
+        a {
+            &:hover {
+                color:$primary;
+                text-decoration: underline;
+            }
+        }
+    }
+    &.border {
+        border:none !important;
+        i {
+            border:2px solid $primary;
+        }
+    }
+    &.rounded  {
+        i {
+        border-radius: 10%;
+        }
+    }
+    &.round {
+        i {
+            border-radius: 100%;
+        }
+    }
+    &.flat {
+        i {
+            line-height: 60px;
+            background: $primary;
+            color: $white;            
+        }   
+    }
+}
+
+/*** end  Address Block ***/ 

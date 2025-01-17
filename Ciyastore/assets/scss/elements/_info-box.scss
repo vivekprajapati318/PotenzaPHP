@@ -1,0 +1,144 @@
+/**********************************
+      ciyastore info-boxes start
+***********************************/
+
+.ciyastore-info-box {
+  display: flex;
+  &.ciyastore-info-box-postion-left {
+    .ciyastore-info-box-icon-wrapper {
+      padding-right: 20px;
+    }
+     &.border-left-right{
+        border-left: 1px solid #dee2e6;
+        border-right: 1px solid #dee2e6;
+        padding: 0 15px;
+      }
+  }
+  &.ciyastore-info-box-postion-right {
+      text-align: right;
+      flex-direction: row-reverse;
+    .ciyastore-info-box-icon-wrapper {
+      padding-left: 20px;
+    }
+  }
+  .ciyastore-info-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 2px;
+    border-style: solid;
+    color: $gray-lighter;
+    &.ciyastore-info-box-icon-without-border {
+      border-width: 0;
+    }
+    &.ciyastore-info-box-icon-primary-color {
+      color: $primary;
+    }
+    &.ciya-shop-info-box-size-sm {
+      &.ciyastore-info-box-icon-without-border {
+        width: 30px;
+        height: auto;
+      }
+    }
+    &.ciya-shop-info-box-size-md {
+      &.ciyastore-info-box-icon-without-border {
+        width: 40px;
+        height: auto;
+      }
+    }
+    &.ciya-shop-info-box-size-lg {
+      &.ciyastore-info-box-icon-without-border {
+        width: 48px;
+        height: auto;
+      }
+    }
+    &.ciya-shop-info-box-size-sm {
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &.ciya-shop-info-box-size-md {
+      width: 70px;
+      height: 70px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+    &.ciya-shop-info-box-size-lg {
+      width: 85px;
+      height: 85px;
+      font-size: 38px;
+      line-height: 50px;
+    }
+    &.ciyastore-info-box-icon-round {
+      border-radius: 50%;
+    }
+  }
+  .ciyastore-info-box-title {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .ciyastore-info-box-description {
+    p {
+      margin-bottom: 0;
+      line-height: 22px;
+    }
+  }
+  .ciyastore-info-box-step {
+    font-size: 36px;
+    font-weight: 700;
+    color: $gray-light;
+  }
+  &.ciyastore-info-box-style-1 { 
+    &.ciyastore-info-box-postion-left {
+      .ciyastore-info-box-icon-wrapper {
+        padding-right: 65px;
+      }
+    }
+    .ciyastore-info-box-step {
+      font-size: 16px;
+      color: $muted;
+      line-height: 22px;
+      font-family: $font-poppins;  
+      &::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 50px;
+        width: 30px;
+        height: 1px;
+        background: $gray;
+      } 
+    }   
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .ciyastore-info-box {
+    &.ciyastore-info-box-postion-left {
+      &.border-left-right { 
+        border: none;
+        border-top: 1px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6;
+        padding: 0;
+      }
+    }
+    &.ciyastore-info-box-postion-right {
+      text-align: left;
+      flex-direction: row;
+      .ciyastore-info-box-icon-wrapper {
+        padding-right: 20px;
+        padding-left: 0;
+      }
+    }
+  }
+
+
+}
+
+
+
+/**********************************
+      ciyastore info-boxes end
+***********************************/   

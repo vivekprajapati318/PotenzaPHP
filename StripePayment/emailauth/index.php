@@ -129,6 +129,7 @@
                         email: email
                     },
                     success: function(data) {
+                        console.log(data);
                         $('#send').hide();
                         $('#otp').show();
                         showAlert("Message has been sent.");

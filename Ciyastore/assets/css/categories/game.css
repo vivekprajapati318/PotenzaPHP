@@ -1,0 +1,948 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+body,
+html {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 18px;
+    color: #fff;
+    background: #171717;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    line-height: 48px;
+    font-size: 44px;
+}
+
+h2,
+.deal-banner .caption h2 {
+    font-weight: 900;
+    line-height: 40px;
+    font-size: 36px;
+}
+
+h3 {
+    font-weight: 900;
+    line-height: 34px;
+    font-size: 30px;
+}
+
+h4 {
+    font-weight: 900;
+    line-height: 28px;
+    font-size: 24px;
+}
+
+h5 {
+    font-weight: 900;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+h6 {
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+#back-to-top .top {
+    background: #f73f13;
+}
+
+#back-to-top .top:hover {
+    background: #323232;
+}
+
+header.site-header .ciya-tools-cart a .count {
+    background: #f73f13;
+}
+
+header.site-header .ciya-tools-cart .cart-link .count {
+    background: #f73f13;
+}
+
+header.site-header .ciya-tools-wishlist a .ciyastore-wishlist-count {
+    background: #f73f13;
+}
+
+header.site-header .logo-wrapper img {
+    max-height: 50px;
+    width: auto;
+    max-width: initial;
+}
+
+header.site-header.is-sticky.header-above-content {
+    background: #fff;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+}
+
+.header-style-menu-center.header-above-content,
+.header-style-menu-right.header-above-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1021;
+    background: 0 0;
+    width: 100%;
+    box-shadow: none;
+}
+
+header.site-header.is-sticky .visible-content-sticky {
+    display: none;
+}
+
+header.site-header.is-sticky .header-search-wrap {
+    display: none;
+}
+
+header.site-header.is-sticky.header-above-content {
+    background: #fff;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07);
+}
+
+.header-style-menu-center .primary-nav-wrapper {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header.site-header.is-sticky .hidden-content-sticky {
+    display: block;
+}
+
+header.site-header .hidden-content-sticky {
+    display: none;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .product-list-widget-container .ciyastore-mini-cart .ciya-mini-cart-item a.product-title {
+    color: #323232;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .product-list-widget-container .ciyastore-mini-cart .ciya-mini-cart-item a.product-title:hover {
+    color: #f73f13;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button {
+    background: #f73f13;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button:hover {
+    background: #323232;
+    color: #ffffff !important;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button:last-child {
+    background: #323232;
+    margin-right: 0;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__buttons a.button:last-child:hover {
+    background: #f73f13;
+    color: #ffffff !important;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__total .amount {
+    color: #f73f13;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .ciyastore-mini-cart__total strong {
+    color: #323232;
+    min-width: 40px;
+    display: inline-block;
+}
+
+header.site-header .ciya-tools-actions li .widget-shopping-cart .quantity .amount {
+    color: #f73f13;
+}
+
+header.site-header .ciya-tools-actions>li i {
+    color: #fff;
+}
+
+header.site-header .ciya-tools-actions>li .glyph-icon {
+    color: #fff;
+}
+
+header.site-header .ciya-tools-actions>li a:hover i {
+    color: #f73f13;
+}
+
+header.site-header .ciya-tools-actions>li a:focus i {
+    color: #f73f13;
+}
+
+header.site-header .ciya-tools {
+    margin-left: 0;
+}
+
+.header-style-menu-center .mega-menu .menu-links>li:hover>a {
+    color: #f73f13;
+}
+
+.header-style-menu-center .mega-menu .menu-links>li:focus>a {
+    color: #f73f13;
+}
+
+.header-style-menu-center .mega-menu .menu-links>li>a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.header-style-menu-center .mega-menu .menu-links>li>a:hover {
+    color: #f73f13;
+}
+
+header.site-header.is-sticky .mega-menu .menu-links>li>a:hover {
+    color: #f73f13;
+}
+
+.header-style-menu-center .header-search-wrap .search-button-wrap .search-button {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.header-style-menu-center .header-search-wrap .search-button-wrap .search-button:hover {
+    color: #f73f13;
+}
+
+.mega-menu .menu-links>li:hover {
+    background: #f73f13;
+}
+
+.mega-menu .menu-links>li:hover>a {
+    color: #f73f13;
+}
+
+.mega-menu .menu-links>li:focus>a {
+    color: #f73f13;
+}
+
+header.site-header.is-sticky .mega-menu .menu-links>li>a {
+    color: #323232;
+}
+
+header.site-header.is-sticky .ciya-tools-actions>li i {
+    color: #323232;
+}
+
+.mega-menu * {
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+footer.site-footer {
+    background: #0e1012;
+    color: #999;
+}
+
+footer.site-footer .site-info {
+    background: #0e1012;
+    color: #999;
+    font-size: 18px;
+}
+
+footer.site-footer .site-info .footer-widget p {
+    color: #999;
+}
+
+footer.site-footer .site-info .footer-widget p a {
+    color: #999;
+    font-size: 18px;
+}
+
+footer.site-footer .site-info .footer-widget p a:hover {
+    color: #f73f13;
+}
+
+footer.site-footer .widget ul li a {
+    color: #999;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+footer.site-footer .widget ul li a:hover {
+    color: #f73f13;
+}
+
+footer.site-footer a {
+    color: #999;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+footer.site-footer a:hover {
+    color: #f73f13;
+    color: #f73f13;
+}
+
+footer.site-footer .footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+footer.site-footer .footer-widgets .widget .widget-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+footer.site-footer .pgs-social-profiles .social-profiles ul li a i {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #323233;
+    color: #999;
+}
+
+footer.site-footer .pgs-social-profiles .social-profiles ul li a:hover i {
+    background-color: #f73f13;
+    border-color: #f73f13;
+    color: #fff;
+}
+
+footer.site-footer .pgs-contact-widget ul li i {
+    color: #999;
+}
+
+footer.site-footer .footer-nav-menu ul li:hover a {
+    color: #f73f13;
+}
+
+footer.site-footer .pgs-newsletter-widget .newsletter_form .newsletter-email {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.06);
+    height: 50px;
+}
+
+footer.site-footer .pgs-newsletter-widget .newsletter_form .button-area .input-group-btn>.btn {
+    background: rgba(255, 255, 255, 0);
+    font-size: 13px;
+    width: 143px;
+    color: #999;
+    font-weight: 400;
+}
+
+footer.site-footer .pgs-newsletter-widget .newsletter_form .button-area .input-group-btn>.btn:before {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.site-footer .site-info {
+    color: #999;
+    font-size: 18px;
+}
+
+.site-footer .footer-widget a {
+    color: #999;
+    font-size: 18px;
+}
+
+footer.site-footer .pgs-newsletter-widget .newsletter_form .newsletter-email:focus {
+    border-color: #f73f13;
+}
+
+.footer-bottom {
+    padding-bottom: 50px;
+    padding-top: 55px;
+    border-top: 1px solid rgba(142, 142, 142, 0.2);
+}
+
+.call h6 {
+    margin-left: 30px;
+    color: #f73f13;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 22px;
+    font-size: 24px;
+    font-weight: 700;
+    display: inline;
+}
+
+.call {
+    display: inherit;
+    padding-top: 0px;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+
+/********************
+        layout
+*********************/
+
+
+/******* banner *************/
+
+.ciyastore_banner .ciyastore_banner-text-wrap-1 h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.pgs-video {
+    position: relative;
+}
+
+.pgs-video::after {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.pgs-video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.pgs-video-content .popup-youtube img {
+    transition: all .3s ease-in-out;
+}
+
+.pgs-video-content .popup-youtube:hover img {
+    transform: scale(0.9);
+}
+
+
+/*** new release ***/
+
+.products .product_title_type-single_line .product-info .product-name a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.products .product_title_type-single_line .product-info .product-name a:hover {
+    color: #f73f13;
+}
+
+.products .product-info .ciyastore-product-category:hover {
+    color: #fff;
+}
+
+.products .product-info .ciyastore-product-category a:hover {
+    color: #fff;
+}
+
+.products .product-hover-style-image-bottom-2 .product-info .price ins .amount {
+    color: #f73f13;
+}
+
+.products .product .price del {
+    color: #fff;
+}
+
+.products .product-hover-style-image-bottom-2.product-hover-button-style-light .product-actions .product-action.product-action-add-to-cart a:before {
+    content: "\f07a" !important;
+    font-family: FontAwesome;
+}
+
+.products .product-hover-style-image-bottom-2.product-hover-button-style-light .product-actions a:hover {
+    color: #f73f13;
+}
+
+.owl-carousel:hover .owl-nav .owl-next:hover i,
+.owl-carousel:hover .owl-nav .owl-prev:hover i {
+    background: #f73f13;
+}
+
+
+/*** new game **/
+
+.new-game {
+    background: url("../../images/categories/game/upcoming-games-bg.jpg") no-repeat;
+    background-position: center center;
+}
+
+.new-game .popup-gallery {
+    padding: 60px 0;
+}
+
+.new-game .popup-gallery .pgs-video::after {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.countdown-border {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 1px;
+    position: relative;
+    display: flex;
+}
+
+.ciyastore-info-box-wrapper {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 0 20%;
+}
+
+.ciyastore-info-box {
+    padding: 15px 0;
+}
+
+.ciyastore-info-box .ciyastore-info-box-title {
+    margin-bottom: 0;
+}
+
+
+/** category slider ***/
+
+.image-slider-items.image-slider-style-1 .about-details {
+    background: transparent;
+    border: none;
+}
+
+.image-slider-items.image-slider-style-1 .about-details .title {
+    font-size: 22px;
+}
+
+.image-slider-items.image-slider-style-1 .about-details .title a {
+    color: #ffffff;
+}
+
+.image-slider-items.image-slider-style-1 .about-details .title a:hover {
+    color: #f73f13;
+}
+
+
+/*** client logo ***/
+
+.ciyastore_clients.owl-carousel .owl-item img {
+    width: auto;
+}
+
+
+/** latest post **/
+
+.latest-post-wrapper.latest-post-style-3 .latest-post-item .latest-post-content {
+    background: #272727;
+    color: #ddd;
+}
+
+.latest-post-wrapper.latest-post-style-3 .latest-post-item .latest-post-entry-footer a {
+    color: #f73f13;
+}
+
+.latest-post-wrapper.latest-post-style-3 .latest-post-item .latest-post-entry-footer a:hover {
+    color: #fff !important;
+}
+
+.latest-post-wrapper.latest-post-style-3 .latest-post-item .post-date {
+    background: #f73f13;
+}
+
+.latest-post-wrapper.latest-post-style-3 .latest-post-item .blog-title a {
+    color: #fff;
+}
+
+
+/*** gallery popup ***/
+
+.pgscore_image-gallery_wrapper .image-gallery-info {
+    position: relative
+}
+
+.pgscore_image-gallery_wrapper .image-gallery-info .image-gallery_item {
+    position: relative;
+    overflow: hidden
+}
+
+.pgscore_image-gallery_wrapper .image-gallery_item img {
+    width: 100%;
+    max-width: 100%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.pgscore_image-gallery_wrapper .image-gallery_item:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.image-gallery_item .pgscore_image-gallery_hover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.image-gallery_item:hover .pgscore_image-gallery_hover {
+    opacity: 1;
+    visibility: visible;
+    background: rgba(247, 63, 19, 0.5);
+}
+
+.image-gallery_item .pgscore_image-gallery_hover.icon-disable {
+    position: relative;
+    opacity: 1;
+    visibility: visible
+}
+
+.image-gallery_item .pgscore_image-gallery_hover .gallery-icon {
+    background: 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.image-gallery_item .pgscore_image-gallery_hover .gallery-icon .icon {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out
+}
+
+.image-gallery_item .pgscore_image-gallery_hover .gallery-icon:hover .icon {
+    width: 40px;
+    height: 40px
+}
+
+.pgscore_image-gallery_style-2 .image-gallery_item .pgscore_image-gallery_hover .gallery-icon .icon {
+    background-image: url(../../images/categories/game/gallery-icon2.png)
+}
+
+
+/*** Modal ***/
+
+#compare,
+#search-popup {
+    -webkit-overflow-scrolling: touch;
+}
+
+.table.compare-list {
+    border: none;
+    font-size: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+.table.compare-list th {
+    background: #272727;
+    color: #fff;
+    border-left-color: rgba(255, 255, 255, .1);
+}
+
+.compare-modal .compare-content table tbody tr th {
+    font-weight: 600;
+}
+
+.compare-modal .compare-content .compare-title h1 {
+    color: #f73f13;
+    border: none;
+}
+
+.compare-modal .compare-wrapper {
+    background: #222;
+    color: #fff;
+}
+
+table.compare-list td,
+table.compare-list th {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    border-right-color: rgba(255, 255, 255, .1);
+    border-bottom-color: rgba(255, 255, 255, .1);
+}
+
+.compare-modal .compare-content table tbody tr td:nth-of-type(odd) {
+    background: #272727;
+    color: #fff;
+}
+
+.compare-modal .compare-content table tbody tr.title td {
+    color: #fff;
+}
+
+.compare-modal .compare-content table tbody tr.price .ciya-Price-amount.amount,
+.compare-modal .compare-content table tbody tr.stock span,
+.compare-modal .compare-content table tbody tr.price .ciya-Price-amount.amount {
+    color: #f73f13;
+}
+
+.compare-modal .compare-content table tbody tr.add-to-cart a {
+    background: #f73f13;
+}
+
+.compare-modal .compare-content table tbody tr.add-to-cart a:hover {
+    background: #fff;
+    color: #757575;
+}
+
+.compare-modal .compare-content .compare-title button.close {
+    opacity: 1;
+}
+
+.compare-modal .compare-content .compare-title button.close span {
+    color: #fff;
+}
+
+.search-modal {
+    background: transparent;
+}
+
+.search-modal .search-wrapper .search-modal-content {
+    background: #222;
+}
+
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner {
+    background: rgba(255, 255, 255, .01);
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-search-button:before {
+    color: #f73f13;
+}
+
+.search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner input.form-control {
+    color: #969696;
+}
+
+.modal-header .close {
+    color: #fff;
+    opacity: 1;
+}
+
+.modal-header .close:focus {
+    outline: none;
+}
+
+'
+
+/**************************************
+            Responsive
+**************************************/
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    h1 {
+        line-height: 44px;
+        font-size: 36px;
+    }
+    h2 {
+        line-height: 38px;
+        font-size: 32px;
+    }
+    h3 {
+        line-height: 34px;
+        font-size: 26px;
+    }
+    h4 {
+        line-height: 28px;
+        font-size: 20px;
+    }
+    h5 {
+        line-height: 22px;
+        font-size: 18px;
+    }
+    .header-style-menu-center .mega-menu .menu-links>li>a {
+        font-size: 15px;
+    }
+    .pgscore_countdown_wrapper {
+        padding: 30px 0;
+    }
+    .ciyastore-info-box-wrapper {
+        padding: 0 15%;
+    }
+    .call {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .call h6 {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    h1 {
+        line-height: 42px;
+        font-size: 34px;
+    }
+    h2 {
+        line-height: 36px;
+        font-size: 30px;
+    }
+    h3 {
+        line-height: 32px;
+        font-size: 24px;
+    }
+    h4 {
+        line-height: 26px;
+        font-size: 18px;
+    }
+    .mobile-button-menu a span {
+        background: #fff;
+    }
+    .mobile-button-menu a span:after,
+    .mobile-button-menu a span::before {
+        background: #fff;
+    }
+    header.site-header.is-sticky .mobile-button-menu a span {
+        background: #323232;
+    }
+    header.site-header.is-sticky .mobile-button-menu a span:after,
+    header.site-header.is-sticky .mobile-button-menu a span::before {
+        background: #323232;
+    }
+    header.site-header.is-sticky .mobile-button-menu a.slicknav_open span {
+        background: transparent;
+    }
+    .ciyastore_banner .ciyastore_banner-text-wrap-1 h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .ciyastore-info-box-wrapper {
+        padding: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+    .call {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    footer.site-footer .pgs-newsletter-widget {
+        margin-top: 20px;
+    }
+    .new-game {
+        background-position: 0 0;
+        background-size: contain;
+    }
+    footer.site-footer .pgs-newsletter-widget {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        line-height: 36px;
+        font-size: 30px;
+    }
+    h2 {
+        line-height: 34px;
+        font-size: 26px;
+    }
+    footer.site-footer .site-info .text-right {
+        text-align: center !important;
+    }
+    .search-modal .search-wrapper .search-modal-content .search_form-wrap .search_form-inner .search_form-input-wrap {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .search-modal .search-wrapper .search-modal-content {
+        vertical-align: middle;
+        padding-top: 0;
+    }
+    .header-style-menu-center .header-search-wrap .search-button-wrap .search-button {
+        padding-left: 0;
+    }
+    .compare-modal .compare-content .compare-title button.close {
+        opacity: 1;
+        right: 5px;
+        top: 15px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    h2 {
+        line-height: 30px;
+        font-size: 22px;
+    }
+    h5 {
+        line-height: 22px;
+        font-size: 16px;
+    }
+    .ciyastore_clients.owl-carousel .owl-item img {
+        margin: 0 auto;
+    }
+    .products-listing-type-carousel .products.owl-carousel {
+        margin-left: -20px !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    header.site-header .logo-wrapper img {
+        max-height: 25px;
+    }
+    .products-listing-type-carousel .products.owl-carousel {
+        margin-left: -12px !important;
+    }
+    .footer-bottom {
+        padding-bottom: 0;
+    }
+    .footer-bottom .call {
+        justify-content: center;
+        display: block;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .call h6 {
+        margin-left: 0;
+        display: block;
+    }
+    footer.site-footer .site-info {
+        padding: 15px 0;
+    }
+}

@@ -1,0 +1,576 @@
+/*================================================
+[  Default  ]
+================================================*/
+
+@import "../variables.scss";
+
+.tp-bullets {
+    &.custom {
+        .tp-bullet {
+            background: transparent;
+        } 
+        div {
+            &.tp-bullet {
+                display: inline-block;
+                width: 56px;
+                height: 56px;
+                margin-right: 30px;
+                font-size: 24px;
+                color: $secondary;
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                &:before {
+                    text-align: center;
+                    line-height: 27px;
+                    width: 27px;
+                    display: inline-block
+                }
+                &:after {
+                    content: "/";
+                    position: absolute;
+                    right: 0px;
+                    font-size: 30px;
+                    color: $secondary
+                }
+                &:last-child {
+                    &:after {
+                        content: none
+                    }
+                }
+                &.selected {
+                    background: transparent;
+                    color: $primary ;
+                    font-size: 36px;
+                    &:hover {
+                        background: transparent;
+                         color: $primary ;
+                    }
+                }
+                &:hover {
+                    background: transparent;
+                    color: $primary 
+                }
+                &:nth-child(1) {
+                    &:before {
+                        content: "01"
+                    }
+                }
+                &:nth-child(2) {
+                    &:before {
+                        content: "02"
+                    }
+                }
+                &:nth-child(3) {
+                    &:before {
+                        content: "03"
+                    }
+                }
+                &:nth-child(4) {
+                    &:before {
+                        content: "04"
+                    }
+                }
+                &:nth-child(5) {
+                    &:before {
+                        content: "05"
+                    }
+                }
+                &:nth-child(6) {
+                    &:before {
+                        content: "06"
+                    }
+                }
+                &:nth-child(7) {
+                    &:before {
+                        content: "07"
+                    }
+                }
+                &:nth-child(8) {
+                    &:before {
+                        content: "08"
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom {
+    &.tp-bullets {
+        &:before {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            padding: 10px;
+            margin-left: -10px;
+            margin-top: -10px;
+            box-sizing: content-box
+        }
+    }
+    .tp-bullet {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        background: #aaa;
+        background: rgba(125, 125, 125, 0.5);
+        cursor: pointer;
+        box-sizing: content-box;
+        &:hover, &.selected {
+            background: rgb(125, 125, 125)
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-poppins;
+    margin-top: 0;
+    margin-bottom: 15px;  
+}
+
+.header-style-menu-center {
+    .mega-menu {
+        .menu-links {
+            >li {
+                &.current-menu-item {
+                    >a {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+.border-space {
+    border-width: 1px;
+    margin-top: 20px;
+    margin-left: 80%;
+    border-color: $secondary;
+    border-style: solid;
+
+    &.border-space-dark {
+        border-color: $secondary;
+    }
+
+    &.border-space-light {
+        border-color: $white;
+    }
+}
+
+.section {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.section-1 {
+    .section-title {
+        h2 {
+            font-size: 56px;
+            line-height: 67px;
+            text-align: right;
+            font-weight: 700;
+            word-break: break-word;
+        }
+    }
+
+    .single_image-content {
+        margin-top: -70px;
+
+        p {
+            margin-bottom: 0;
+            margin-right: 0;
+            margin-left: 0;
+
+            a {
+                font-size: 24px;
+                color: $white;
+                margin-bottom: 0;
+
+                &.text-dark {
+                    color: $secondary !important;
+                }
+            }
+        }
+
+        .border-space {
+            margin-left: 34px;
+            margin-top: 12px;
+        }
+    }
+}
+
+.ciyastore_banner {
+    position: relative;
+    overflow: hidden;
+
+    &.ciyastore_banner-1 {
+        margin-bottom: 31px;
+
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                .ciyastore_banner-text-wrap-2 {
+                    .ciyastore_banner-text {
+                        font-size: 0.4em;
+                    }
+                }
+            }
+        }
+    }
+
+    &.ciyastore_banner-3 {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                .ciyastore_banner-text-wrap-1 {
+                    .ciyastore_banner-text {
+                        font-size: 1.5em;
+                        color: $secondary;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    &.ciyastore_banner-4 {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-inner-wrapper {
+                .ciyastore_banner-text-wrap-2 {
+                    .ciyastore_banner-text {
+                        font-size: 0.9em;
+                        line-height: 2em;
+                    }
+                }
+                .ciyastore_banner-btn-wrap{
+                    .ciyastore_banner-btn{
+                        background-color: $white;
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .ciyastore_banner-content {
+        &-1 {
+            padding-left: 48%;
+        }
+
+        &-2 {
+            padding-right: 48%;
+            text-align: right;
+        }
+
+        .ciyastore_banner-content-wrapper {
+            .ciyastore_banner-content-inner-wrapper {
+                .ciyastore_banner-label-wrap {
+                    .ciyastore_banner-label {
+                        font-size: 16px;
+                        color: $white;
+                        background-color: $secondary;
+                        line-height: 20px;
+                        font-weight: 700;
+                        padding: 7px 15px;
+                        margin: 0;
+                        margin-bottom: 5px;
+                        display: inline-block;
+
+                        &.ciyastore_banner-label-yellow {
+                            background-color: $yellow;  
+                            color: $secondary;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.section-2 {
+    .ciyastore_banner-content-wrapper {
+        justify-content: center;
+        text-align: center;
+
+        .ciyastore_banner-label {
+            font-size: 28px !important;
+            line-height: 38px !important;
+            font-family: $font-open-sans;
+            font-weight: 400 !important;
+        }
+
+        .ciyastore_banner-text {
+            h2.deal-text {
+                font-size: 0.9em;
+                color: $secondary;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 2em;
+            }
+        }
+    }
+
+}
+
+.section-3 {
+    .ciyastore_button_wrapper {
+        margin-top: 0;
+
+        a.inline_hover {
+            position: relative;
+            background: transparent;
+            color: $secondary;
+            font-size: 14px;
+            padding: 3px 0;
+            line-height: 22px;
+
+            &:after {
+                content: "";
+                width: 100%;
+                border-bottom: 2px solid;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+            }
+
+            &:hover {
+                background: transparent;
+                color: $primary ;
+
+                &:after {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+.banner-bg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.newsletter-wrapper {
+    &.newsletter-style-1 {
+        &.newsletter-design-4 {
+            .input-area {
+                background-color: $white;
+                padding-left: 15px;
+                border-radius: 3px;
+            }
+        }
+    }
+    .newsletter-title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+
+.position-a {
+    position: absolute;
+}
+
+.ciyastore_banner {
+	.ciyastore_banner-content {
+		.ciyastore_banner-content-wrapper {
+			.ciyastore_banner-content-inner-wrapper {
+				.ciyastore_banner-btn-wrap {
+					.ciyastore_banner-btn {
+                        &.btn-banner-white {
+                            margin: 0 auto;
+                            background: $white;
+                            columns: $secondary;
+                            &:hover {
+                                margin: 0 auto;
+                                background: $secondary;
+                                columns: $white;
+                            }
+                        }
+					}
+				}
+			}
+		}
+	}
+}
+.sub-text p {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner-bg {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .ciyastore_banner {
+        &.ciyastore_banner-4 {
+            .ciyastore_banner-content {
+                .ciyastore_banner-content-inner-wrapper {
+                    .ciyastore_banner-text-wrap-2 {
+                        .ciyastore_banner-text {
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .ciyastore_banner {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-wrapper {
+                .ciyastore_banner-content-inner-wrapper {
+                    .ciyastore_banner-label-wrap {
+                        .ciyastore_banner-label {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .single_image-wrapper {
+        img {
+            width: 100%;
+        }
+    }
+
+    .background-video {
+        video {
+            left: auto !important;
+        }
+    
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    h2 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .section-2 {
+        .ciyastore_banner-content-wrapper {
+            .ciyastore_banner-label {
+                font-size: 18px !important;
+                line-height: 28px !important;
+            }
+        }
+    }
+    .position-md-r {
+        position: relative !important;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .newsletter-wrapper {
+        &.newsletter-style-1 {
+            &.newsletter-design-4 {
+                .input-group-btn {
+                    &:before {
+                    color: #323232;
+                    }
+                }
+            }
+        }
+    }
+}
+    
+
+@media only screen and (max-width: 479px) {
+    h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .ciyastore_banner {
+        .ciyastore_banner-content {
+            .ciyastore_banner-content-wrapper {
+                .ciyastore_banner-content-inner-wrapper {
+                    .ciyastore_banner-label-wrap {
+                        .ciyastore_banner-label {
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .section-2 {
+        .ciyastore_banner-content-wrapper {
+            .ciyastore_banner-label {
+                font-size: 12px !important;
+                line-height: 12px !important;
+            }
+        }
+
+    }
+
+    .banner-bg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .newsletter-wrapper {
+        .newsletter-title {
+            font-size: 22px;
+            line-height: 26px;
+        }
+        &.newsletter-style-1 {
+            &.newsletter-design-4 {
+                .button-area {
+                    &:before {
+                        right: 24px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .latest-post-wrapper {
+        .latest-post-item {
+            .latest-post-image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .latest-post-content {
+                display: block;
+                width: 100%;
+            }
+        }
+        &.latest-post-style-1 {
+            .latest-post-item {
+                .latest-post-content {
+                    padding-left: 0;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }       
+}

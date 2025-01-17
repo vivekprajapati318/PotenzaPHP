@@ -1,0 +1,105 @@
+.ciyastore_categorybox_wrapper {
+    margin-bottom: 30px;
+    background-color: $bg-gray-light;
+    position: relative;
+    overflow: hidden;
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 155px 160px 155px;
+        border-color: transparent transparent rgba(0,0,0,.05) transparent;
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+    }
+    .category-box {
+        padding: 20px 0 20px 20px;
+        background-repeat: no-repeat;
+        background-position: 120% 100%;
+        -webkit-transition: all .3s ease-out 0s;
+        -moz-transition: all .3s ease-out 0s;
+        -ms-transition: all .3s ease-out 0s;
+        -o-transition: all .3s ease-out 0s;
+        transition: all .3s ease-out 0s;
+        position: relative;
+        overflow: hidden;
+        h2 {
+            color: $primary;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        .subhead {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            color: $secondary;
+        }
+        .category-box-link {
+            ul {
+                padding: 0;
+                margin-bottom: 0;
+                li {
+                    margin-bottom: 0;
+                    text-transform: capitalize;
+                    list-style: none;
+                    line-height: 30px;
+                    a {
+                        color:$muted;
+                        i {
+                            margin-right: 12px;
+                            font-size: 16px;
+                            color:$muted;
+                        }
+                        &:hover, &:focus {
+                            padding-left: 4px;
+                            -webkit-transition: all .3s ease-out 0s;
+                            -moz-transition: all .3s ease-out 0s;
+                            -ms-transition: all .3s ease-out 0s;
+                            -o-transition: all .3s ease-out 0s;
+                            transition: all .3s ease-out 0s;
+                            color:$primary;
+                        }
+                    }
+                    &.view-all {
+                        margin-top: 5px;
+                        padding-bottom: 0;
+                        a {
+                            color: $primary;
+                            padding-left: 0;
+                            text-decoration: underline;
+                            &:hover, &:focus {
+                                text-decoration: none;
+                                color:$secondary;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        &:hover {
+            background-position: 110% 100%;
+        }
+    }
+}
+@media only screen and (max-width: 1600px){
+    .category-box {
+        background-position: 100px 100%;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .category-box {
+        background-position: right 100%;
+        background-size: 270px auto;
+    }
+}
+@media only screen and (max-width: 575px){
+    .category-box {
+        background-size: 200px auto;
+    }
+}

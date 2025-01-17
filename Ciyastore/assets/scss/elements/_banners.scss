@@ -1,0 +1,573 @@
+/* Banners */
+@-webkit-keyframes ciya-shine {
+	100% {
+		left: 125%
+	}
+}
+
+@keyframes ciya-shine {
+	100% {
+		left: 125%
+	}
+}
+.ciyastore_banner {
+    position: relative;
+    overflow: hidden;
+    background:none;
+    font-family: $font-open-sans;
+    font-size: 60px;
+    .ciyastore_banner-image {
+        -webkit-transition: .5s all ease-in-out;
+        -moz-transition: .5s all ease-in-out;
+        -ms-transition: .5s all ease-in-out;
+        -o-transition: .5s all ease-in-out;
+        transition: .5s all ease-in-out;
+    }
+    .ciyastore_banner-content {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 10;
+        padding: 25px;
+        -webkit-transition: background .5s ease;
+        -o-transition: background .5s ease;
+        transition: background .5s ease;
+        .ciyastore_banner-content-inner-wrapper {
+            vertical-align: top;
+        
+        .ciyastore_banner-text {
+            line-height: normal;
+            margin: 0;
+            display: inline-block;
+            vertical-align: top;
+            font-size:30px;
+            font-weight: 600;
+            color: $secondary;
+        }
+        .ciyastore_banner-text-bg_color {
+            .ciyastore_banner-text {
+                padding: 7px 15px;
+                margin-bottom: 5px;
+            }
+        }
+        .ciyastore_banner-text-wrap-1 {
+            .ciyastore_banner-text {
+                font-size: 0.6em;
+                color: $secondary;
+                font-weight: 600;
+            }
+        }
+        .ciyastore_banner-text-wrap-2 {
+            .ciyastore_banner-text {
+            font-size: 0.5em;
+            color: $secondary;
+            font-weight: 600;
+            }   
+        }
+        .ciyastore_banner-btn-wrap {
+            position: relative;
+            z-index: 9;
+            margin-top: 15px;
+            display: flex;
+            .ciyastore_banner-btn {
+                font-weight: 500;
+                display: inline-block;
+                font-size: 14px;
+            }
+            &.ciyastore_banner-btn-style-link {
+                .ciyastore_banner-btn {
+                    font-weight: 600;
+                    border-bottom: 1px solid;
+                    padding-left: 0;
+                    padding-right: 0;
+                    color:$primary;
+                    &:hover{
+                        color:$secondary;
+                    }
+                }
+            }
+            &.ciyastore_banner-btn-size-md {
+                .ciyastore_banner-btn {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 44px;
+                    padding: 0 25px;
+                    border: 2px solid $secondary;
+                    color:$secondary;
+                    background: none;
+                    &:hover, &:focus {
+                        border: 2px solid $primary;
+                        color:$primary;
+                    }
+                }
+            }
+            &.ciyastore_banner-btn-style-flat {
+                .ciyastore_banner-btn {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 44px;
+                    padding: 0 25px;
+                    background: $primary;
+                    color:$white;
+                    &:hover, &:focus {
+                        background: $secondary;
+                        color:$white;
+                        
+                    }
+                }
+            }
+        }  
+    }
+    &.ciyastore_banner-content-hcenter {
+        .ciyastore_banner-btn-wrap {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
+    &.ciyastore_banner-content-hright {
+        .ciyastore_banner-btn-wrap {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: flex-end;
+            align-items: flex-end;
+        }
+    }
+    }
+    .ciyastore_banner-content-hleft {
+        text-align: left;
+    }
+    .ciyastore_banner-content-hcenter {
+        text-align: center;
+    }
+    .ciyastore_banner-content-hright {
+        text-align: right;
+
+    }
+    .ciyastore_banner-content-wrapper {
+        display: table;
+    height: 100%;
+    width: 100%;
+    }
+    .ciyastore_banner-content-inner-wrapper {
+        display: table-cell;
+    }
+    .ciyastore_banner-content-vtop {
+        .ciyastore_banner-content-inner-wrapper {
+            vertical-align: top;
+        }
+    }
+    .ciyastore_banner-content-vmiddle {
+        .ciyastore_banner-content-inner-wrapper {
+            vertical-align: middle;
+        }
+    }
+    .ciyastore_banner-content-vbottom  {
+        .ciyastore_banner-content-inner-wrapper {
+            vertical-align: bottom;
+        }
+    }
+    &.ciyastore_banner-effect-zoom {
+        &:hover {
+            cursor: pointer;
+            .ciyastore_banner-image {
+                -webkit-transform: scale(1.08);
+                -moz-transform: scale(1.08);
+                -o-transform: scale(1.08);
+                transform: scale(1.08);
+            }
+        }
+    }
+    &.ciyastore_banner-effect-flash {
+        &:before {
+            position: absolute;
+            top: 0;
+            left: -75%;
+            z-index: 2;
+            display: block;
+            content: '';
+            width: 150px;
+            height: 100%;
+            background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 100%);
+            background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.5) 100%);
+            -webkit-transform: skewX(-25deg);
+            -moz-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+        &:hover {
+            cursor: pointer;
+            &:before {
+                -webkit-animation: ciya-shine 1.5s;
+                -moz-animation: ciya-shine 1.5s;
+                animation: ciya-shine 1.5s;
+                -webkit-transition: all .6s ease-in-out;
+                -moz-transition: all .6s ease-in-out;
+                -ms-transition: all .6s ease-in-out;
+                -o-transition: all .6s ease-in-out;
+                transition: all .6s ease-in-out;
+                left: -100%;
+            }
+        }
+    }
+    &.ciyastore_banner-effect-border:after, &.ciyastore_banner-effect-border:before {
+        content: "";
+        position: absolute;
+        opacity: 0;
+        -webkit-transition: all .5s ease 0s;
+        -o-transition: all .5s ease 0s;
+        transition: all .5s ease 0s;
+        z-index: 2;
+    }
+    &.ciyastore_banner-effect-border {
+        &:before {
+            border-top: 1px dotted rgba(255,255,255,.7);
+            border-bottom: 1px dotted rgba(255,255,255,.7);
+            -webkit-transform: scale(1,0);
+            -ms-transform: scale(1,0);
+            -o-transform: scale(1,0);
+            transform: scale(1,0);
+            top: 30px;
+            right: 15px;
+            bottom: 30px;
+            left: 15px;
+        }
+        &:after {
+            border-left: 1px dotted rgba(255,255,255,.7);
+            border-right: 1px dotted rgba(255,255,255,.7);
+            -webkit-transform: scale(0,1);
+            -ms-transform: scale(0,1);
+            -o-transform: scale(0,1);
+            transform: scale(0,1);
+            top: 15px;
+            right: 30px;
+            bottom: 15px;
+            left: 30px;
+        }
+        &:hover {
+            cursor: pointer;
+            &:before {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+                transform: scale(1);
+            
+            }
+            &:after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+        
+    }
+    .ciyastore_banner-badge {
+        border-radius: 50%;
+        color: $secondary;
+        display: inline-block;
+        font-size: 15px;
+        height: 70px;
+        line-height: 15px;
+        max-height: 100%;
+        padding: 5px;
+        position: absolute;
+        width: 70px;
+        margin: 30px;
+        &.ciyastore_banner-badge_type-flat {
+            width: 50px;
+            height: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 14px;
+            background-color: #ff0000;
+            color:$white;
+        }
+        .ciyastore_banner-badge-inner {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            .ciyastore_banner-badge-text {
+                overflow: hidden;
+                padding: 3px;
+            }
+        }
+    }
+    .ciyastore_banner-badge_align-vtop {
+        top: 0;
+    }
+    .ciyastore_banner-badge_align-vbottom {
+        bottom: 0;
+    }
+    .ciyastore_banner-badge_align-hleft {
+        left: 0;
+    }
+    .ciyastore_banner-badge_align-hright {
+        right: 0;
+    }
+    .ciyastore_banner-badge_align-hcenter {
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        left: 50%;
+    }
+    .ciyastore_banner-badge_align-vbottom, .ciyastore_banner-badge_align-vtop {
+        &.ciyastore_banner-badge_align-hcenter {
+            -webkit-transform: translate(-50%,0);
+            -ms-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+        }
+    }
+    .ciyastore_banner-badge_type-border {
+        color: #008000;
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        border-color: #008000;
+        border-width: 2px;
+        border-style: solid;
+    }
+}
+.banner-deal-style {
+	.ciyastore_banner {
+		.ciyastore_banner-content {
+			.ciyastore_banner-content-inner-wrapper {
+				font-size: 70px;
+			}
+		}
+	}
+}
+.ciyastore_banner{
+    .ciyastore_banner-content{
+        &.padding-y-150{
+            padding-top: 150px;
+            padding-bottom: 150px;
+            padding-left:30px;
+            padding-right: 30px;
+        }
+    }
+}
+@media only screen and (max-width: 1200px){
+    .ciyastore_banner{
+        font-size: 50px;
+    }
+    .banner-deal-style {
+        .ciyastore_banner {
+            .ciyastore_banner-content {
+                .ciyastore_banner-content-inner-wrapper {
+                    font-size: 50px;
+                }
+            }
+        }
+        .pgscore_banner-style-deal-1 {
+            .deal-counter-wrapper.counter-style-style-1 {
+                .countdown {
+                    li {
+                        span {
+                            font-size: 26px;
+                            line-height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pgscore_countdown_wrapper {
+        .deal-counter-wrapper.counter-style-style-1 {
+            .countdown {
+                li {
+                    span {
+                        font-size: 26px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+@media only screen and (min-width: 992px){
+    .ciyastore_banner {
+        background: 0 0!important;
+    }
+}
+@media only screen and (max-width: 991px){
+    .ciyastore_banner {
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        margin-bottom: 30px;
+        .ciyastore_banner-content {
+            position: relative;
+        }
+
+        .ciyastore_banner-image {
+            display: none;
+        }
+    }
+
+    .banner-deal-style {
+        .ciyastore_banner {
+            min-height: 250px;
+            .ciyastore_banner-content {
+                .ciyastore_banner-content-inner-wrapper {
+                    font-size: 30px;
+                }
+            }
+        }
+        .pgscore_banner-style-deal-1 {
+            .deal-counter-wrapper {
+                &.counter-style-style-1 {
+                    .countdown {
+                        li {
+                            span {
+                                font-size: 24px;
+                                line-height: 34px;
+                            }
+                        }
+                    }
+                }
+                &.counter-style-style-2 {
+                    .countdown {
+                        li {
+                            span {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+                            min-width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pgscore_countdown_wrapper {
+        .deal-counter-wrapper {
+            &.counter-style-style-1 {
+                .countdown {
+                    li {
+                        span {
+                            font-size: 24px;
+                            line-height: 34px;
+                        }
+                    }
+                }
+            }
+            &.counter-style-style-2 {
+                .countdown {
+                    li {
+                        span {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ciyastore_banner {
+        .ciyastore_banner-content-vtop, .ciyastore_banner-content-vbottom  {
+            .ciyastore_banner-content-inner-wrapper {
+                vertical-align: middle;
+            }
+        } 
+    }
+
+}
+@media only screen and (max-width: 576px){
+
+
+
+    .banner-deal-style {
+        .ciyastore_banner {
+            min-height: 170px;
+            .ciyastore_banner-content {
+                padding: 10px;
+            }
+        }
+        .pgscore_banner-style-deal-1 {
+            .deal-counter-wrapper.counter-style-style-1 {
+                .countdown {
+                    li {
+                        span {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                        &:before {
+                            right: -10px;
+                        }
+                        margin-right: 14px;
+                    }
+                }
+            }
+            .deal-counter-wrapper.counter-style-style-2 {
+                .countdown {
+                    li {
+                        span {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pgscore_countdown_wrapper {
+        .deal-counter-wrapper.counter-style-style-1 {
+            .countdown {
+                li {
+                    span {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                    &:before {
+                        right: -10px;
+                    }
+                }
+            }
+        }
+        .deal-counter-wrapper.counter-style-style-2 {
+            .countdown {
+                li {
+                    span {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .ciyastore_banner{
+        font-size: 30px;
+    }
+}
+
+
+/*** end banner ***/

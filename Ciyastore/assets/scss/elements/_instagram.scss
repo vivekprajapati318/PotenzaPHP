@@ -1,0 +1,57 @@
+.insta_v2_content {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.insta_v2_header {
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.insta_v2_header--title {
+    -webkit-box-flex: 0;
+    -ms-box-flex: 0 0 auto;
+    flex: 1 1 auto;
+    margin-right: 10px;
+    .insta_v2_title {
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+}
+.insta_v2_header--button {
+    margin-left: auto;
+    -webkit-flex: 0 0 132px;
+    -ms-flex: 0 0 132px;
+    flex: 0 0 132px;
+    a {
+        background: $primary;
+        border: none;
+        color: $white;
+        text-transform: uppercase;
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 14px;
+        cursor: pointer;
+        display: inline-block;
+        font-family: inherit;
+        line-height: 24px;
+        padding: 8px 18px 8px 35px;
+        position: relative;
+        i {
+            position: absolute;
+            top: 50%;
+            margin-top: -6px;
+            left: 18px;
+        }
+        &:hover {
+            background: $secondary;
+        }
+    }
+}

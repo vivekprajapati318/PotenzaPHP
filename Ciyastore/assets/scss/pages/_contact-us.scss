@@ -1,0 +1,35 @@
+.contact-wrapper {
+    padding: 80px 40px;
+    .form-group {
+        width:100%;
+    }
+}
+.map-wrapper {
+    width: 100%;
+    height: 100%;
+    .embed-responsive-16by9::before {
+        padding-top: 72.25%;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 992px){
+    .contact-wrapper {
+        padding: 60px 15px;
+    }
+    .ciyastore_info_box-with-icon {
+        &.ciyastore_info_box-icon_position-left {
+            .ciyastore_info_box-inner{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px){
+
+    .contact-wrapper {
+        padding: 40px 15px;   
+    }       
+}

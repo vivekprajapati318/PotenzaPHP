@@ -1,0 +1,227 @@
+.coming-soon {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 64px;
+    .header {
+        background: 0 0;
+        text-align: center;
+        img {
+            margin: 20px 0;
+        }
+    }
+    .pgscore_banner-style-deal-1 {
+        .deal-counter-wrapper.counter-style-style-2 {
+            .countdown {
+                li {
+                    list-style-type: none;
+                    display: inline-block;
+                    text-align: center;
+                    padding: 14px 6px;
+                    margin: 0 2px;
+                    background: $bg-gray-light;
+                    color: $secondary;
+                    box-shadow: unset;
+                    span {
+                        vertical-align: top;
+                        color: $primary ;
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 22px;
+                        line-height: 28px;
+                        vertical-align: top;
+                        text-transform: capitalize;
+                        padding: 0 50px;
+                        color: $secondary;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .pgscore_countdown_wrapper {
+        .deal-counter-wrapper.counter-style-style-2 {
+            .countdown {
+                li {
+                    list-style-type: none;
+                    display: inline-block;
+                    text-align: center;
+                    padding: 14px 6px;
+                    margin: 0 2px;
+                    background: $bg-gray-light;
+                    color: $secondary;
+                    box-shadow: unset;
+                    span {
+                        vertical-align: top;
+                        color: $primary ;
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 22px;
+                        line-height: 28px;
+                        vertical-align: top;
+                        text-transform: capitalize;
+                        padding: 0 50px;
+                        color: $secondary;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    
+    .mntc-cs-item.mntc-cs-content {
+        padding: 10px 0 20px;  
+        i {
+            font-size: 100px;
+            margin-bottom: 25px;
+            color: #e4e4e4;
+        }
+        h1 {
+            font-size: 62px;
+            text-transform: uppercase;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 50px;
+        }
+        p {
+            font-size: 32px;
+            padding: 0 50px;     
+            line-height: 44px;  
+        }
+    }
+    .commingsoon_countdown {
+        padding: 0;
+        margin: 15px 0 30px;
+        display: inline-block;
+        overflow: hidden;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        vertical-align: top;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            text-align: center;
+            padding: 14px 6px;
+            margin: 0 2px;
+            background: $bg-gray-light;
+            color: $secondary;
+            span {
+                vertical-align: top;
+                color: $primary;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 50px
+            }
+            p {
+                margin: 0;
+                font-size: 22px;
+                line-height: 28px;
+                vertical-align: top;
+                text-transform: capitalize
+            }
+            &:last-child {
+                border-right: none
+            }
+        }
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        box-shadow: none;
+    }
+}
+
+
+@media only screen and (max-width: 991px){
+    .coming-soon {
+        .mntc-cs-item.mntc-cs-content {
+            h1 {
+                margin-bottom: 40px;
+                font-size: 46px;  
+            }
+            p {
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .coming-soon {
+        .mntc-cs-item.mntc-cs-content {
+            padding: 40px 0 20px;
+            h1 {
+                margin-bottom: 20px;
+                font-size: 34px;
+                line-height: 40px;
+            }
+            p {
+                padding: 0px;
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+        .pgscore_banner-style-deal-1 {
+            .deal-counter-wrapper {
+                &.counter-style-style-2 {
+                    .countdown {
+                        li {
+                            padding: 8px 18px;;
+                            span {
+                                font-size: 24px;
+                                line-height: 36px;
+                            }
+                            p {
+                                font-size: 14px;
+                                padding: 0px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+                &.margin-bottom3.counter-size-sm.counter-style-style-2 {
+                    margin-bottom: 90px;
+                }
+            }
+        }
+        .mnt-footer {
+            text-align: center;
+            .text-right {   
+                text-align: center !important;  
+                margin-top: 10px;  
+            }
+        }
+        .mntc-cs-item.mntc-cs-content {
+            padding: 0px 0 20px; 
+        }
+        .pgscore_countdown_wrapper {
+            .deal-counter-wrapper.counter-style-style-2 {
+                .countdown {
+                    li {
+                        span {
+                            font-size: 24px;
+                        }
+                        p {
+                            font-size: 18px;
+                            padding: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}

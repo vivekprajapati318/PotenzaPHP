@@ -1,0 +1,363 @@
+/*================================================
+[  Fashion  ]
+================================================*/
+
+
+/***************************
+    REVOLUTION SLIDER
+***************************/
+
+#rev_slider_15_1 .metis.tparrows {
+    background: white;
+    padding: 10px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+#rev_slider_15_1 .metis.tparrows:hover {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+#rev_slider_15_1 .metis.tparrows:hover:before {
+    transform: scale(1.5);
+}
+
+#rev_slider_15_1 .metis.tparrows:before {
+    color: black;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+
+/***************************
+    LAYOUT CSS
+***************************/
+
+.ciyastore_banner {
+    font-size: 70px;
+    text-transform: capitalize;
+}
+
+.ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-1 .ciyastore_banner-text {
+    font-size: 0.6em;
+    color: #323232;
+    font-weight: 700;
+}
+
+.ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-style-link .ciyastore_banner-btn {
+    color: #323232;
+}
+
+.ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-style-link .ciyastore_banner-btn:hover {
+    color: #04d39f;
+}
+
+.ciyastore_banner.ciyastore-banner-2 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-1 .ciyastore_banner-text {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+.ciyastore_banner.ciyastore-banner-2 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-2 .ciyastore_banner-text {
+    font-size: 0.3em;
+    font-weight: 400;
+    letter-spacing: 8px;
+    line-height: 1.8em;
+}
+
+.single-img-wrapper {
+    position: relative;
+}
+
+.single-img-wrapper .text-wrapper {
+    text-align: center;
+    padding: 20px 15px;
+}
+
+.single-img-wrapper .text-wrapper h5 {
+    margin-bottom: 10px;
+}
+
+.single-img-wrapper .text-wrapper p {
+    margin-bottom: 0;
+}
+
+.single-img-wrapper h5 {
+    font-weight: 600;
+}
+
+.single-img-wrapper h3 {
+    font-weight: 700;
+}
+
+.single-img-wrapper .single-img-content {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 220px;
+}
+
+.single-img-wrapper .single-img-content.content-vbottom {
+    bottom: 20px;
+    top: inherit;
+}
+
+.single-img-wrapper.single-img-wrapper-1 {
+    padding-right: 10%;
+    margin-bottom: 40px;
+}
+
+.single-img-wrapper.single-img-wrapper-1 .text-wrapper {
+    margin-top: 30px;
+}
+
+.single-img-wrapper.single-img-wrapper-1 .single-img-content {
+    left: 190px;
+    top: 0;
+}
+
+.single-img-wrapper.single-img-wrapper-2 {
+    padding-left: 10%;
+}
+
+.single-img-wrapper.single-img-wrapper-2 .text-wrapper {
+    margin-bottom: 30px;
+}
+
+.single-img-wrapper.single-img-wrapper-2 .single-img-content {
+    left: 0px;
+}
+
+.single-img-wrapper.single-img-wrapper-3 {
+    padding-left: 10%;
+    margin-bottom: 40px;
+}
+
+.single-img-wrapper.single-img-wrapper-3 .text-wrapper {
+    margin-top: 100px;
+}
+
+.single-img-wrapper.single-img-wrapper-3 .single-img-content {
+    top: inherit;
+    left: 0;
+    bottom: 65px;
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    margin-bottom: 70px;
+}
+
+.single-img-wrapper.single-img-wrapper-3 .single-img-content .border-line {
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+.border-line {
+    height: 2px;
+    margin-top: 60px;
+    margin-right: 80%;
+    margin-bottom: 10px;
+    background-color: #c1eade;
+}
+
+.bg-sky {
+    background: #e3f6fc;
+}
+
+.bg-orange {
+    background: #fde1d6;
+}
+
+.bg-green {
+    background: #cdf6ec;
+}
+
+a.inline_hover {
+    position: relative;
+    background: transparent;
+    color: #323232;
+    font-size: 14px;
+    padding: 3px 0;
+    line-height: 22px;
+}
+
+a.inline_hover:after {
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+a.inline_hover:hover {
+    background: transparent;
+}
+
+a.inline_hover:hover:after {
+    width: 30%;
+}
+
+.newsletter-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.newsletter-section .newsletter-wrapper .newsletter-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.newsletter-section .newsletter-wrapper.newsletter-style-1.newsletter-design-6 .input-area .newsletter-email {
+    background: #ffffff !important;
+    color: #323232 !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.newsletter-section .newsletter-wrapper.newsletter-style-1.newsletter-design-6 .input-area .newsletter-email::placeholder {
+    color: #969696 !important;
+}
+
+.newsletter-section .newsletter-wrapper.newsletter-style-1.newsletter-design-6 .button-area .btn.submit {
+    color: #323232;
+    position: relative;
+}
+
+.newsletter-section .newsletter-wrapper.newsletter-style-1.newsletter-design-6 .button-area .btn.submit:hover {
+    color: #04d39f;
+}
+
+.newsletter-section .newsletter-wrapper.newsletter-style-1.newsletter-design-6 .button-area .btn.submit:focus {
+    color: #04d39f;
+}
+
+.newsletter-section .newsletter-wrapper.newsletter-style-1.newsletter-design-6 .button-area:before {
+    color: #323232;
+}
+
+.newsletter-section .newsletter-wrapper.newsletter-style-1.newsletter-design-6 .button-area:hover:before {
+    color: #04d39f;
+}
+
+.envolop-bg {
+    background-image: url(../../images/newsletter/mail.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.ciyastore_clients .owl-carousel .owl-item img {
+    width: auto;
+}
+
+
+/***************************
+    RESPONSIVE CSS
+***************************/
+
+@media only screen and (max-width: 1199px) {
+    .single-img-wrapper.single-img-wrapper-1 .single-img-content {
+        left: 130px;
+    }
+    .single-img-wrapper .single-img-content {
+        width: 170px;
+    }
+    .single-img-wrapper.single-img-wrapper-3 .text-wrapper {
+        margin-top: 140px;
+    }
+    .single-img-wrapper.single-img-wrapper-3 .single-img-content {
+        bottom: 100px;
+    }
+    .ciyastore_banner {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .ciyastore_banner {
+        font-size: 50px;
+    }
+    .single-img-wrapper .single-img-content {
+        width: auto;
+    }
+    .single-img-wrapper.single-img-wrapper-1 .single-img-content {
+        left: inherit;
+        right: 20px;
+    }
+    .single-img-wrapper.single-img-wrapper-2 {
+        margin-bottom: 20px;
+    }
+    .single-img-wrapper.single-img-wrapper-3 .single-img-content {
+        bottom: 65px;
+    }
+    .single-img-wrapper.single-img-wrapper-3 .text-wrapper {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .single-img-wrapper.single-img-wrapper-1 {
+        margin-bottom: 60px;
+    }
+    .single-img-wrapper.single-img-wrapper-1 .single-img-content {
+        left: 250px;
+    }
+    .single-img-wrapper .single-img-content {
+        width: 210px;
+    }
+    .newsletter-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
+    .newsletter-wrapper.newsletter-style-1 .newsletter p {
+        padding: 0;
+    }
+    .newsletter-wrapper.newsletter-style-1.newsletter-design-6 .button-area .btn.submit {
+        min-width: inherit;
+        width: 45px;
+        font-size: 0px;
+        color: #969696;
+        padding: 0;
+    }
+    .newsletter-wrapper.newsletter-style-1.newsletter-design-6 .button-area:before {
+        color: #969696;
+        left: 12px;
+    }
+    .ciyastore_banner {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .ciyastore_banner {
+        font-size: 30px;
+    }
+    .newsletter-wrapper.newsletter-style-1.newsletter-design-6 .input-group-btn:before {
+        color: #323232;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .single-img-wrapper.single-img-wrapper-1 .single-img-content {
+        right: -10px;
+        left: auto;
+    }
+    .single-img-wrapper.single-img-wrapper-3 .single-img-content {
+        bottom: 85px;
+    }
+    .single-img-wrapper.single-img-wrapper-3 .text-wrapper {
+        margin-top: 130px;
+    }
+    .ciyastore_clients .owl-carousel .owl-item img {
+        margin: 0 auto;
+    }
+}

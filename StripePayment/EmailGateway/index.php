@@ -131,7 +131,7 @@
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         $mail->Username = 'vivekprajapati120304@gmail.com';
-        $mail->Password = 'your-email-password'; // Replace with actual password
+        $mail->Password = 'zjph mmhq zwsc fhpy';
         $mail->setFrom('vivekprajapati120304@gmail.com', 'Vivek Prajapati');
         $mail->addAddress($email, $name);
         $mail->Subject = $subject;

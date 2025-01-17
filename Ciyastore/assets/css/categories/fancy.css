@@ -1,0 +1,187 @@
+/*================================================
+[  Home Fancy  ]
+================================================*/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px; } }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px; }
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px; }
+
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; }
+
+h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; }
+
+h1 {
+  line-height: 44px;
+  font-size: 36px; }
+
+h2 {
+  line-height: 38px;
+  font-size: 30px; }
+
+h3 {
+  line-height: 34px;
+  font-size: 26px; }
+
+h4 {
+  line-height: 30px;
+  font-size: 22px; }
+
+h5 {
+  line-height: 28px;
+  font-size: 20px; }
+
+h6 {
+  line-height: 22px;
+  font-size: 18px; }
+
+.ciyastore_banner {
+  font-size: 70px;
+  text-transform: uppercase; }
+  .ciyastore_banner .ciyastore_banner-content {
+    padding: 35px 40px; }
+    .ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-style-flat .ciyastore_banner-btn {
+      font-size: 13px;
+      line-height: 38px;
+      padding: 0 20px;
+      color: #ffffff;
+      background-color: #323232; }
+    .ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-style-link .ciyastore_banner-btn {
+      color: #323232; }
+  .ciyastore_banner.ciyastore-banner-1 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-1 .ciyastore_banner-text {
+    font-weight: 700;
+    font-size: 0.88em;
+    line-height: 1.5em; }
+  .ciyastore_banner.ciyastore-banner-1 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-2 .ciyastore_banner-text {
+    font-size: 0.4em;
+    line-height: 1.5em;
+    font-weight: 500; }
+  .ciyastore_banner.ciyastore-banner-2 {
+    margin-bottom: 35px; }
+    .ciyastore_banner.ciyastore-banner-2 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text {
+      font-weight: 700;
+      font-size: 0.56em;
+      line-height: normal; }
+    .ciyastore_banner.ciyastore-banner-2 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-btn-wrap.ciyastore_banner-btn-style-link .ciyastore_banner-btn {
+      color: #323232; }
+  .ciyastore_banner.ciyastore-banner-3 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-1 .ciyastore_banner-text {
+    font-weight: 400;
+    font-size: 0.66em;
+    color: #323232; }
+  .ciyastore_banner.ciyastore-banner-3 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-2 .ciyastore_banner-text {
+    font-weight: 700;
+    font-size: 0.66em; }
+  .ciyastore_banner.ciyastore-banner-4 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper {
+    padding-left: 40%; }
+    .ciyastore_banner.ciyastore-banner-4 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-1 .ciyastore_banner-text {
+      font-size: 0.2em;
+      background-color: #fff4de;
+      letter-spacing: 5px;
+      font-weight: 700;
+      padding: 7px 15px;
+      margin-bottom: 5px; }
+    .ciyastore_banner.ciyastore-banner-4 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-2 .ciyastore_banner-text {
+      font-size: 1em;
+      line-height: 1.2em;
+      font-weight: 700; }
+    .ciyastore_banner.ciyastore-banner-4 .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-3 .ciyastore_banner-text {
+      font-size: 0.75em;
+      font-weight: 400; }
+
+.latest-post-excerpt p {
+  margin: 0px; }
+
+.insta-bg .title {
+  position: relative; }
+  .insta-bg .title:before {
+    content: "\f16d";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 70px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    margin-left: -35px;
+    font-weight: 400;
+    color: rgba(10, 10, 10, 0.1);
+    top: -15px; }
+
+.insta-bg p {
+  font-size: 16px;
+  margin-bottom: 20px; }
+
+.ciyastore_clients .owl-carousel .owl-item img {
+  width: auto; }
+
+.latest-post-type-carousel, .latest-post-type-carousel .owl-carousel, .latest-post-type-carousel .owl-carousel .latest-post-item,
+.latest-post-type-carousel .owl-carousel .owl-item, .latest-post-type-carousel .owl-carousel .owl-item .item,
+.latest-post-type-carousel .owl-carousel .owl-stage-outer .owl-stage, .latest-post-type-carousel .owl-carousel .owl-stage-outer {
+  height: 100%; }
+
+/*--------------------  Responsive Start  -------------------*/
+@media only screen and (max-width: 1199px) {
+  .ciyastore_banner {
+    font-size: 60px; } }
+
+@media only screen and (max-width: 991px) {
+  .ciyastore_banner {
+    font-size: 50px; }
+  .latest-post-wrapper .latest-post-item .latest-post-item-inner {
+    display: block; }
+  .latest-post-wrapper .latest-post-item .latest-post-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #dddddd;
+    margin-bottom: 15px; }
+  .latest-post-wrapper.latest-post-style-1 .latest-post-item .latest-post-content {
+    padding-left: 0px;
+    text-align: left; }
+  .newsletter-bg {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px; }
+  .newsletter-wrapper.newsletter-style-1.newsletter-design-1 .button-area {
+    position: relative;
+    width: 100%;
+    margin-top: 20px; }
+    .newsletter-wrapper.newsletter-style-1.newsletter-design-1 .button-area .btn.submit {
+      width: 100%; }
+  .ciyastore_banner.ciyastore-banner-1 .ciyastore_banner-content {
+    margin-bottom: 20px; }
+  .ciyastore_banner.ciyastore-banner-4 {
+    margin-bottom: 0; }
+  .section-title h2 {
+    font-size: 22px; } }
+
+@media only screen and (max-width: 767px) {
+  .ciyastore_banner {
+    font-size: 30px; }
+    .ciyastore_banner.ciyastore-banner-4 {
+      font-style: 25px; } }
+
+@media only screen and (max-width: 600px) {
+  .bg-hoat-deal .ciyastore_banner_wrapper {
+    margin: 0px -15px; }
+  .ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper {
+    font-size: 22px; }
+  .ciyastore-banner-4.ciyastore_banner .ciyastore_banner-content .ciyastore_banner-content-inner-wrapper .ciyastore_banner-text-wrap-1 .ciyastore_banner-text {
+    font-size: 0.45em; } }
+
+@media only screen and (max-width: 479px) {
+  .ciyastore_clients .owl-carousel .owl-item img {
+    margin: 0 auto; } }

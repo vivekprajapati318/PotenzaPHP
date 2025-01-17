@@ -1,0 +1,59 @@
+.ciyastore_list {
+    padding-left:0;
+    &.icon-list-type-none {
+        li {
+            list-style-type: none;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.list-unstyled {
+        li {
+            list-style-type: none;
+            line-height: 24px;
+            display: table;
+            margin: 0;
+            .ciyastore-list-info {
+                display: table-cell;
+                vertical-align: top;
+                padding-left: 10px;
+                padding-bottom: 0;
+            }
+        }
+    }
+    li {
+        list-style-type: circle;
+        line-height: 30px;
+        a {
+            color:$muted;
+            &:hover, &:focus {
+                color:$primary;
+            }
+        }
+        .ciyastore-list-info {
+            display: table-cell;
+            vertical-align: top;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            line-height: 18px;
+        }
+    }
+    i {
+        color: $primary;
+        display: table-cell;
+        padding-top: 5px;
+    }
+}
+.bg-dark-gray{
+    .ciyastore_list {
+
+            li {
+                p {
+                    margin-bottom: 0;
+                    color: $muted;
+                }
+            }
+        
+    }
+}

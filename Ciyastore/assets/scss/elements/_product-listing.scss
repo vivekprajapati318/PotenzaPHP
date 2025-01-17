@@ -1,0 +1,201 @@
+.products-listing-intro-wrapper {
+    height: 100%;
+    padding: 25px 25px 85px 25px;
+    position: relative;
+    z-index: 1;
+    &.products-listing-intro-content-alignment-left {
+        text-align: left;
+    }
+    &.products-listing-intro-content-alignment-right {
+        text-align: right;
+    }
+    .products-listing-title {
+        h2 {
+            font-weight: 700;
+            line-height: 42px;
+            font-size:34px;
+        }
+    }
+    .products-listing-control {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px;
+        padding-top: 0;
+        width: 100%;
+        
+    }
+    .products-listing-nav {
+        &>div {
+            width: 40px;
+            height: 40px;
+            background: $white;
+            border-radius: 50px;
+            display: inline-block;
+            text-align: center;
+            color: $muted;
+            line-height: 48px;
+            cursor: pointer;
+            margin-right: 5px;
+            -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.09);
+            -moz-box-shadow: 0 3px 5px rgba(0,0,0,.09);
+            box-shadow: 0 3px 5px rgba(0,0,0,.09);
+        }
+    }
+    .products-listing-link {
+        margin-top: 15px;
+        a {
+            font-weight: 600;
+            text-decoration: underline;
+            color:$white;
+        }
+    }
+    .products-listing-intro-wrapper-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(0,0,0,0.7);
+    }
+}
+
+.ciyastore-products-listing-wrapper {
+    &.ciyastore_products_listing-1 {
+    .products {
+        .product {
+            margin-bottom: 30px;
+        }
+    }
+}
+}
+
+
+.products-listing-type-carousel {
+    .products {
+        .product {
+            margin:0;
+        }
+    }
+}
+.products-listing-intro-bg_type-image, .products-listing-intro-bg_type-image h2 {
+    color:$white;
+}
+.tabs-wrapper{
+    .nav{
+        border-bottom: none !important;
+        li{
+            margin:0 10px 10px;
+            &:first-child{
+                margin-left: 0;
+            }
+            a{
+                padding: 10px 20px;
+                background-color: $bg-gray-lighter;
+                color: $secondary;
+                display: inline-block;
+                &.active, &:hover{
+                    background-color: $primary ;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+.accordion {
+	margin-bottom: 0px;
+	>.card {
+		border: none;
+		border-radius: 0px !important;
+		margin-bottom: 10px;
+		.card-header {
+			padding: 0;
+			border: none;
+			background-color: none;
+			a {
+				display: block;
+				padding: 15px 65px 15px 20px;
+				text-align: left;
+				text-decoration: none;
+				background-color: $primary ;
+				color: $white;
+				position: relative;
+				font-size: 15px;
+				line-height: 20px;
+				&:hover {
+					text-decoration: none;
+                }
+                &.btn {
+                    border-radius: 0;
+                }
+                &.collapsed {
+                    background-color: $bg-gray-lighter;
+                    color: $secondary;
+                    .icon-class{
+                        display: inline-block;
+                        font: normal normal normal 14px/1 FontAwesome;
+                        font-size: inherit;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        &::before{
+                            content: "\f067";
+                        }
+                    }
+                }
+                .icon-class{
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    &::before{
+                        content: "\f068";
+                    }
+                }
+                i {
+                    position: absolute;
+                    width: 35px;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+			}
+		}
+    }
+    .card-body {
+        padding-left:0;
+        padding-right:0;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    .products-listing-type-carousel {
+        .products {
+            .product {
+                margin:0px 0px 20px 0px;
+            }
+        }
+    }
+    .ciyastore-products-listing-wrapper {
+        .products {
+            margin: 0px;     
+        }  
+    }
+    .tabs-wrapper {
+        .nav {
+            li {
+                margin: 0 0px 10px;  
+                width: 100%;
+                a {
+                    width: 100%;  
+                }
+            }
+        }
+    }
+}
