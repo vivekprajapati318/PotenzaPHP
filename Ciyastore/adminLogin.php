@@ -35,6 +35,8 @@
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input class="form-control" type="password" placeholder="Password" required name="password" id="password">
+
+                    <input type="button" value="show" id=show>
                 </div>
                 <div class="form-group">
                     <a href="#" title="Forgot your password?">Forgot your password?</a>
@@ -47,6 +49,12 @@
         </div>
     </center>
     <script>
+        $("#show").mousedown(function() {
+            $("#password").attr("type", 'text')
+        })
+        $("#show").mouseup(function() {
+            $("#password").attr("type", 'password')
+        })
         $("#LoginA").on("click", function() {
             email = $('#AdminEmail').val()
             pass = $("#password").val()

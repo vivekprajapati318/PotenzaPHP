@@ -9,17 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CPoppins:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 90vh;
-        }
-
         .container {
             background: #fff;
             margin-top: 150px;
@@ -136,59 +125,164 @@
     </style>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
+<div class="alert">
+    <h2>Alert Messages</h2>
+
+    <p>error!</p>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Danger!</strong> invalid credencials password should have 8 char
+    </div>
+</div>
 
 <body>
 
     <div class="container">
+
         <h1>Add Product</h1>
+
         <div class="userData">
             <label for="title">Title</label>
-            <input type="text" id="title" placeholder="Product name">
+            <input type="text" id="title" required placeholder="Product name">
         </div>
         <div class="product desc">
             <label for="desc">Description</label>
-            <textarea name="desc" id="desc" placeholder="Enter product description"></textarea>
+            <textarea name="desc" id="desc" required placeholder="Enter product description"></textarea>
         </div>
         <div class="product images">
             <label for="fileUpload">Images</label>
-            <input type="file" name="file" id="file">
-            <input type="button" id="add" value="Add Image">
+            <div class="com">
+                <input type="file" name="file[]" required id="file" multiple class=file>
+
+            </div>
+            <input type="button" id="add" class="add" value="Add Image">
         </div>
         <div class="product SKU">
             <label for="SKU">SKU</label>
-            <input type="text" id="SKU" placeholder="SKU">
+            <input type="text" id="SKU" required placeholder="SKU">
         </div>
         <div class="product category">
             <label for="category">Category</label>
-            <input type="text" id="category" placeholder="Category"><br>
-            <input type="button" value="add catagory" id="addcat">
+            <p>you can add multiple catagory by using ' , ' </p>
+            <input type="text" id="category" required placeholder="Category" class="cat"><br>
+
         </div>
         <div class="product price">
             <label for="price">Price</label>
-            <input type="number" id="price" placeholder="Price">
+            <input type="number" id="price" required placeholder="Price">
         </div>
-        <input type="submit" value="Add Product">
+        <input type="submit" value="Add Product" id="AddProduct">
+
     </div>
 
     <script>
         $(document).ready(function() {
-            $("#add").on("click", function() {
-                const newImage = $("<input>", {
-                    type: "file",
-                    name: "file",
-                    style: "margin-top: 10px;"
+            $(".alert").hide()
+            click = 0;
+            $(document).on("click", "#AddProduct", function() {
+
+                if (click == 0) {
+                    alert("click on add image first")
+                }
+            })
+
+            $(".add").on("click", function() {
+                click = 1;
+                var formElement = $(this).closest("form")[0];
+
+                var formdata = new FormData(formElement);
+
+                var files = $("#file")[0].files;
+                console.log(files)
+                for (var i = 1; i < files.length; i++) {
+                    formdata.append("file[]", files[i]);
+                }
+
+                $.ajax({
+                    url: 'proImages.php',
+                    type: "post",
+                    data: formdata,
+                    contentType: false,
+                    processData: false,
+                    success: function(data) {
+                        if (data == 1) {
+                            alert("file is greater");
+                        } else {
+                            alert("Files uploaded successfully:", data);
+                            $(document).on("click", "#AddProduct", function() {
+                                var title = $('#title').val()
+                                var desc = $('#desc').val()
+                                var image = data
+                                var SKU = $("#SKU").val()
+                                var category = $("#category").val()
+                                var price = $("#price").val()
+                                const titleerr = descerr = imageerr = categoryerr = priceerr = click = 0
+                                if (!title) {
+                                    alert("add title")
+                                    titleerr = 1
+                                }
+                                if (!SKU) {
+                                    SKUerr = 1
+                                }
+                                if (!desc) {
+                                    alert("add description")
+                                    descerr = 1
+                                }
+
+                                if (!category) {
+                                    alert("add category")
+                                    categoryerr = 1
+                                }
+                                if (!price) {
+                                    alert("add price")
+                                    priceerr = 1
+                                }
+
+                                var reg = new RegExp('^[0-9]$');
+                                testpr = reg.test(price)
+                                if (!testpr) {
+                                    priceerr = 1
+                                }
+
+
+                                $.ajax({
+                                    url: "IndertPro.php",
+                                    type: "post",
+                                    data: {
+                                        title: title,
+                                        desc: desc,
+                                        image: image,
+                                        SKU: SKU,
+                                        category: category,
+                                        price: price
+                                    },
+                                    success: function(data) {
+                                        console.log(data)
+                                        if (titleerr || descerr || imageerr || categoryerr || priceerr || click == 0) {
+                                            $(".alert").show().text("Invalid credentials. Please fix the errors and try again.");
+                                        } else {
+                                            if (data == 1) {
+                                                alert("success")
+                                                window.location.href = "index.php";
+                                            } else {
+                                                alert("err", data)
+                                            }
+                                        }
+                                    }
+                                })
+                                $('#title').val()
+                            });
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("Error uploading files:", error);
+
+
+                    }
                 });
-                $(".product.images").append(newImage);
             });
-            $("#addcat").on("click", function() {
-                const newcat = $("<input>", {
-                    type: "text",
-                    name: "text",
-                    style: "margin-top: 10px;",
-                    placeholder: "catagory"
-                });
-                $(".product.category").append(newcat);
-            });
+
+
         });
     </script>
 </body>

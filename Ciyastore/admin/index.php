@@ -104,7 +104,7 @@
             <input type="submit" id="ProAdd" value="Add Product">
         </div>
 
-
+        <div class="lkj"></div>
     </div>
 </body>
 
@@ -133,6 +133,7 @@
                     $("#lk").html(data);
                     $('.form-group').hide()
                     $('#back').show()
+                    window.location.href = "Product.php"
                 }
             })
         })
@@ -147,9 +148,7 @@
                 }
             })
         })
-        $("#back").on('click', function() {
-            window.location.href = "index.php";
-        })
+
         $("#home").on('click', function() {
             window.location.href = "../index.php";
         })

@@ -132,14 +132,14 @@
                                                             <!-- drop down multilevel  -->
 
                                                         <li class="hoverTrigger">
-                                                            <a href="javascript:void(0)">Blog</i>
+                                                            <a href="Blog.php">Blog</i>
                                                                 <div class="mobileTriggerButton"></div>
                                                             </a>
                                                             <!-- drop down multilevel  -->
 
                                                         </li>
                                                         <li class="hoverTrigger">
-                                                            <a href="javascript:void(0)">Shop<div class="mobileTriggerButton"></div></a>
+                                                            <a href="Shop.php">Shop<div class="mobileTriggerButton"></div></a>
                                                             <!-- drop down full width -->
 
                                                         </li>
@@ -194,19 +194,31 @@
                                                                             <label for="username" id="UserName" style="font-size:small;"><?php if (isset($_SESSION['email'])) {
                                                                                                                                                 echo $_SESSION['email'];
                                                                                                                                             } else {
-                                                                                                                                                echo 'no user';
+                                                                                                                                                echo 'no user, login first';
                                                                                                                                             }
                                                                                                                                             ?>
                                                                             </label>
                                                                         </li>
                                                                         <li class="mega-menu-item">
-                                                                            <a class="mega-menu-link" href="Update_profile.php">
-                                                                                update profile</a>
+                                                                            <?php if (isset($_SESSION['email'])) {
+                                                                                echo '  <a class="mega-menu-link" href="Update_profile.php">  update profile</a>';
+                                                                            } else {
+                                                                                echo "";
+                                                                            }
+                                                                            ?>
+
+
                                                                         </li>
 
                                                                         <li class="mega-menu-item" id="reset">
-                                                                            <a class="mega-menu-link" href="resetPass.php">
-                                                                                reset password</a>
+                                                                            <?php if (isset($_SESSION['email'])) {
+                                                                                echo '   <a class="mega-menu-link" href="resetPass.php">
+                                                                                reset password</a>';
+                                                                            } else {
+                                                                                echo ` login first`;
+                                                                            }
+                                                                            ?>
+
 
                                                                         </li>
 
@@ -343,6 +355,11 @@
                                                     <span class="cart-icon"><i class="glyph-icon pgsicon-ecommerce-empty-shopping-cart"></i></span>
                                                     <span class="cart-count count">3</span>
                                                 </a>
+
+
+
+
+                                                <!-- cart hover -->
                                                 <div class="widget ciyastore widget-shopping-cart">
                                                     <div class="widget-shopping-cart-content">
                                                         <div class="product-list-widget-container has-scrollbar">
@@ -394,11 +411,15 @@
                                                             </span>
                                                         </p>
                                                         <p class="ciyastore-mini-cart__buttons buttons">
-                                                            <a href="shopping-cart.html" class="button wc-forward">View cart</a>
+                                                            <a href="cart.php" class="button wc-forward">View cart</a>
                                                             <a href="checkout.html" class="button checkout wc-forward">Checkout</a>
                                                         </p>
                                                     </div>
                                                 </div>
+
+
+
+
                                             </li>
 
 
@@ -431,73 +452,9 @@
                                             <li><a href="index.html" role="menuitem" tabindex="-1">Home Default</a></li>
                                         </ul>
                                     </li>
-                                    <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
-                                            <a href="javascript:void(0)" tabindex="-1">Blog</a>
-                                            <!-- drop down multilevel  -->
-                                            <span class="slicknav_arrow">+</span></a>
-                                        <ul class="drop-down-multilevel slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                            <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
-                                                    <a href="javascript:void(0)" tabindex="-1">Blog
-                                                        Classic
-                                                    </a>
-                                                    <span class="slicknav_arrow">+</span></a>
-                                                <ul class="drop-down-multilevel slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                                    <li><a href="blog-classic-left-sidebar.html" role="menuitem" tabindex="-1">Classic Left Sidebar</a>
-                                                    </li>
+                                    <li class="slicknav_collapsed slicknav_parent"><a href="Blog.php" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
+                                            <a href="Blog.php" tabindex="-1">Blog</a>
 
-                                                </ul>
-                                            </li>
-                                            <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
-                                                    <a href="javascript:void(0)" tabindex="-1">Blog
-                                                        Grid
-                                                    </a>
-                                                    <span class="slicknav_arrow">+</span></a>
-                                                <ul class="drop-down-multilevel slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                                    <li><a href="blog-grid-left-sidebar.html" role="menuitem" tabindex="-1">Grid Left Sidebar</a>
-                                                    </li>
-                                                    <li><a href="blog-grid-right-sidebar.html" role="menuitem" tabindex="-1">Grid Right Sidebar</a>
-                                                    </li>
-                                                    <li><a href="blog-grid-full-width-2-columns.html" role="menuitem" tabindex="-1">Full Width 2 Column</a>
-                                                    </li>
-                                                    <li><a href="blog-grid-full-width-3-columns.html" role="menuitem" tabindex="-1">Full Width 3 Column</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
-                                                    <a href="javascript:void(0)" tabindex="-1">Blog Masonry
-                                                    </a>
-                                                    <span class="slicknav_arrow">+</span></a>
-                                                <ul class="drop-down-multilevel slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                                    <li><a href="blog-masonry-left-sidebar.html" role="menuitem" tabindex="-1">Masonry Left Sidebar</a>
-                                                    </li>
-                                                    <li><a href="blog-masonry-right-sidebar.html" role="menuitem" tabindex="-1">Masonry Right Sidebar</a>
-                                                    </li>
-                                                    <li><a href="blog-masonry-full-width-2-columns.html" role="menuitem" tabindex="-1">Full Width 2 Column</a>
-                                                    </li>
-                                                    <li><a href="blog-masonry-full-width-3-columns.html" role="menuitem" tabindex="-1">Full Width 3 Column</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
-                                                    <a href="javascript:void(0)" tabindex="-1">Blog
-                                                        Time Line
-                                                    </a>
-                                                    <span class="slicknav_arrow">+</span></a>
-                                                <ul class="drop-down-multilevel slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                                    <li><a href="blog-timeline-left-sidebar.html" role="menuitem" tabindex="-1">Timeline Left Sidebar</a>
-                                                    </li>
-                                                    <li><a href="blog-timeline-right-sidebar.html" role="menuitem" tabindex="-1">Timeline Right Sidebar</a>
-                                                    </li>
-                                                    <li><a href="blog-timeline-full-width.html" role="menuitem" tabindex="-1">Timeline Full Width</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="blog-single.html" role="menuitem" tabindex="-1">Blog
-                                                    Single Post
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </li>
                                     <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
                                             <a href="javascript:void(0)" tabindex="-1">Shop</a>

@@ -56,6 +56,7 @@
                                     <div class="form-group">
                                         <label for="password">Password</label>
                                         <input class="form-control" type="password" placeholder="Password" name="password" id="password">
+                                        <input type="button" value="show" id=show>
                                     </div>
                                     <div class="form-group">
                                         <a href="forgotPass.php" title="Forgot your password?">Forgot your password?</a>
@@ -85,6 +86,12 @@
 
     <script>
         $(document).ready(function() {
+            $("#show").mousedown(function() {
+                $("#password").attr("type", 'text')
+            })
+            $("#show").mouseup(function() {
+                $("#password").attr("type", 'password')
+            })
             $("button.close span").on("click", function() {
                 $(".show").hide();
             })

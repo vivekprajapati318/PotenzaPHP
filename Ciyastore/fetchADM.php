@@ -10,14 +10,13 @@ if (isset($_POST)) {
         while ($row = mysqli_fetch_assoc($result)) {
             $email = $row['Email'];
             $pass = $row['password'];
-        }
-        if ($AEmal === $email && $Apass === $pass) {
-            $_SESSION['User'] = "USER";
-            $_SESSION['Email'] = $AEmal;
 
-            echo 1;
-        } else {
-            echo 0;
+            if ($AEmal === $email && $Apass === $pass) {
+                $_SESSION['User'] = "USER";
+                $_SESSION['Email'] = $AEmal;
+                echo 1;
+                break;
+            }
         }
     }
 }
