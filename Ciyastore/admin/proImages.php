@@ -20,8 +20,8 @@ if (!empty($_FILES['file']['name'][0])) {
                     $newname = uniqid("", true) . "." . $filee;
                     $newdest = './uploaded_files/' . $newname;
                     move_uploaded_file($tempna, $newdest);
-                    header("success");
-                    echo $newname . " ";
+
+                    echo " " . 'http://localhost/vivek/Ciyastore/admin/uploaded_files/' . $newname;
                 } else {
                     die("there is some error");
                 }

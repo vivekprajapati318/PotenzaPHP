@@ -26,6 +26,7 @@
 
 
 <body>
+
     <div class="forcefullwidth_wrapper_tp_banner" id="rev_slider_16_1_forcefullwidth" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px">
         <div id="rev_slider_16_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container tp-mouseover" data-alias="ciyastore-4" data-source="gallery" style="margin: 0px auto; background: transparent; padding: 0px; position: absolute; overflow: visible; height: 675px; width: 1440px; left: 0px;">
             <!-- START REVOLUTION SLIDER 5.4.8.3 fullwidth mode -->
@@ -379,10 +380,12 @@
                                     $description = $row['description'];
                                     $image = $row['image'];
                                     $image = explode(" ", $image);
+
                                     $SKU = $row['SKU'];
                                     $catagory = $row['catagory'];
                                     $catagory = explode(",",  $catagory);
                                     $price = $row['price'];
+                                    $quantity = $row['ProCount'];
 
                                     echo '
             
@@ -397,7 +400,13 @@
                                                         <img src="' . $image[0] . '" data-src="assets/images/shop/shop-8.jpg" class="img-fluid" alt="shop" height="376">
                                                     </div>
                                                     <div class="product-thumbnail-swap">
-                                                        <img src="' . $image[1] . '" data-src="assets/images/shop/shop-8-1.jpg" class="img-fluid" alt="shop"  height="376">
+                                                        <img src="';
+                                    if ($image[1]) {
+                                        echo $image[1];
+                                    } else {
+                                        echo "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQppJKxBxJI-9UWLe2VVmzuBd24zsq4_ihxZw&s";
+                                    };
+                                    echo '" data-src="assets/images/shop/shop-8-1.jpg" class="img-fluid" alt="shop"  height="376">
                                                     </div>
                                                 </a>
                                             </div>
@@ -427,6 +436,13 @@
                                                 <ins>
                                                     <span class="price-amount amount">
                                                         <span class="currency-symbol">$</span>' . $price . '.00
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                             <span class="quantity">
+                                                <ins>
+                                                    <span class="quantity-amount amount">
+                                                        <span class="currency-symbol"></span> in stock: <span>' . $quantity . ' </span>
                                                     </span>
                                                 </ins>
                                             </span>

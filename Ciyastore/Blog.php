@@ -25,6 +25,8 @@
 </head>
 
 <body>
+    
+   <?php require "header.php"; ?>
     <div class="site-content">
         <div class="inner-intro header_intro header_intro_bg-image header_intro_opacity header_intro_opacity-custom">
             <div class="container">

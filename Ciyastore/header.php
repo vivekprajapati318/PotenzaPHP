@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -113,7 +113,7 @@
                             <div class="col-xl-2 col-lg-2 col-5">
                                 <div class="logo-wrapper">
                                     <a href="index.php">
-                                        <img class="img-fluid " src="assets/images/logo.png" alt="logo">
+                                        <img class="img-fluid " src="assets/images/logo.png" alt="CiyaStore">
                                     </a>
                                 </div>
                             </div>
@@ -156,21 +156,19 @@
                                                                         <h4>Product Hovers</h4>
                                                                         <ul>
                                                                             <li class="mega-menu-item">
-                                                                                <a class="mega-menu-link" href="menWear.php">men</a>
+                                                                                <input type="button" class="Filterman" id="man" value="men">
                                                                             </li>
                                                                             <li class="mega-menu-item">
-                                                                                <a class="mega-menu-link" href="womenWear.php">woman
-
-                                                                                </a>
+                                                                                <input type="button" id="woman" value="women">
                                                                             </li>
                                                                             <li class="mega-menu-item">
-                                                                                <a class="mega-menu-link" href="kids.php">kids</a>
+                                                                                <input type="button" id="kids" value="kids">
                                                                             </li>
                                                                             <li class="mega-menu-item">
-                                                                                <a class="mega-menu-link" href="footWear.php">footwear</a>
+                                                                                <input type="button" id="footwear" value="footwear">
                                                                             </li>
                                                                             <li class="mega-menu-item">
-                                                                                <a class="mega-menu-link" href="winterWear.php">winter wear</a>
+                                                                                <input type="button" id="Winter" value="winter wear">
                                                                             </li>
                                                                         </ul>
                                                                     </div>
@@ -191,7 +189,7 @@
                                                                     </a>
                                                                     <ul class="drop-down-multilevel effect-expand-top" style="transition: 400ms;">
                                                                         <li class="mega-menu-item">
-                                                                            <label for="username" id="UserName" style="font-size:small;"><?php if (isset($_SESSION['email'])) {
+                                                                            <label for="username" id="UserName" style="font-size:small;"><?php if (isset($_SESSION['User'])) {
                                                                                                                                                 echo $_SESSION['email'];
                                                                                                                                             } else {
                                                                                                                                                 echo 'no user, login first';
@@ -200,7 +198,7 @@
                                                                             </label>
                                                                         </li>
                                                                         <li class="mega-menu-item">
-                                                                            <?php if (isset($_SESSION['email'])) {
+                                                                            <?php if (isset($_SESSION['User'])) {
                                                                                 echo '  <a class="mega-menu-link" href="Update_profile.php">  update profile</a>';
                                                                             } else {
                                                                                 echo "";
@@ -211,7 +209,7 @@
                                                                         </li>
 
                                                                         <li class="mega-menu-item" id="reset">
-                                                                            <?php if (isset($_SESSION['email'])) {
+                                                                            <?php if (isset($_SESSION['User'])) {
                                                                                 echo '   <a class="mega-menu-link" href="resetPass.php">
                                                                                 reset password</a>';
                                                                             } else {
@@ -351,7 +349,7 @@
                                     <div class="ciya-tools">
                                         <ul class="ciya-tools-actions">
                                             <li class="ciya-tools-action ciya-tools-cart">
-                                                <a class="cart-link" href="#">
+                                                <a class="cart-link" href="cart.php">
                                                     <span class="cart-icon"><i class="glyph-icon pgsicon-ecommerce-empty-shopping-cart"></i></span>
                                                     <span class="cart-count count">3</span>
                                                 </a>
@@ -412,7 +410,7 @@
                                                         </p>
                                                         <p class="ciyastore-mini-cart__buttons buttons">
                                                             <a href="cart.php" class="button wc-forward">View cart</a>
-                                                            <a href="checkout.html" class="button checkout wc-forward">Checkout</a>
+                                                            <a href="checkout.php" class="button checkout wc-forward">Checkout</a>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -445,7 +443,7 @@
                             <div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
                                 <ul class="slicknav_nav slicknav_hidden" id="mobileNav" aria-hidden="true" role="menu" style="display: none;">
                                     <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
-                                            <a href="javascript:void(0)" tabindex="-1">Home</a>
+                                            <a href="index.php" tabindex="-1">Home</a>
                                             <!-- drop down multilevel  -->
                                             <span class="slicknav_arrow">+</span></a>
                                         <ul class="drop-down-multilevel slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
@@ -487,7 +485,7 @@
                                                         <a class="mega-menu-link" href="shopping-cart.html" role="menuitem" tabindex="-1">My Shopping cart</a>
                                                     </li>
                                                     <li class="mega-menu-item">
-                                                        <a class="mega-menu-link" href="checkout.html" role="menuitem" tabindex="-1">Checkout Default</a>
+                                                        <a class="mega-menu-link" href="checkout.php" role="menuitem" tabindex="-1">Checkout Default</a>
                                                     </li>
                                                     <li class="mega-menu-item">
                                                         <a class="mega-menu-link" href="my-account.html" role="menuitem" tabindex="-1">My Account</a>
@@ -669,8 +667,71 @@
 
         </div>
     </header>
+
+    <div class="search-modal modal fade" id="search-popup" style="display: none;" aria-hidden="true">
+        <div class="search-wrapper modal-dialog">
+            <div class="search-modal-content modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="search-modal-content-inner" data-select2-id="37">
+                    <div class="search_form-wrap" data-select2-id="36">
+                        <div class="search_form-inner search-bg-default" data-select2-id="35">
+                            <form class="search-form" role="search" method="get" data-select2-id="34">
+                                <div class="search_form-category-wrap">
+                                    <select name="search_category" class="search_form-category select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" data-select2-id="29">
+                                        <option value="" selected="" data-select2-id="31">All Categories</option>
+                                        <option value="34" data-select2-id="38"> Men</option>
+                                        <option value="35" data-select2-id="39"> Sport</option>
+                                        <option value="36" data-select2-id="40"> Women</option>
+                                        <option value="58" data-select2-id="41"> Bags</option>
+                                        <option value="68" data-select2-id="42"> Kids</option>
+                                        <option value="69" data-select2-id="43"> Clothing</option>
+                                        <option value="238" data-select2-id="44"> Shirt</option>
+                                        <option value="286" data-select2-id="45"> Boys</option>
+                                        <option value="287" data-select2-id="46"> Shoes</option>
+                                        <option value="298" data-select2-id="47"> Coats &amp; jackets</option>
+                                        <option value="299" data-select2-id="48"> Dresswear</option>
+                                        <option value="300" data-select2-id="49"> Girls</option>
+                                        <option value="302" data-select2-id="50"> Outfits</option>
+                                        <option value="303" data-select2-id="51"> Blazers</option>
+                                        <option value="304" data-select2-id="52"> Accessories</option>
+                                        <option value="308" data-select2-id="53"> Athleisure</option>
+                                        <option value="309" data-select2-id="54"> jumpsuits</option>
+                                        <option value="310" data-select2-id="55"> Juniors</option>
+                                        <option value="311" data-select2-id="56"> New Arrivals</option>
+                                        <option value="312" data-select2-id="57"> Pajamas &amp; Robes</option>
+                                        <option value="316" data-select2-id="58"> Uncategorized</option>
+                                        <option value="328" data-select2-id="59"> Hoodies</option>
+                                    </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" data-select2-id="30" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false" aria-labelledby="select2-search_category-07-container"><span class="select2-selection__rendered" id="select2-search_category-07-container" role="textbox" aria-readonly="true" title="All Categories">All Categories</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </div>
+                                <div class="search_form-input-wrap">
+                                    <input type="hidden" name="post_type" value="product">
+                                    <label class="screen-reader-text" for="header-el-search-0">Search for:</label>
+                                    <div class="search_form-search-field">
+                                        <input type="text" id="header-el-search-0" class="form-control search-form ui-autocomplete-input" value="" name="s" placeholder="Enter Search Keyword..." autocomplete="off">
+                                    </div>
+                                    <div class="search_form-search-button"> <input value="" type="submit"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         $(document).ready(function() {
+
+            $(document).on("click", ".search_button", function() {
+                alert("clicks")
+                $(".modal").toggle()
+            })
+            $("button.close span").on("click", function() {
+                $(".show").hide()
+            })
+
+
             $("#logout").on("click", function() {
 
                 $.ajax({

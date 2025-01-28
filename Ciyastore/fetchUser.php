@@ -14,7 +14,7 @@ if (isset($_POST)) {
             $pass = $row['password'];
 
             if ($UEmal == $email && $Upass == $pass) {
-
+                $_SESSION['User'] = "user";
                 $_SESSION['email'] = $email;
                 $k++;
             }

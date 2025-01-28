@@ -153,7 +153,7 @@
             <label for="fileUpload">Images</label>
             <div class="com">
                 <input type="file" name="file[]" required id="file" multiple class=file>
-
+                <textarea name="imagedata" id="imagedata" placeholder="imagedata"></textarea>
             </div>
             <input type="button" id="add" class="add" value="Add Image">
         </div>
@@ -171,118 +171,127 @@
             <label for="price">Price</label>
             <input type="number" id="price" required placeholder="Price">
         </div>
+        <div class="product Quantity">
+            <label for="Quantity">
+
+                Quantity</label>
+            <input type="number" id="Quantity" required placeholder="Quantity">
+        </div>
         <input type="submit" value="Add Product" id="AddProduct">
 
     </div>
 
     <script>
         $(document).ready(function() {
-            $(".alert").hide()
-            click = 0;
-            $(document).on("click", "#AddProduct", function() {
-
-                if (click == 0) {
-                    alert("click on add image first")
-                }
-            })
+            $(".alert").hide();
+            let imageUploaded = false;
 
             $(".add").on("click", function() {
-                click = 1;
-                var formElement = $(this).closest("form")[0];
+                const formdata = new FormData();
+                const files = $("#file")[0].files;
 
-                var formdata = new FormData(formElement);
+                if (files.length === 0) {
+                    alert("Please select an image to upload.");
+                    return;
+                }
 
-                var files = $("#file")[0].files;
-                console.log(files)
-                for (var i = 1; i < files.length; i++) {
+                for (let i = 0; i < files.length; i++) {
                     formdata.append("file[]", files[i]);
                 }
 
                 $.ajax({
-                    url: 'proImages.php',
-                    type: "post",
+                    url: "proImages.php",
+                    type: "POST",
                     data: formdata,
                     contentType: false,
                     processData: false,
-                    success: function(data) {
-                        if (data == 1) {
-                            alert("file is greater");
+                    success: function(response) {
+                        if (response === "1") {
+                            alert("File size is too large.");
                         } else {
-                            alert("Files uploaded successfully:", data);
-                            $(document).on("click", "#AddProduct", function() {
-                                var title = $('#title').val()
-                                var desc = $('#desc').val()
-                                var image = data
-                                var SKU = $("#SKU").val()
-                                var category = $("#category").val()
-                                var price = $("#price").val()
-                                const titleerr = descerr = imageerr = categoryerr = priceerr = click = 0
-                                if (!title) {
-                                    alert("add title")
-                                    titleerr = 1
-                                }
-                                if (!SKU) {
-                                    SKUerr = 1
-                                }
-                                if (!desc) {
-                                    alert("add description")
-                                    descerr = 1
-                                }
-
-                                if (!category) {
-                                    alert("add category")
-                                    categoryerr = 1
-                                }
-                                if (!price) {
-                                    alert("add price")
-                                    priceerr = 1
-                                }
-
-                                var reg = new RegExp('^[0-9]$');
-                                testpr = reg.test(price)
-                                if (!testpr) {
-                                    priceerr = 1
-                                }
-
-
-                                $.ajax({
-                                    url: "IndertPro.php",
-                                    type: "post",
-                                    data: {
-                                        title: title,
-                                        desc: desc,
-                                        image: image,
-                                        SKU: SKU,
-                                        category: category,
-                                        price: price
-                                    },
-                                    success: function(data) {
-                                        console.log(data)
-                                        if (titleerr || descerr || imageerr || categoryerr || priceerr || click == 0) {
-                                            $(".alert").show().text("Invalid credentials. Please fix the errors and try again.");
-                                        } else {
-                                            if (data == 1) {
-                                                alert("success")
-                                                window.location.href = "index.php";
-                                            } else {
-                                                alert("err", data)
-                                            }
-                                        }
-                                    }
-                                })
-                                $('#title').val()
-                            });
+                            alert("Files uploaded successfully.");
+                            $("#imagedata").val(response);
+                            imageUploaded = true;
                         }
                     },
                     error: function(xhr, status, error) {
                         console.error("Error uploading files:", error);
-
-
-                    }
+                    },
                 });
             });
 
+            $(document).on("click", "#AddProduct", function() {
+                const title = $("#title").val();
+                const desc = $("#desc").val();
+                const image = $("#imagedata").val();
+                const SKU = $("#SKU").val();
+                const category = $("#category").val();
+                const price = $("#price").val();
+                const Quantity = $("#Quantity").val();
 
+                let hasError = false;
+
+
+                if (!title) {
+                    alert("Please add a title.");
+                    hasError = true;
+                }
+                if (!desc) {
+                    alert("Please add a description.");
+                    hasError = true;
+                }
+                if (!imageUploaded || !image) {
+                    alert("Please upload an image.");
+                    hasError = true;
+                }
+                if (!SKU) {
+                    alert("Please add an SKU.");
+                    hasError = true;
+                }
+                if (!category) {
+                    alert("Please add a category.");
+                    hasError = true;
+                }
+                if (!price || isNaN(price) || price <= 0) {
+                    alert("Please add a valid price.");
+                    hasError = true;
+                }
+                if (!Quantity || isNaN(Quantity) || Quantity <= 0) {
+                    alert("Please add a valid quantity.");
+                    hasError = true;
+                }
+
+                if (hasError) {
+                    $(".alert").show().text("Invalid credentials. Please fix the errors and try again.");
+                    return;
+                }
+
+                $.ajax({
+                    url: "IndertPro.php",
+                    type: "POST",
+                    data: {
+                        title: title,
+                        desc: desc,
+                        image: image,
+                        SKU: SKU,
+                        category: category,
+                        price: price,
+                        Quantity: Quantity,
+                    },
+                    success: function(response) {
+                        console.log(response);
+                        if (response == 1) {
+                            alert("Product added successfully!");
+                            window.location.href = "index.php";
+                        } else {
+                            alert("Error adding product: " + response);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("Error adding product:", error);
+                    },
+                });
+            });
         });
     </script>
 </body>

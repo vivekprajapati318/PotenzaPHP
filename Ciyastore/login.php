@@ -38,7 +38,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" id="myModalLabel">Admin Sign in </h4>
-                    <a href="adminLogin.php" class="btn btn-primary">admin only</a>
+                    <a id="AdminLogin" href="adminLogin.php" class="btn btn-primary">admin only</a>
                 </div>
                 <div class="modal-header">
                     <h4 class="modal-title" id="myModalLabel">USER Sign in Or Register</h4>
@@ -114,8 +114,6 @@
                         if (data == 1) {
                             alert("success")
                             $("#pgs_login_form").toggle();
-
-
                         } else {
 
                             alert("invalid credencial" + data)
@@ -123,6 +121,20 @@
                     }
                 })
 
+            })
+            $("#AdminLogin").click(function() {
+
+                $.ajax({
+                    url: "sess.php",
+                    success: function(data) {
+
+                        if (data == 1) {
+
+                        } else {
+                            console.log("err")
+                        }
+                    }
+                })
             })
         })
 

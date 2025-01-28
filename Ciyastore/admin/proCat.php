@@ -1,10 +1,11 @@
 <?php
+require "./DBconn/DB.php";
+$sql = "SELECT catagory from product";
+$result = $conn->query($sql);
+$strr = "";
+while ($row = mysqli_fetch_assoc($result)) {
 
-use Symfony\Component\Validator\Constraints\Length;
-
-$images = array();
-$image = $_POST['cat'];
-for ($i = 0; $i < 7; $i++) {
-    $images[$i] = $image;
+    $strr = $strr . "," . $row['catagory'];
 }
-print_r($images);
+
+$catagory = explode(",", $strr);
