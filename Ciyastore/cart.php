@@ -147,7 +147,7 @@
                                         }
                                     }
                                 } else {
-                                    echo "<h2 style='background-color:rgb(25, 222, 147);color:rgb(69, 75, 73);'>login  for using add to cart functionality </h2>";
+                                    echo "<h2 style='background-color:rgb(25, 222, 147);color:rgb(102, 107, 106);'>login  for using add to cart functionality </h2>";
                                 }
 
                                 ?>
