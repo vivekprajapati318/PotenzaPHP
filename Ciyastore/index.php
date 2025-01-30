@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,6 +30,8 @@
     <?php require "header.php"; ?>
     <?php require "home.php"; ?>
     <?php require "login.php"; ?>
+    <?php require "footer.php"; ?>
+
 
 
 </body>

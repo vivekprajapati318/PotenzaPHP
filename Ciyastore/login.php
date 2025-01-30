@@ -86,6 +86,8 @@
 
     <script>
         $(document).ready(function() {
+
+
             $("#show").mousedown(function() {
                 $("#password").attr("type", 'text')
             })
@@ -96,10 +98,11 @@
                 $(".show").hide();
             })
             $(document).on("click", "a#login", function() {
+
                 $("#pgs_login_form").show()
             })
 
-            $("#loginUser").on("click", function() {
+            $(document).on("click", "#loginUser", function() {
                 email = $('#Email').val()
                 pass = $("#password").val()
                 $.ajax({

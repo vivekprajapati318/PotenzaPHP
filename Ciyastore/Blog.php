@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,8 +26,8 @@
 </head>
 
 <body>
-    
-   <?php require "header.php"; ?>
+    <div class="commm"></div>
+    <?php require "header.php"; ?>
     <div class="site-content">
         <div class="inner-intro header_intro header_intro_bg-image header_intro_opacity header_intro_opacity-custom">
             <div class="container">
@@ -784,3 +785,13 @@
 </body>
 
 </html>
+<script>
+    $(document).on("click", "a#login", function() {
+
+        $('.commm').load("login.php", function() {
+
+            $("#pgs_login_form").toggle()
+        })
+
+    })
+</script>

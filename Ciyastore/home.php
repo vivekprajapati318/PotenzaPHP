@@ -386,83 +386,7 @@
                                     $catagory = explode(",",  $catagory);
                                     $price = $row['price'];
                                     $quantity = $row['ProCount'];
-
-                                    echo '
-            
-                        
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <div class="product product-hover-style-default product-hover-button-style-dark product_title_type-single_line product_icon_type-line-icon">
-                                    <div class="product-inner">
-                                        <div class="product-thumbnail">
-                                            <div class="product-thumbnail-inner">
-                                                <a href="ProDetail.php">
-                                                    <div class="product-thumbnail-main">
-                                                        <img src="' . $image[0] . '" data-src="assets/images/shop/shop-8.jpg" class="img-fluid" alt="shop" height="376">
-                                                    </div>
-                                                    <div class="product-thumbnail-swap">
-                                                        <img src="';
-                                    if ($image[1]) {
-                                        echo $image[1];
-                                    } else {
-                                        echo "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQppJKxBxJI-9UWLe2VVmzuBd24zsq4_ihxZw&s";
-                                    };
-                                    echo '" data-src="assets/images/shop/shop-8-1.jpg" class="img-fluid" alt="shop"  height="376">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="product-action product-action-quick-view">
-                                                <a href="#" class="open-quick-view" data-toggle="tooltip" data-original-title="Quick view" data-placement="right">Quick
-                                                    View</a>
-                                            </div>
-                                            <div class="product-actions">
-                                                <div class="product-actions-inner">
-                                                    <div class="product-action product-action-add-to-cart">
-                                                        <a href="cart.php" class="button add_to_cart_button" rel="nofollow">Add to
-                                                            cart</a>
-                                                    </div>
-                                           
-                                               
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-info">
-                                            <span class="ciyastore-product-category">
-                                                <a href="catagortSort.php">' . $catagory[0] . '</a>
-                                            </span>
-                                            <h3 class="product-name">
-                                                <a href="ProDetail.php">' . $title . 't </a>
-                                            </h3>
-                                            <span class="price">
-                                                <ins>
-                                                    <span class="price-amount amount">
-                                                        <span class="currency-symbol">$</span>' . $price . '.00
-                                                    </span>
-                                                </ins>
-                                            </span>
-                                             <span class="quantity">
-                                                <ins>
-                                                    <span class="quantity-amount amount">
-                                                        <span class="currency-symbol"></span> in stock: <span>' . $quantity . ' </span>
-                                                    </span>
-                                                </ins>
-                                            </span>
-                                            <div class="star-rating-wrapper">
-                                                <i class="fa fa-star text-warning"></i>
-                                                <i class="fa fa-star text-warning"></i>
-                                                <i class="fa fa-star text-warning"></i>
-                                                <i class="fa fa-star text-warning"></i>
-                                                <i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-
-
-
-
-';
+                                    require "./sorting/shopPRO.php";
                                 }
                             }
                             ?></div>
@@ -1009,6 +933,61 @@
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            $(document).on("click", ".dataPRO", function() {
+                data = $(this).data('id');
+                alert(data)
+                $.ajax({
+                    url: "ProDetail.php",
+                    type: "POST",
+                    data: {
+                        data: data
+                    },
+                    success: function(data) {
+                        console.log(data)
+
+                    }
+                })
+            })
+
+            $.ajax({
+                url: "./sorting/shopPRO.php",
+                success: function() {
+                    $(document).on("click", ".ADDcart", function(e) {
+                        var id = $(this).data("id")
+
+                        $.ajax({
+                            url: "./cart/adding.php",
+                            type: "POST",
+                            data: {
+                                id: id
+                            },
+                            success: function(data) {
+                                console.log(data);
+                                if (data == 1) {
+                                    alert("added")
+                                    window.location.reload()
+                                } else if (data == 0) {
+                                    alert('exist')
+                                }
+                            }
+
+                        })
+
+
+
+                        var title = $(e.target).closest('div').eq(1).html()
+                        console.log(title, id)
+                    });
+                    $(document).on("click", ".notinStockproduct-action", function() {
+                        console.log("Out of stock button clicked");
+                        alert("This product is out of stock.");
+                    });
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>

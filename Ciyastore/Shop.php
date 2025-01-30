@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,9 +32,12 @@
     <link rel="stylesheet" href="assets/css/plugins.css" />
     <!-- Base Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+    <div class="commm"></div>
     <?php require "header.php";
     require_once "./admin/proCat.php"; ?>
     <div class="site-content">
@@ -85,7 +89,7 @@
                                                         <div class="shop-filter-wrapper">
 
                                                             <select name="product_cat" id="product_cat" class="dropdown_product_cat select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" data-select2-id="product_cat">
-                                                                <option value="" selected="selected" data-select2-id="34">Any
+                                                                <option value="any" selected="selected" data-select2-id="34">Any
                                                                     Category
                                                                 </option>
 
@@ -124,8 +128,8 @@
                                                         <option value="menu_order" selected="selected" value="default" data-select2-id="46">Default sorting
                                                         </option>
 
-                                                        <option value="price">Sort by price: low to high</option>
-                                                        <option value="price-desc">Sort by price: high to low</option>
+                                                        <option value="asc">Sort by price: low to high</option>
+                                                        <option value="desc">Sort by price: high to low</option>
                                                     </select>
                                                 </form>
                                             </div>
@@ -145,116 +149,111 @@
                                     $image =  explode(" ", $row['image']);
                                     $catagory =  explode(",", $row['catagory']);
 
+
+
+
+
+
                                     if ($row['ProCount'] > 0) {
-                                        $out = '   <div class="col-lg-3 col-md-4 col-sm-6">
-                                <div class="product product-hover-style-hover-summary product-hover-button-style-light product_title_type-single_line product_icon_type-line-icon">
-
-                                              <div class="product-inner"> <div class="content-hover-block" style="margin-bottom: -103px;"></div>
-                                        <div class="product-thumbnail">
-                                            <div class="product-thumbnail-inner">
-                                                <a href="#">
-                                                    <div class="product-thumbnail-main">
-                                                        <img src="' . $image[0] . ' "style="height:300px;">
-                                                        <p class="stock in-stock">' . $row['ProCount'] . ' in stock</p>
-                                                    </div>
-                                                    <div class="product-thumbnail-swap">
-                                                        <img src="' . $image[1] . '">
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <div class="product-actions">
-                                                <div class="product-actions-inner">
-                                                    <div class="product-action product-action-add-to-cart ">
-                                                       <button class="ADDcart" style=" color:white;background-color:rgb(23, 221, 145);"> Add to
-                                                            cart  </button>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-info center-text">
-                                            <span class="ciyastore-product-category">
-                                                <a href="#">' . $catagory[0] . '</a>
-                                            </span>
-                                            <h3 class="product-name">
-                                                <a href="shop-single-classic-no-sidebar.html">' . $row['Title'] . ' </a>
-                                            </h3>
-                                            <span class="price">
-                                                <ins>
-                                                    <span class="price-amount amount">
-                                                        <span class="currency-symbol">$</span>' . $row['price'] . '
-                                                    </span>
-                                                </ins>
-                                            </span>
-                                            <div class="ciyastore-product-description ciyastore-short-description ">
-                                                <div class="ciyastore-description-inner">
-                                                    ' . $row['description'] . '
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                 
-                                </div> </div>
+                                        $out = '   
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="product product-hover-style-hover-summary product-hover-button-style-light product_title_type-single_line product_icon_type-line-icon">
+            <div class="product-inner"> 
+                <div class="content-hover-block" style="margin-bottom: -103px;"></div>
+                <div class="product-thumbnail">
+                    <div class="product-thumbnail-inner">
+                        <a href="ProDetail.php?proid=' . $row["proid"] . '">
+                            <div class="product-thumbnail-main">
+                                <img src="' . $image[0] . '" style="height:300px;">
+                                <p class="stock in-stock">' . $row['ProCount'] . ' in stock</p>
+                            </div>
+                            <div class="product-thumbnail-swap">
+                                <img src="' . $image[1] . '" style="height:300px;">
+                            </div>
+                        </a>
                     </div>
-';
+                    <div class="product-actions">
+                        <div class="product-actions-inner">
+                            <div class="product-action product-action-add-to-cart">
+                                <button  class="ADDcart product-action" data-toggle="tooltip" data-original-title="add to cart" data-placement="right" data-id="' . $row['proid'] . ' " style="color:white;background-color:rgb(23, 221, 145);">Add to cart</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info center-text">
+                    <span class="ciyastore-product-category">
+                        <a href="#">' . $catagory[0] . '</a>
+                    </span>
+                    <h3 class="product-name">
+                        <a href="shop-single-classic-no-sidebar.html">' . $row['Title'] . '</a>
+                    </h3>
+                    <span class="price">
+                        <ins>
+                            <span class="price-amount amount">
+                                <span class="currency-symbol">$</span>' . $row['price'] . '
+                            </span>
+                        </ins>
+                    </span>
+                    <div class="ciyastore-product-description ciyastore-short-description">
+                        <div class="ciyastore-description-inner">
+                            ' . $row['description'] . '
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>';
                                         echo $out;
                                     } else {
-                                        echo  '               <div class="col-md-4 col-sm-6">
-                                <div class="product product-hover-style-hover-summary product-hover-button-style-light product_title_type-single_line product_icon_type-line-icon">
-                                    <div class="product-inner">
-                                        <div class="content-hover-block" style="margin-bottom: -103px;"></div>
-                                        <div class="product-thumbnail">
-                                            <div class="product-thumbnail-inner">
-                                                <a href="#">
-                                                    <div class="product-thumbnail-main">
-                                                        <img src="' . $image[0] . '" style="height:300px;">
-                                                        <p class="stock out-of-stock">Out of stock</p>
-                                                    </div>
-                                                    <div class="product-thumbnail-swap">
-                                                        <img src=' . $image[1] . '" style="height:300px;">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="product-action product-action-wishlist">
-                                                <a href="wishlist.html" class="add_to_wishlist" data-toggle="tooltip" data-original-title="Wishlist" data-placement="right"> Add to
-                                                    Wishlist</a>
-                                            </div>
-                                            <div class="product-actions">
-                                                <div class="product-actions-inner">
-                                                        
-                                                    <div class="product-action product-action-add-to-cart">
-                                                        <button class="notinStock" style="background-color:rgb(235, 70, 70); color:white;"> out of stock
-                                                           </button>
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-info center-text">
-                                            <span class="ciyastore-product-category">
-                                                <a href="#">Accessories</a>
-                                            </span>
-                                            <h3 class="product-name">
-                                                <a href="shop-single-classic-no-sidebar.html">' . $row['Title'] . '</a>
-                                            </h3>
-                                            <span class="price">
-                                                <ins>
-                                                    <span class="price-amount amount">
-                                                        <span class="currency-symbol">$</span>  ' . $row['price'] . '
-                                            </span>
-                                            </ins>
-                                            </span>
-                                            <div class="ciyastore-product-description ciyastore-short-description">
-                                                <div class="ciyastore-description-inner">
-                                                    ' . $row['description'] . ' </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>';
+                                        echo '               
+    <div class="col-md-4 col-sm-6">
+        <div class="product product-hover-style-hover-summary product-hover-button-style-light product_title_type-single_line product_icon_type-line-icon">
+            <div class="product-inner">
+                <div class="content-hover-block" style="margin-bottom: -103px;"></div>
+                <div class="product-thumbnail">
+                    <div class="product-thumbnail-inner">
+                        <a href="ProDetail.php?proid=' . $row["proid"] . '">
+                            <div class="product-thumbnail-main">
+                                <img src="' . $image[0] . '" style="height:300px;">
+                                <p class="stock out-of-stock">Out of stock</p>
+                            </div>
+                            <div class="product-thumbnail-swap">
+                                <img src="' . $image[1] . '" style="height:300px;">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-actions">
+                        <div class="product-actions-inner">
+                            <div class="product-action product-action-add-to-cart">
+                                <button class="notinStockproduct-action" data-toggle="tooltip" data-original-title="out of stock" data-placement="right" style="background-color:rgb(235, 70, 70); color:white;">Out of stock</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info center-text">
+                    <span class="ciyastore-product-category">
+                        <a href="#">' . $catagory[0] . '</a>
+                    </span>
+                    <h3 class="product-name">
+                        <a href="shop-single-classic-no-sidebar.html">' . $row['Title'] . '</a>
+                    </h3>
+                    <span class="price">
+                        <ins>
+                            <span class="price-amount amount">
+                                <span class="currency-symbol">$</span>' . $row['price'] . '
+                            </span>
+                        </ins>
+                    </span>
+                    <div class="ciyastore-product-description ciyastore-short-description">
+                        <div class="ciyastore-description-inner">
+                            ' . $row['description'] . '
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>';
                                     }
                                 }
                             }
@@ -272,8 +271,56 @@
                         <!-- plugins path -->
                         <script>
                             var plugin_path = 'assets/js/';
+                        </script>
+                        <script>
                             $(document).ready(function() {
+                                $(document).on("click", "a#login", function() {
+                                    alert('click')
+                                    $('.commm').load("login.php", function() {
+                                        alert('loaded')
+                                        $("#pgs_login_form").toggle()
+                                    })
+                                })
+                                $.ajax({
+                                    url: "./sorting/shopPRO.php",
+                                    success: function() {
+                                        $(document).on("click", ".ADDcart", function(e) {
+                                            var id = $(this).data("id")
+
+                                            $.ajax({
+                                                url: "./cart/adding.php",
+                                                type: "POST",
+                                                data: {
+                                                    id: id
+                                                },
+                                                success: function(data) {
+                                                    console.log(data);
+                                                    if (data == 1) {
+                                                        alert("added")
+                                                        window.location.reload()
+                                                    } else if (data == 0) {
+                                                        alert('exist')
+                                                    }
+                                                }
+
+                                            })
+
+
+
+                                            var title = $(e.target).closest('div').eq(1).html()
+                                            console.log(title, id)
+                                        });
+                                        $(document).on("click", ".notinStockproduct-action", function() {
+                                            console.log("Out of stock button clicked");
+                                            alert("This product is out of stock.");
+                                        });
+                                    }
+                                })
+
+
+
                                 $("#priceSelect").on("change", function() {
+
                                     var priceval = $("#priceSelect").val()
                                     console.log(priceval)
                                     $.ajax({
@@ -306,11 +353,8 @@
                                             console.log("Response from server:", data);
 
                                             $(".products").html(data);
-                                        },
-                                        error: function(xhr, status, error) {
-                                            // Handle errors
-                                            console.error("AJAX Error:", status, error);
-                                        },
+                                        }
+
                                     });
                                 });
                                 $("#shop-filter-search").on("keyup", function() {
@@ -325,17 +369,15 @@
                                             console.log("Response from server:", data);
 
                                             $(".products").html(data);
-                                        },
-                                        error: function(xhr, status, error) {
-                                            // Handle errors
-                                            console.error("AJAX Error:", status, error);
-                                        },
+                                        }
+
                                     });
 
                                 })
-                                $(document).on(".ADDcart", "click", function() {
-                                    alert("cloo")
-                                });
+
+
+
+
                             })
                         </script>
                         <!-- custom -->

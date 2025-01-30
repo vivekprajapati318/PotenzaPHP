@@ -35,120 +35,99 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <style>
-        .container {
-            background: #fff;
-            margin-top: 15px;
-            padding: 30px;
+        /* Container Styling for Table */
+        .table-container {
+            width: 90%;
+            /* Adjust to your desired width */
+            max-width: 1200px;
+            /* Optional: Limit max width */
+            margin: 40px auto;
+            /* Center the container */
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            width: 70%;
-            max-width: 600px;
         }
 
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
             color: #333;
         }
 
-        .container label {
-            font-weight: bold;
-            margin-bottom: 5px;
-            display: block;
-            color: #555;
+        th {
+            background-color: #f2f2f2;
+            color: #007bff;
         }
 
-        .container input[type="text"],
-        .container input[type="number"],
-        .container textarea,
-        .container input[type="file"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 14px;
-            transition: border-color 0.3s;
-        }
-
-        .container input[type="text"]:focus,
-        .container input[type="number"]:focus,
-        .container textarea:focus,
-        .container input[type="file"]:focus {
-            border-color: #007bff;
-            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-        }
-
-        .container .product.images {
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .container input[type="submit"],
-        .container input[type="button"] {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: #007bff;
-            color: #fff;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .container input[type="submit"]:hover,
-        .container input[type="button"]:hover {
-            background-color: #0056b3;
-        }
-
-        #add {
-            margin-left: 10px;
-            background-color: #28a745;
-        }
-
-        #add:hover {
-            background-color: #218838;
-        }
-
-        .product.desc textarea {
-            height: 80px;
-        }
-
-        .product.images img {
+        td img {
             max-width: 100px;
-            margin: 5px;
+            height: auto;
+            margin-right: 10px;
             border-radius: 5px;
         }
 
-        .product.price,
-        .product.SKU {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
+        tr:hover {
+            background-color: #f9f9f9;
         }
 
-        .product.category {
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            position: relative;
-            overflow: hidden;
-
-
+        /* Modal Positioning Fix */
+        .modal-content {
+            border-radius: 10px;
+            padding: 20px;
         }
 
-        .product.price input,
-        .product.SKU input,
-        .product.category input {
-            flex: 1;
+        .modal-header {
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px 10px 0 0;
+            padding: 15px;
+        }
+
+        .modal-header h4 {
+            margin: 0;
+        }
+
+        .modal-header .close {
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 0;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .table-container {
+                width: 95%;
+                /* Adjust for smaller screens */
+                padding: 15px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th,
+            td {
+                padding: 10px;
+            }
         }
     </style>
+
+
 </head>
 
 <body>

@@ -83,38 +83,41 @@
 </head>
 
 <body>
-    <?php if (isset($_SESSION['User'])) {
-        if ($_SESSION['User'] == "admin") {
+    <?php
+
+    if ($_SESSION['User'] == "admin") {
     ?>
-            <?php require "../header.php"; ?>
-            <div class="container">
-                <input type="button" id="back" value="Back">
-                <input type="button" id="home" value="home">
 
-                <div class="lk" id="lk"></div>
-                <div class="userData form-group">
-                    <label for="UserData">User data will be stored here</label>
-                    <input type="submit" id="user" value="User's Data">
-                </div>
+        <div class="container">
+            <input type="button" id="back" value="Back">
+            <input type="button" id="home" value="home">
 
-                <div class="ProductData form-group">
-                    <label for="ProductData">Product details will be stored here</label>
-                    <input type="submit" id="Pro" value="Product Details">
-                </div>
+            <div class="lk" id="lk"></div>
+            <div class="userData form-group">
+                <label for="UserData">User data will be stored here</label>
+                <input type="submit" id="user" value="User's Data">
+            </div>
+
+            <div class="ProductData form-group">
+                <label for="ProductData">Product details will be stored here</label>
+                <input type="submit" id="Pro" value="Product Details">
+            </div>
 
 
 
-                <div class="ProductData form-group">
-                    <label for="AddProductData">New product details</label>
-                    <input type="submit" id="ProAdd" value="Add Product">
-                </div>
+            <div class="ProductData form-group">
+                <label for="AddProductData">New product details</label>
+                <input type="submit" id="ProAdd" value="Add Product">
+            </div>
 
-                <div class="lkj"></div>
-            </div> <?php }
-            } else {
+            <div class="lkj"></div>
+        </div> <?php } else {
 
                 echo "<script> window.location.href = '../adminLogin.php'</script>'";
-            } ?>
+            }
+
+
+            require "../footer.php"; ?>
 </body>
 
 </html>

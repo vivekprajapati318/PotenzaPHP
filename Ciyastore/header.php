@@ -1,4 +1,3 @@
-<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,10 +40,10 @@
                             <div class="topbar-link">
                                 <ul>
                                     <li class="topbar_item topbar_item_type-currency">
-                                        <select class="select2 select2-hidden-accessible" data-select2-id="4" tabindex="-1" aria-hidden="true">
-                                            <option data-select2-id="6">USD ($)</option>
+                                        <select class="select23 select2-hidden-accessible" data-select2-id="4" tabindex="-1" aria-hidden="true">
+                                            <option id="6">USD ($)</option>
                                             <option>EUR (€)</option>
-                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: 89px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-hnt7-container"><span class="select2-selection__rendered" id="select2-hnt7-container" role="textbox" aria-readonly="true" title="USD ($)">USD ($)</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </select><span class="select23 select2-container select2-container--default" dir="ltr" data-select2-id="5" style="width: 89px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-hnt7-container"><span class="select2-selection__rendered" id="select2-hnt7-container" role="textbox" aria-readonly="true" title="USD ($)">USD ($)</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                     </li>
                                     <li class="topbar_item topbar_item_type-email">
                                         <a href="mailto:vivekprajapati318@gmail.com"><i class="fa fa-envelope-o">&nbsp;</i>vivekprajapati@318.com</a>
@@ -128,7 +127,7 @@
                                                     <ul class="menu-links mega-menu-primary" style="display: none; max-height: 400px; overflow: auto;">
                                                         <!-- active class -->
                                                         <li class="hoverTrigger active">
-                                                            <a href="javascript:void(0)">Home <div class="mobileTriggerButton"></div></a>
+                                                            <a href="index.php">Home <div class="mobileTriggerButton"></div></a>
                                                             <!-- drop down multilevel  -->
 
                                                         <li class="hoverTrigger">
@@ -351,7 +350,16 @@
                                             <li class="ciya-tools-action ciya-tools-cart">
                                                 <a class="cart-link" href="cart.php">
                                                     <span class="cart-icon"><i class="glyph-icon pgsicon-ecommerce-empty-shopping-cart"></i></span>
-                                                    <span class="cart-count count">3</span>
+                                                    <span class="cart-count count">
+                                                        <?php
+                                                        require "./DBconn/DB.php";
+                                                        if (isset($_SESSION['email'])) {
+                                                            $sql = $conn->query("SELECT COUNT('proid') from cart WHERE Email= '$_SESSION[email]';");
+                                                            $result = mysqli_fetch_array($sql);
+                                                            echo $result[0];
+                                                        } else {
+                                                            echo 0;
+                                                        } ?></span>
                                                 </a>
 
 
@@ -362,52 +370,44 @@
                                                     <div class="widget-shopping-cart-content">
                                                         <div class="product-list-widget-container has-scrollbar">
                                                             <ul class="ciyastore-mini-cart cart-list">
-                                                                <li class="ciya-mini-cart-item">
-                                                                    <a href="#" class="remove remove_from_cart_button">×</a>
-                                                                    <div class="media">
-                                                                        <a href="#"><img width="60" height="76" src="assets/images/shop/img-01.jpg" data-src="assets/images/shop/img-01.jpg" class="img-fluid" alt=""></a>
+
+
+                                                                <?PHP
+                                                                if (isset($_SESSION['email'])) {
+                                                                    require "./DBconn/DB.php";
+                                                                    $sql = $conn->query("SELECT * FROM cart WHERE Email='$_SESSION[email]'");
+
+                                                                    if (mysqli_num_rows($sql) > 0) {
+                                                                        while ($row = mysqli_fetch_assoc($sql)) {
+
+                                                                            $image = $row['image'];
+                                                                            $image = explode(" ", $image);
+
+                                                                            echo '    <li class="ciya-mini-cart-item">
+
+                                                                    <div class="media"> <button class="remove remove_from_cart_button"data-id="' . $row['proid'] . '" style="margin-top :25px;">X</button>
+                                                                        <a href="#"><img width="60" height="76" src="' . $image[0] . '" data-src="assets/images/shop/img-03.jpg" class="img-fluid" alt=""></a>
                                                                         <div class="media-body">
-                                                                            <a href="#" class="product-title">Buckle
-                                                                                belt – Saint Laurent</a>
-                                                                            <span class="quantity">1 × <span class="woocs-special_price_code"><span class="ciya-Price-amount amount"><span class="ciya-Price-currencySymbol">$</span>40.00</span>
+                                                                                    <h6>' . $row['Title'] . '
+                                                                                    </h6>
+                                                                            <span class="quantity">1 × <span class="woocs-special_price_code"><span class="ciya-Price-amount amount"><span class="ciya-Price-currencySymbol">$</span>' . $row['price'] . '</span>
                                                                                 </span>
                                                                             </span>
                                                                         </div>
                                                                     </div>
                                                                 </li>
-                                                                <li class="ciya-mini-cart-item">
-                                                                    <a href="#" class="remove remove_from_cart_button">×</a>
-                                                                    <div class="media">
-                                                                        <a href="#"><img width="60" height="76" src="assets/images/shop/img-02.jpg" data-src="assets/images/shop/img-02.jpg" class="img-fluid" alt=""></a>
-                                                                        <div class="media-body">
-                                                                            <a href="#" class="product-title">Extra Fine
-                                                                                Wool Jumpers </a>
-                                                                            <span class="quantity">1 × <span class="woocs-special_price_code"><span class="ciya-Price-amount amount"><span class="ciya-Price-currencySymbol">$</span>40.00</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="ciya-mini-cart-item">
-                                                                    <a href="#" class="remove remove_from_cart_button">×</a>
-                                                                    <div class="media">
-                                                                        <a href="#"><img width="60" height="76" src="assets/images/shop/img-03.jpg" data-src="assets/images/shop/img-03.jpg" class="img-fluid" alt=""></a>
-                                                                        <div class="media-body">
-                                                                            <a href="#" class="product-title">Girl's
-                                                                                Cold Shoulder Bling Dress –
-                                                                                Black</a>
-                                                                            <span class="quantity">1 × <span class="woocs-special_price_code"><span class="ciya-Price-amount amount"><span class="ciya-Price-currencySymbol">$</span>116.00</span>
-                                                                                </span>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </li>
+ ';
+                                                                        }
+                                                                    }
+                                                                } else {
+                                                                    echo "please login to access cart";
+                                                                }
+                                                                ?>
+
+
                                                             </ul>
                                                         </div>
-                                                        <p class="ciyastore-mini-cart__total total">
-                                                            <strong>Subtotal:</strong> <span class="woocs_special_price_code"><span class="ciyastore-Price-amount amount"><span class="ciyastore-Price-currencySymbol">$</span>196.00</span>
-                                                            </span>
-                                                        </p>
+
                                                         <p class="ciyastore-mini-cart__buttons buttons">
                                                             <a href="cart.php" class="button wc-forward">View cart</a>
                                                             <a href="checkout.php" class="button checkout wc-forward">Checkout</a>
@@ -730,7 +730,20 @@
             $("button.close span").on("click", function() {
                 $(".show").hide()
             })
+            $(document).on("click", ".remove", function() {
+                var id = $(this).data('id')
 
+                $.ajax({
+                    url: ".cart/Removeitem.php",
+                    type: "POST",
+                    data: {
+                        id: id
+                    },
+                    success: function(data) {
+                        console.log(data)
+                    }
+                })
+            })
 
             $("#logout").on("click", function() {
 
@@ -740,6 +753,7 @@
                         console.log(data)
                         if (data == 1) {
                             alert('logout successfully')
+                            window.location.reload(true)
                             $('a#login').show()
                             $('#lable1').hide()
 

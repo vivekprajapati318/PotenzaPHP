@@ -8,118 +8,85 @@ if (mysqli_num_rows($result) > 0) {
         $image =  explode(" ", $row['image']);
         $catagory =  explode(",", $row['catagory']);
 
-        if ($row['ProCount'] > 0) {
-            $out = '   <div class="col-lg-3 col-md-4 col-sm-6">
-    <div class="product product-hover-style-hover-summary product-hover-button-style-light product_title_type-single_line product_icon_type-line-icon">
-
-                  <div class="product-inner"> <div class="content-hover-block" style="margin-bottom: -103px;"></div>
-            <div class="product-thumbnail">
-                <div class="product-thumbnail-inner">
-                    <a href="#">
-                        <div class="product-thumbnail-main">
-                            <img src="' . $image[0] . ' "style="height:300px;">
-                            <p class="stock in-stock">' . $row['ProCount'] . ' in stock</p>
-                        </div>
-                        <div class="product-thumbnail-swap">
-                            <img src="' . $image[1] . '">
-                        </div>
-                    </a>
-                </div>
-
-                <div class="product-actions">
-                    <div class="product-actions-inner">
-                        <div class="product-action product-action-add-to-cart">
-                            <a href="cart.php" class="button add_to_cart_button">Add to
-                                cart</a>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="product-info center-text">
-                <span class="ciyastore-product-category">
-                    <a href="#">' . $catagory[0] . '</a>
-                </span>
-                <h3 class="product-name">
-                    <a href="shop-single-classic-no-sidebar.html">' . $row['Title'] . ' </a>
-                </h3>
-                <span class="price">
-                    <ins>
-                        <span class="price-amount amount">
-                            <span class="currency-symbol">$</span>' . $row['price'] . '
-                        </span>
-                    </ins>
-                </span>
-                <div class="ciyastore-product-description ciyastore-short-description ">
-                    <div class="ciyastore-description-inner">
-                        ' . $row['description'] . '
-                    </div>
-
-                </div>
-            </div>
-     
-    </div> </div>
-</div>
-';
-        } else {
-            $out =    '  <div class="col-md-4 col-sm-6">
-    <div class="product product-hover-style-hover-summary product-hover-button-style-light product_title_type-single_line product_icon_type-line-icon">
-        <div class="product-inner">
-            <div class="content-hover-block" style="margin-bottom: -103px;"></div>
-            <div class="product-thumbnail">
-                <div class="product-thumbnail-inner">
-                    <a href="#">
-                        <div class="product-thumbnail-main">
-                            <img src="' . $image[0] . '"style="height:300px;" >
-                            <p class="stock out-of-stock">Out of stock</p>
-                        </div>
-                        <div class="product-thumbnail-swap">
-                            <img src=' . $image[1] . '"style="height:300px;">
-                        </div>
-                    </a>
-                </div>
-                <div class="product-action product-action-wishlist">
-                    <a href="wishlist.html" class="add_to_wishlist" data-toggle="tooltip" data-original-title="Wishlist" data-placement="right"> Add to
-                        Wishlist</a>
-                </div>
-                <div class="product-actions">
-                    <div class="product-actions-inner">
-                            
-                        <div class="product-action product-action-add-to-cart">
-                            <a href="cart.php" class="button add_to_cart_button">Add to
-                                cart</a>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="product-info center-text">
-                <span class="ciyastore-product-category">
-                    <a href="#">Accessories</a>
-                </span>
-                <h3 class="product-name">
-                    <a href="shop-single-classic-no-sidebar.html">' . $row['Title'] . '</a>
-                </h3>
-                <span class="price">
-                    <ins>
-                        <span class="price-amount amount">
-                            <span class="currency-symbol">$</span>  ' . $row['price'] . '
-                </span>
-                </ins>
-                </span>
-                <div class="ciyastore-product-description ciyastore-short-description">
-                    <div class="ciyastore-description-inner">
-                        ' . $row['description'] . ' </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
- </div>';
-        }
-        echo $out;
+        require "shopPRO.php";
     }
 } else {
-    echo "not found";
+    echo "
+    <html>
+    <head>
+    <style>
+    .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+}
+
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+    </style>
+    </head>
+    <body>
+
+
+    <div id='productNotFoundModal' class='modal'>
+  <div class='modal-content'>
+    <span class='close-btn' >&times;</span>
+    <h2>Product Not Found</h2>
+    <p>Sorry, the product you're looking for is not available.</p>
+    
+  </div>
+</div>
+
+    <script>
+    $(document).ready(function(){
+    $('#productNotFoundModal').show()
+    $('.close-btn').on('click',function(){
+     $('#productNotFoundModal').hide()
+     window.location.reload()
+    })
+    })
+    </script>
+     </body> </html>";
 }
