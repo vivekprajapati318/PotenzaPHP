@@ -254,7 +254,7 @@
                                 var pal = $('.cart_totals .order-total ').text('$' + totalwith_tax.toFixed(2));
 
                                 $(".checkout-button").on("click", function() {
-                                    window.location.href = `./Order/order.php?amo=${totalwith_tax}`
+                                    window.location.href = `./Order/order.php?amo=${totalwith_tax}&stotal=${total}`
                                 })
                             }
 
@@ -336,9 +336,12 @@
                             });
                             $(document).on('input', '.quantity', function() {
                                 updateCart();
+
                                 $('input').on('blur', function() {
                                     id = $(this).closest("tr").find('.proid').val();
-                                    quant = $('.quantity').closest('td').find('.quantity').val()
+
+                                    quant = $(this).closest('td').find('.quantity').val()
+
 
                                     $.ajax({
                                         url: "./cart/quantinput.php",

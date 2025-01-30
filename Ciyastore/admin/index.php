@@ -31,13 +31,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fix Alignment</title>
     <style>
-        body {
+        .container {
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 0;
         }
 
-        .container {
+        .container1 {
             max-width: 600px;
             margin: 0 auto;
         }
@@ -87,38 +87,40 @@
 
     if ($_SESSION['User'] == "admin") {
     ?>
-
         <div class="container">
-            <input type="button" id="back" value="Back">
-            <input type="button" id="home" value="home">
+            <div class="container1">
+                <input type="button" id="back" value="Back">
+                <input type="button" id="home" value="home">
 
-            <div class="lk" id="lk"></div>
-            <div class="userData form-group">
-                <label for="UserData">User data will be stored here</label>
-                <input type="submit" id="user" value="User's Data">
-            </div>
+                <div class="lk" id="lk"></div>
+                <div class="userData form-group">
+                    <label for="UserData">User data will be stored here</label>
+                    <input type="submit" id="user" value="User's Data">
+                </div>
 
-            <div class="ProductData form-group">
-                <label for="ProductData">Product details will be stored here</label>
-                <input type="submit" id="Pro" value="Product Details">
-            </div>
-
-
-
-            <div class="ProductData form-group">
-                <label for="AddProductData">New product details</label>
-                <input type="submit" id="ProAdd" value="Add Product">
-            </div>
-
-            <div class="lkj"></div>
-        </div> <?php } else {
-
-                echo "<script> window.location.href = '../adminLogin.php'</script>'";
-            }
+                <div class="ProductData form-group">
+                    <label for="ProductData">Product details will be stored here</label>
+                    <input type="submit" id="Pro" value="Product Details">
+                </div>
 
 
-            require "../footer.php"; ?>
+
+                <div class="ProductData form-group">
+                    <label for="AddProductData">New product details</label>
+                    <input type="submit" id="ProAdd" value="Add Product">
+                </div>
+
+                <div class="lkj"></div>
+            </div> <?php } else {
+
+                    echo "<script> window.location.href = '../adminLogin.php'</script>'";
+                }
+
+                    ?>
+        </div>
+        <?php require "../footer.php"; ?>
 </body>
+
 
 </html>
 

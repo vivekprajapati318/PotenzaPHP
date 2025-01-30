@@ -390,7 +390,7 @@
                                                                         <div class="media-body">
                                                                                     <h6>' . $row['Title'] . '
                                                                                     </h6>
-                                                                            <span class="quantity">1 × <span class="woocs-special_price_code"><span class="ciya-Price-amount amount"><span class="ciya-Price-currencySymbol">$</span>' . $row['price'] . '</span>
+                                                                            <span class="quantity">' . $row['quantity'] . ' × <span class="woocs-special_price_code"><span class="ciya-Price-amount amount"><span class="ciya-Price-currencySymbol">$</span>' . $row['price'] . '</span>
                                                                                 </span>
                                                                             </span>
                                                                         </div>
@@ -410,7 +410,7 @@
 
                                                         <p class="ciyastore-mini-cart__buttons buttons">
                                                             <a href="cart.php" class="button wc-forward">View cart</a>
-                                                            <a href="checkout.php" class="button checkout wc-forward">Checkout</a>
+                                                            <a href="Order/order.php" class="button checkout wc-forward">Checkout</a>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -734,7 +734,7 @@
                 var id = $(this).data('id')
 
                 $.ajax({
-                    url: ".cart/Removeitem.php",
+                    url: "./cart/Removeitem.php",
                     type: "POST",
                     data: {
                         id: id
