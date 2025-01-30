@@ -10,6 +10,12 @@
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.png" />
     <!-- Google Fonts -->
+
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CPoppins:400,500,600,700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -92,6 +98,7 @@
                                     </th>
                                     <th class="product-subtotal">Total</th>
                                 </tr>
+
                                 <?php
 
                                 require "./DBconn/DB.php";
@@ -112,7 +119,8 @@
 
                                 <tr>
                                     <td class="product-remove "style="display:flex co;or">
-                                        <button class="remove"   data-id="' . $row["proid"] . '">  </button>
+                                        <button class="remove fas fa-trash-alt"   data-id="' . $row["proid"] . ' ">  </button>
+                                    <input type="hidden" name="proid" class="proid" id="proid"  value="' . $row["proid"] . '">
                                     </td>
                                     <td class="product-thumbnail">
                                         <a href="#">
@@ -128,9 +136,9 @@
                                             $out .= '
                                     <td class="product-quantity" data-title="Quantity">
                                         <div class="number-input md-number-input" style="display:flex;">
-                                            <button onclick="this.parentNode.querySelector(\'input[type=number]\').stepDown()" class="minus">-</button>
-                                            <input class="quantity" min="0" name="quantity" id="quantity" value="1" type="number">
-                                            <button onclick="this.parentNode.querySelector(\'input[type=number]\').stepUp()" class="plus">+</button>
+                                            <button onclick="this.parentNode.querySelector(\'input[type=number]\').stepDown()" class="minus" data-id="' . $row['quantity'] . '">-</button>
+                                            <input class="quantity" min="0" name="quantity" data-id="' . $row['quantity'] . '" value="' . $row['quantity'] . '" type="number">
+                                            <button onclick="this.parentNode.querySelector(\'input[type=number]\').stepUp()" class="plus"  data-id="' . $row['quantity'] . '">+</button>
                                         </div>
                                     </td>
                                 
@@ -208,14 +216,17 @@
                             </tbody>
                         </table>
                         <div class="proceed-to-checkout">
-                            <a href="checkout.php" class="checkout-button button">
-                                Proceed to checkout</a>
+                            <button class="checkout-button button">
+                                Proceed to checkout</button>
                         </div>
                     </div>
 
                     <?php require "footer.php"; ?>
                     <script>
                         $(document).ready(function() {
+                            // Base URL
+
+
                             function updateCart() {
                                 var total = 0;
                                 var totalwith_tax = 0;
@@ -241,7 +252,10 @@
                                 var pal1 = $(' .cart_totals .cart-subtotal td ').text('$' + total.toFixed(2));
 
                                 var pal = $('.cart_totals .order-total ').text('$' + totalwith_tax.toFixed(2));
-                                // console.log(pal, pal1)
+
+                                $(".checkout-button").on("click", function() {
+                                    window.location.href = `./Order/order.php?amo=${totalwith_tax}`
+                                })
                             }
 
                             updateCart();
@@ -264,19 +278,88 @@
 
 
                             })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             $(document).on('click', ' .minus', function() {
                                 updateCart();
+                                quant = $(this).data('id')
+                                id = $(this).closest("tr").find('.proid').val();
+
                                 $.ajax({
-                                    Url: "./cart/quantplus.php",
+                                    url: "./cart/quantminus.php",
+                                    type: "POST",
+                                    data: {
+                                        Quant: quant,
+                                        id: id
+                                    },
+                                    success: function(data) {
+                                        window.location.reload()
+                                    }
 
                                 })
+
+
+
                             });
                             $(document).on('click', '.plus ', function() {
                                 updateCart();
-                            });
+                                id = $(this).closest("tr").find('.proid').val();
+                                quant = $(this).data('id')
 
+                                $.ajax({
+                                    url: "./cart/quantplus.php",
+                                    type: "POST",
+                                    data: {
+                                        Quant: quant,
+                                        id: id
+                                    },
+                                    success: function(data) {
+                                        window.location.reload()
+                                    }
+
+
+                                })
+
+
+                            });
                             $(document).on('input', '.quantity', function() {
                                 updateCart();
+                                $('input').on('blur', function() {
+                                    id = $(this).closest("tr").find('.proid').val();
+                                    quant = $('.quantity').closest('td').find('.quantity').val()
+
+                                    $.ajax({
+                                        url: "./cart/quantinput.php",
+                                        type: "POST",
+                                        data: {
+                                            Quant: quant,
+                                            id: id
+                                        },
+                                        success: function(data) {
+
+                                            window.location.reload()
+                                        }
+
+
+                                    })
+                                })
+
+
+
+
+
                             });
                             $('.back').on("click", function() {
                                 window.history.back()
@@ -286,6 +369,7 @@
                                 $('.commm').load("login.php", function() {
 
                                     $("#pgs_login_form").toggle()
+                                    window.location.reload()
                                 })
 
                             })
