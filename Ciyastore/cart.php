@@ -326,7 +326,12 @@
                                         id: id
                                     },
                                     success: function(data) {
-                                        window.location.reload()
+                                        if (data == 1) {
+                                            alert("quantity you have entered is higher then stock")
+                                            window.location.reload()
+                                        } else {
+                                            window.location.reload()
+                                        }
                                     }
 
 
@@ -351,8 +356,12 @@
                                             id: id
                                         },
                                         success: function(data) {
-
-                                            window.location.reload()
+                                            if (data == 1) {
+                                                alert("quantity you have entered is higher then stock")
+                                                window.location.reload()
+                                            } else {
+                                                window.location.reload()
+                                            }
                                         }
 
 

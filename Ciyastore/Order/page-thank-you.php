@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -151,7 +152,21 @@
 </head>
 
 <body>
+    <?php
+    require "../DBconn/DB.php";
+    $deletePRO = $conn->query("SELECT proid , quantity from cart where Email='$_SESSION[email]' ;");
+    while (
+        $delete = mysqli_fetch_assoc($deletePRO)
+    ) {
+        $id = $delete['proid'];
+        $quant = $delete['quantity'];
+        echo $id, $quant;
+        // $prod = $conn->query("UPDATE product set ProCount='Quant'");
+    }
+    // $sql = $conn->query("DELETE from cart where Email='$_SESSION[email]' ;");
 
+    echo "<script>alert('ordered')</script>";
+    ?>
     <header>
         <h1>Ciyastore</h1>
     </header>
@@ -182,14 +197,14 @@
     </div>
 
     <div class="cta-buttons">
-        <a href="/track-order">Track Your Order</a>
-        <a href="/shop">Continue Shopping</a>
+        <a href="./trackrecord.php">Track Your Order</a>
+        <a href="../Shop.php">Continue Shopping</a>
     </div>
 
     <div class="social-media">
         <p>Share your Ciyastore find with us! Tag us on social media:</p>
         <a href="https://facebook.com/ciyastore" target="_blank">Facebook</a>
-        <a href="https://instagram.com/ciyastore" target="_blank">Instagram</a>
+        <a href="https://instagram.com/vivekprajapati2004" target="_blank">Instagram</a>
         <a href="https://twitter.com/ciyastore" target="_blank">Twitter</a>
     </div>
     <?php require "../footer.php" ?>

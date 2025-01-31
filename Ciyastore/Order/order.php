@@ -90,272 +90,14 @@
                                     <div class="form-group">
                                         <label for="billing_first_name" class="">First name&nbsp;<abbr class="required" title="required">*</abbr>
                                         </label>
-                                        <input type="text" tabindex="1" class="form-control " name="billing_first_name" id="billing_first_name" placeholder="" value="<?php echo  $first; ?>">
+                                        <input type="text" tabindex="1" class="form-control " name="billing_first_name" id="billing_first_name" readonly placeholder="" value="<?php echo  $first; ?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="billing_last_name" class="">Last name&nbsp;<abbr class="required" title="required">*</abbr></label>
-                                        <input type="text" tabindex="2" class="form-control " name="billing_last_name" id="billing_last_name" placeholder="" value="<?php echo  $last; ?>">
+                                        <input type="text" tabindex="2" class="form-control " name="billing_last_name" id="billing_last_name" placeholder="" readonly value="<?php echo  $last; ?>">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="billing_company" class="">Company name&nbsp;<span class="optional">(optional)</span></label>
-                                        <input type="text" tabindex="3" class="form-control" name="billing_company" id="billing_company" placeholder="" value="potenza global solution ">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="billing_country" class="">Country&nbsp;<abbr class="required" title="required">*</abbr></label>
-                                        <select name="billing_country" id="billing_country" class="select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" data-select2-id="billing_country">
-                                            <option value="">Select a country…</option>
-                                            <option value="AX">Åland Islands</option>
-                                            <option value="AF">Afghanistan</option>
-                                            <option value="AL">Albania</option>
-                                            <option value="DZ">Algeria</option>
-                                            <option value="AS">American Samoa</option>
-                                            <option value="AD">Andorra</option>
-                                            <option value="AO">Angola</option>
-                                            <option value="AI">Anguilla</option>
-                                            <option value="AQ">Antarctica</option>
-                                            <option value="AG">Antigua and Barbuda</option>
-                                            <option value="AR">Argentina</option>
-                                            <option value="AM">Armenia</option>
-                                            <option value="AW">Aruba</option>
-                                            <option value="AU">Australia</option>
-                                            <option value="AT">Austria</option>
-                                            <option value="AZ">Azerbaijan</option>
-                                            <option value="BS">Bahamas</option>
-                                            <option value="BH">Bahrain</option>
-                                            <option value="BD">Bangladesh</option>
-                                            <option value="BB">Barbados</option>
-                                            <option value="BY">Belarus</option>
-                                            <option value="PW">Belau</option>
-                                            <option value="BE">Belgium</option>
-                                            <option value="BZ">Belize</option>
-                                            <option value="BJ">Benin</option>
-                                            <option value="BM">Bermuda</option>
-                                            <option value="BT">Bhutan</option>
-                                            <option value="BO">Bolivia</option>
-                                            <option value="BQ">Bonaire, Saint Eustatius and Saba</option>
-                                            <option value="BA">Bosnia and Herzegovina</option>
-                                            <option value="BW">Botswana</option>
-                                            <option value="BV">Bouvet Island</option>
-                                            <option value="BR">Brazil</option>
-                                            <option value="IO">British Indian Ocean Territory</option>
-                                            <option value="VG">British Virgin Islands</option>
-                                            <option value="BN">Brunei</option>
-                                            <option value="BG">Bulgaria</option>
-                                            <option value="BF">Burkina Faso</option>
-                                            <option value="BI">Burundi</option>
-                                            <option value="KH">Cambodia</option>
-                                            <option value="CM">Cameroon</option>
-                                            <option value="CA">Canada</option>
-                                            <option value="CV">Cape Verde</option>
-                                            <option value="KY">Cayman Islands</option>
-                                            <option value="CF">Central African Republic</option>
-                                            <option value="TD">Chad</option>
-                                            <option value="CL">Chile</option>
-                                            <option value="CN">China</option>
-                                            <option value="CX">Christmas Island</option>
-                                            <option value="CC">Cocos (Keeling) Islands</option>
-                                            <option value="CO">Colombia</option>
-                                            <option value="KM">Comoros</option>
-                                            <option value="CG">Congo (Brazzaville)</option>
-                                            <option value="CD">Congo (Kinshasa)</option>
-                                            <option value="CK">Cook Islands</option>
-                                            <option value="CR">Costa Rica</option>
-                                            <option value="HR">Croatia</option>
-                                            <option value="CU">Cuba</option>
-                                            <option value="CW">Curaçao</option>
-                                            <option value="CY">Cyprus</option>
-                                            <option value="CZ">Czech Republic</option>
-                                            <option value="DK">Denmark</option>
-                                            <option value="DJ">Djibouti</option>
-                                            <option value="DM">Dominica</option>
-                                            <option value="DO">Dominican Republic</option>
-                                            <option value="EC">Ecuador</option>
-                                            <option value="EG">Egypt</option>
-                                            <option value="SV">El Salvador</option>
-                                            <option value="GQ">Equatorial Guinea</option>
-                                            <option value="ER">Eritrea</option>
-                                            <option value="EE">Estonia</option>
-                                            <option value="ET">Ethiopia</option>
-                                            <option value="FK">Falkland Islands</option>
-                                            <option value="FO">Faroe Islands</option>
-                                            <option value="FJ">Fiji</option>
-                                            <option value="FI">Finland</option>
-                                            <option value="FR">France</option>
-                                            <option value="GF">French Guiana</option>
-                                            <option value="PF">French Polynesia</option>
-                                            <option value="TF">French Southern Territories</option>
-                                            <option value="GA">Gabon</option>
-                                            <option value="GM">Gambia</option>
-                                            <option value="GE">Georgia</option>
-                                            <option value="DE">Germany</option>
-                                            <option value="GH">Ghana</option>
-                                            <option value="GI">Gibraltar</option>
-                                            <option value="GR">Greece</option>
-                                            <option value="GL">Greenland</option>
-                                            <option value="GD">Grenada</option>
-                                            <option value="GP">Guadeloupe</option>
-                                            <option value="GU">Guam</option>
-                                            <option value="GT">Guatemala</option>
-                                            <option value="GG">Guernsey</option>
-                                            <option value="GN">Guinea</option>
-                                            <option value="GW">Guinea-Bissau</option>
-                                            <option value="GY">Guyana</option>
-                                            <option value="HT">Haiti</option>
-                                            <option value="HM">Heard Island and McDonald Islands</option>
-                                            <option value="HN">Honduras</option>
-                                            <option value="HK">Hong Kong</option>
-                                            <option value="HU">Hungary</option>
-                                            <option value="IS">Iceland</option>
-                                            <option value="IN" selected="selected" data-select2-id="34">India</option>
-                                            <option value="ID">Indonesia</option>
-                                            <option value="IR">Iran</option>
-                                            <option value="IQ">Iraq</option>
-                                            <option value="IE">Ireland</option>
-                                            <option value="IM">Isle of Man</option>
-                                            <option value="IL">Israel</option>
-                                            <option value="IT">Italy</option>
-                                            <option value="CI">Ivory Coast</option>
-                                            <option value="JM">Jamaica</option>
-                                            <option value="JP">Japan</option>
-                                            <option value="JE">Jersey</option>
-                                            <option value="JO">Jordan</option>
-                                            <option value="KZ">Kazakhstan</option>
-                                            <option value="KE">Kenya</option>
-                                            <option value="KI">Kiribati</option>
-                                            <option value="KW">Kuwait</option>
-                                            <option value="KG">Kyrgyzstan</option>
-                                            <option value="LA">Laos</option>
-                                            <option value="LV">Latvia</option>
-                                            <option value="LB">Lebanon</option>
-                                            <option value="LS">Lesotho</option>
-                                            <option value="LR">Liberia</option>
-                                            <option value="LY">Libya</option>
-                                            <option value="LI">Liechtenstein</option>
-                                            <option value="LT">Lithuania</option>
-                                            <option value="LU">Luxembourg</option>
-                                            <option value="MO">Macao S.A.R., China</option>
-                                            <option value="MK">Macedonia</option>
-                                            <option value="MG">Madagascar</option>
-                                            <option value="MW">Malawi</option>
-                                            <option value="MY">Malaysia</option>
-                                            <option value="MV">Maldives</option>
-                                            <option value="ML">Mali</option>
-                                            <option value="MT">Malta</option>
-                                            <option value="MH">Marshall Islands</option>
-                                            <option value="MQ">Martinique</option>
-                                            <option value="MR">Mauritania</option>
-                                            <option value="MU">Mauritius</option>
-                                            <option value="YT">Mayotte</option>
-                                            <option value="MX">Mexico</option>
-                                            <option value="FM">Micronesia</option>
-                                            <option value="MD">Moldova</option>
-                                            <option value="MC">Monaco</option>
-                                            <option value="MN">Mongolia</option>
-                                            <option value="ME">Montenegro</option>
-                                            <option value="MS">Montserrat</option>
-                                            <option value="MA">Morocco</option>
-                                            <option value="MZ">Mozambique</option>
-                                            <option value="MM">Myanmar</option>
-                                            <option value="NA">Namibia</option>
-                                            <option value="NR">Nauru</option>
-                                            <option value="NP">Nepal</option>
-                                            <option value="NL">Netherlands</option>
-                                            <option value="NC">New Caledonia</option>
-                                            <option value="NZ">New Zealand</option>
-                                            <option value="NI">Nicaragua</option>
-                                            <option value="NE">Niger</option>
-                                            <option value="NG">Nigeria</option>
-                                            <option value="NU">Niue</option>
-                                            <option value="NF">Norfolk Island</option>
-                                            <option value="KP">North Korea</option>
-                                            <option value="MP">Northern Mariana Islands</option>
-                                            <option value="NO">Norway</option>
-                                            <option value="OM">Oman</option>
-                                            <option value="PK">Pakistan</option>
-                                            <option value="PS">Palestinian Territory</option>
-                                            <option value="PA">Panama</option>
-                                            <option value="PG">Papua New Guinea</option>
-                                            <option value="PY">Paraguay</option>
-                                            <option value="PE">Peru</option>
-                                            <option value="PH">Philippines</option>
-                                            <option value="PN">Pitcairn</option>
-                                            <option value="PL">Poland</option>
-                                            <option value="PT">Portugal</option>
-                                            <option value="PR">Puerto Rico</option>
-                                            <option value="QA">Qatar</option>
-                                            <option value="RE">Reunion</option>
-                                            <option value="RO">Romania</option>
-                                            <option value="RU">Russia</option>
-                                            <option value="RW">Rwanda</option>
-                                            <option value="ST">São Tomé and Príncipe</option>
-                                            <option value="BL">Saint Barthélemy</option>
-                                            <option value="SH">Saint Helena</option>
-                                            <option value="KN">Saint Kitts and Nevis</option>
-                                            <option value="LC">Saint Lucia</option>
-                                            <option value="SX">Saint Martin (Dutch part)</option>
-                                            <option value="MF">Saint Martin (French part)</option>
-                                            <option value="PM">Saint Pierre and Miquelon</option>
-                                            <option value="VC">Saint Vincent and the Grenadines</option>
-                                            <option value="WS">Samoa</option>
-                                            <option value="SM">San Marino</option>
-                                            <option value="SA">Saudi Arabia</option>
-                                            <option value="SN">Senegal</option>
-                                            <option value="RS">Serbia</option>
-                                            <option value="SC">Seychelles</option>
-                                            <option value="SL">Sierra Leone</option>
-                                            <option value="SG">Singapore</option>
-                                            <option value="SK">Slovakia</option>
-                                            <option value="SI">Slovenia</option>
-                                            <option value="SB">Solomon Islands</option>
-                                            <option value="SO">Somalia</option>
-                                            <option value="ZA">South Africa</option>
-                                            <option value="GS">South Georgia/Sandwich Islands</option>
-                                            <option value="KR">South Korea</option>
-                                            <option value="SS">South Sudan</option>
-                                            <option value="ES">Spain</option>
-                                            <option value="LK">Sri Lanka</option>
-                                            <option value="SD">Sudan</option>
-                                            <option value="SR">Suriname</option>
-                                            <option value="SJ">Svalbard and Jan Mayen</option>
-                                            <option value="SZ">Swaziland</option>
-                                            <option value="SE">Sweden</option>
-                                            <option value="CH">Switzerland</option>
-                                            <option value="SY">Syria</option>
-                                            <option value="TW">Taiwan</option>
-                                            <option value="TJ">Tajikistan</option>
-                                            <option value="TZ">Tanzania</option>
-                                            <option value="TH">Thailand</option>
-                                            <option value="TL">Timor-Leste</option>
-                                            <option value="TG">Togo</option>
-                                            <option value="TK">Tokelau</option>
-                                            <option value="TO">Tonga</option>
-                                            <option value="TT">Trinidad and Tobago</option>
-                                            <option value="TN">Tunisia</option>
-                                            <option value="TR">Turkey</option>
-                                            <option value="TM">Turkmenistan</option>
-                                            <option value="TC">Turks and Caicos Islands</option>
-                                            <option value="TV">Tuvalu</option>
-                                            <option value="UG">Uganda</option>
-                                            <option value="UA">Ukraine</option>
-                                            <option value="AE">United Arab Emirates</option>
-                                            <option value="GB">United Kingdom (UK)</option>
-                                            <option value="US">United States (US)</option>
-                                            <option value="UM">United States (US) Minor Outlying Islands
-                                            </option>
-                                            <option value="VI">United States (US) Virgin Islands</option>
-                                            <option value="UY">Uruguay</option>
-                                            <option value="UZ">Uzbekistan</option>
-                                            <option value="VU">Vanuatu</option>
-                                            <option value="VA">Vatican</option>
-                                            <option value="VE">Venezuela</option>
-                                            <option value="VN">Vietnam</option>
-                                            <option value="WF">Wallis and Futuna</option>
-                                            <option value="EH">Western Sahara</option>
-                                            <option value="YE">Yemen</option>
-                                            <option value="ZM">Zambia</option>
-                                            <option value="ZW">Zimbabwe</option>
-                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="33" style="width: 317.333px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="4" aria-disabled="false" aria-labelledby="select2-billing_country-container"><span class="select2-selection__rendered" id="select2-billing_country-container" role="textbox" aria-readonly="true" title="India">India</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                    </div>
+
+
                                     <div class="form-group">
                                         <label for="billing_address_1" class="">Street address&nbsp;<abbr class="required" title="required">*</abbr></label>
                                         <input type="text" tabindex="5" class="form-control" name="billing_address_1" id="billing_address_1" placeholder="House number and street name" value="">
@@ -371,7 +113,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="billing_state" class="">State / County&nbsp;<abbr class="required" title="required">*</abbr></label>
-                                        <select name="billing_state" id="billing_state" class="select2 select2-hidden-accessible" data-placeholder="" tabindex="-1" aria-hidden="true" data-select2-id="billing_state">
+                                        <select name="billing_state" id="billing_state" class="select2 select2-accessible" data-placeholder="" tabindex="-1" data-select2-id="billing_state">
                                             <option value="" data-select2-id="36">Select a state…</option>
                                             <option value="AP">Andhra Pradesh</option>
                                             <option value="AR">Arunachal Pradesh</option>
@@ -409,7 +151,7 @@
                                             <option value="DL">Delhi</option>
                                             <option value="LD">Lakshadeep</option>
                                             <option value="PY">Pondicherry (Puducherry)</option>
-                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="35" style="width: 245.333px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="8" aria-disabled="false" aria-labelledby="select2-billing_state-container"><span class="select2-selection__rendered" id="select2-billing_state-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder"></span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="billing_postcode" class="">Postcode / ZIP&nbsp;<abbr class="required" title="required">*</abbr></label>
@@ -417,11 +159,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="billing_phone" class="">Phone&nbsp;<abbr class="required" title="required">*</abbr></label>
-                                        <input type="tel" tabindex="10" class="form-control" name="billing_phone" id="billing_phone" placeholder="" value="<?php echo  $phone; ?>" autocomplete="tel">
+                                        <input type="tel" tabindex="10" class="form-control" name="billing_phone" id="billing_phone" readonly placeholder="" value="<?php echo  $phone; ?>" autocomplete="tel">
                                     </div>
                                     <div class="form-group">
                                         <label for="billing_email" class="">Email address&nbsp;<abbr class="required" title="required">*</abbr></label>
-                                        <input type="email" tabindex="11" class="form-control" name="billing_email" id="billing_email" placeholder="" value="<?php echo  $email; ?>" autocomplete="email">
+                                        <input type="email" tabindex="11" class="form-control" name="billing_email" id="billing_email" readonly placeholder="" value="<?php echo  $email; ?>" autocomplete="email">
                                     </div>
                                 </div>
                             </div>
@@ -460,20 +202,26 @@
 
 
 
+                                <?php
+                                $sql = $conn->query("SELECT Title , price, quantity from cart where Email='$_SESSION[email]';");
+
+                                if (mysqli_num_rows($sql) > 0) {
+                                    while ($row = mysqli_fetch_assoc($sql)) {
 
 
-
+                                        echo '
                                 <tr class="cart_item">
                                     <td class="product-name">
-                                        Women’s Fabric Mix Midi Wrap Jumpsuit <strong class="product-quantity">× 1</strong>
+                                      ' . $row['Title'] . ' <strong class="product-quantity">× ' . $row['quantity'] . '</strong>
                                     </td>
                                     <td class="product-total">
-                                        <span class="woocs_special_price_code"><span class="Price-amount amount"><span class="Price-currencySymbol">$</span>40.00</span>
+                                        <span class="woocs_special_price_code"><span class="Price-amount amount"><span class="Price-currencySymbol">$</span>' . $row['price'] * $row['quantity'] . '</span>
                                         </span>
                                     </td>
-                                </tr>
-
-
+                                </tr>';
+                                    }
+                                }
+                                ?>
 
 
 
@@ -491,17 +239,17 @@
                                     <td data-title="Shipping">
                                         <ul id="shipping_method" class="shipping-methods">
                                             <li>
-                                                <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_flat_rate3" value="flat_rate:3" class="shipping_method" checked="checked"><label for="shipping_method_0_flat_rate3">Flat rate: <span class="Price-amount amount"><span class="Price-currencySymbol">$</span>0.00</span></label>
+                                                <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_flat_rate3" value="flat_rate:3" class="shipping_method" checked="checked"><label for="shipping_method_0_flat_rate3">Flat rate: <span class="Price-amount amount"><span class="Price-currencySymbol"></span>8%</span></label>
                                             </li>
                                             <li>
-                                                <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_local_pickup4" value="local_pickup:4" class="shipping_method"><label for="shipping_method_0_local_pickup4">Local pickup: <span class="Price-amount amount"><span class="Price-currencySymbol">$</span>0.00</span></label>
+                                                <input type="radio" name="shipping_method[0]" data-index="0" id="shipping_method_0_local_pickup4" value="local_pickup:4" class="shipping_method"><label for="shipping_method_0_local_pickup4">Local pickup: <span class="Price-amount amount"><span class="Price-currencySymbol"></span>8%</span></label>
                                             </li>
                                         </ul>
                                     </td>
                                 </tr>
                                 <tr class="order-total">
                                     <th>Total</th>
-                                    <td><strong><span class="woocs_special_price_code"><span class="Price-amount amount"><span class="Price-currencySymbol">$</span><?php echo  $_GET['amo']  ?></span></span></strong>
+                                    <td><strong><span class="woocs_special_price_code"><span class="Price-amount amount1" value="<?php echo  $_GET['amo']  ?>"><span class="Price-currencySymbol">$</span><?php echo  $_GET['amo']  ?></span></span></strong>
                                     </td>
                                 </tr>
                             </tfoot>
@@ -512,20 +260,12 @@
                                     <input id="payment_method_bacs" type="radio" class="input-radio" name="payment_method" value="bacs" data-order_button_text="">
                                     <label for="payment_method_bacs">
                                         Direct bank transfer </label>
-                                    <div class="payment_box payment_method_bacs" style="">
+                                    <div class="payment_box payment_method_bacs">
                                         <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
                                         </p>
                                     </div>
                                 </li>
-                                <li class="payment_method_cheque">
-                                    <input id="payment_method_cheque" type="radio" class="input-radio" name="payment_method" value="cheque" data-order_button_text="">
-                                    <label for="payment_method_cheque">
-                                        Check payments </label>
-                                    <div class="payment_box payment_method_cheque">
-                                        <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
-                                        </p>
-                                    </div>
-                                </li>
+
                                 <li class="payment_method_cod">
                                     <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" checked="checked" data-order_button_text="">
                                     <label for="payment_method_cod">
@@ -535,12 +275,12 @@
                                     </div>
                                 </li>
                                 <li class="payment_method_paypal">
-                                    <input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method" value="paypal" data-order_button_text="Proceed to PayPal">
+                                    <input id="payment_method_paypal" type="radio" class="input-radio" name="payment_method" value="UPI" data-order_button_text="Proceed to UPI">
                                     <label for="payment_method_paypal">
-                                        PayPal <img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg" alt="PayPal acceptance mark"><a href="https://www.paypal.com/us/webapps/mpp/paypal-popup" class="about_paypal" onclick="javascript:window.open('https://www.paypal.com/us/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">What
-                                            is PayPal?</a> </label>
+                                        UPI <img src="https://www.shutterstock.com/shutterstock/photos/2327361425/display_1500/stock-vector-unified-payments-interface-upi-logo-vector-editorial-use-only-july-bangalore-india-2327361425.jpg" alt="UPI acceptance mark"><a href="https://www.npci.org.in/what-we-do/upi/product-overview" class="about_paypal" onclick="javascript:window.open('https://www.npci.org.in/what-we-do/upi/product-overview','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">What
+                                            is UPI?</a> </label>
                                     <div class="payment_box payment_method_paypal" style="display:none;">
-                                        <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account. SANDBOX ENABLED. You can use sandbox testing accounts only. See the <a href="https://developer.paypal.com/docs/classic/lifecycle/ug_sandbox/">PayPal
+                                        <p>Pay via UPI; you can pay with your credit card if you don’t have a UPI account. SANDBOX ENABLED. You can use sandbox testing accounts only. See the <a href="https://developer.BHIM.com/docs/classic/lifecycle/ug_sandbox/">UPI
                                                 Sandbox Testing Guide</a> for more details.
                                         </p>
                                     </div>
@@ -560,65 +300,7 @@
                                                 policy</a>.
                                         </p>
                                     </div>
-                                    <div class="terms-and-conditions" style="display: none; max-height: 200px; overflow: auto;">
-                                        <h2>ciyastore Terms of Use</h2>
-                                        <p><strong>This document is an electronic record in terms of Information
-                                                Technology Act, 2000 and rules there under as applicable and the
-                                                amended provisions pertaining to electronic records in various
-                                                statutes as amended by the Information Technology Act, 2000. This
-                                                electronic record is generated by a computer system and does not
-                                                require any physical or digital signatures. </strong><strong>This
-                                                document is published in accordance with the provisions of Rule 3
-                                                (1) of the Information Technology (Intermediaries guidelines) Rules,
-                                                2011 that require publishing the rules and regulations, privacy
-                                                policy and Terms of Use for access or usage of
-                                                ciyastore.potenzaglobalsolutions.com website.</strong>
-                                        </p>
-                                        <p>The domain name ciyastore.potenzaglobalsolutions.com (hereinafter referred to as “Website”) is owned by ciyastore Internet Private Limited a company incorporated under the Companies Act, 1956 with its registered
-                                            office at Vaishnavi Summit, Ground Floor, 7th Main, 80 feet Road, 3rd Block, Koramangala Industrial Layout, Next to Wipro office, Corporation Ward No. 68, Koramangala, Bangalore – 560 034, Karnataka, India
-                                            (hereinafter referred to as “ciyastore”). Your use of the Website and services and tools are governed by the following terms and conditions (
-                                            <strong>“Terms of Use”</strong> ) as applicable to the Website including the applicable policies which are incorporated herein by way of reference. If You transact on the Website, You shall be subject to
-                                            the policies that are applicable to the Website for such transaction. By mere use of the Website, You shall be contracting with ciyastore Internet Private Limited and these terms and conditions including
-                                            the policies constitute Your binding obligations, with ciyastore. For the purpose of these Terms of Use, wherever the context so requires
-                                            <strong>“You”</strong> or <strong>“User”</strong> shall mean any natural or legal person who has agreed to become a buyer on the Website by providing Registration Data while registering on the Website as
-                                            Registered User using the computer systems. ciyastore allows the User to surf the Website or making purchases without registering on the Website. The term <strong>“We”</strong> , <strong>“Us”</strong> ,
-                                            <strong>“Our”</strong> shall mean ciyastore Internet Private Limited. When You use any of the services provided by Us through the Website, including but not limited to, (e.g. Product Reviews, Seller Reviews),
-                                            You will be subject to the rules, guidelines, policies, terms, and conditions applicable to such service, and they shall be deemed to be incorporated into this Terms of Use and shall be considered as part
-                                            and parcel of this Terms of Use. We reserve the right, at Our sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time without any prior written notice to You. It is
-                                            Your responsibility to review these Terms of Use periodically for updates / changes. Your continued use of the Website following the posting of changes will mean that You accept and agree to the revisions.
-                                            As long as You comply with these Terms of Use, We grant You a personal, non-exclusive, non-transferable, limited privilege to enter and use the Website.
-                                        </p>
-                                        <p><strong>ACCESSING, BROWSING OR OTHERWISE USING THE SITE INDICATES YOUR
-                                                AGREEMENT TO ALL THE TERMS AND CONDITIONS UNDER THESE TERMS OF USE,
-                                                SO PLEASE READ THE TERMS OF USE CAREFULLY BEFORE
-                                                PROCEEDING.</strong> By impliedly or expressly accepting these Terms of Use, You also accept and agree to be bound by ciyastore Policies ((including but not limited to Privacy Policy available at Privacy) as amended
-                                            from time to time.
-                                        </p>
-                                        <h2>Membership Eligibility</h2>
-                                        <p>Use of the Website is available only to persons who can form legally binding contracts under Indian Contract Act, 1872. Persons who are “incompetent to contract” within the meaning of the Indian Contract Act,
-                                            1872 including minors, un-discharged insolvents etc. are not eligible to use the Website. If you are a minor i.e. under the age of 18 years, you shall not register as a User of the ciyastore website and
-                                            shall not transact on or use the website. As a minor if you wish to use or transact on website, such use or transaction may be made by your legal guardian or parents on the Website. ciyastore reserves the
-                                            right to terminate your membership and / or refuse to provide you with access to the Website if it is brought to ciyastore’s notice or if it is discovered that you are under the age of 18 years.
-                                        </p>
-                                        <h2>Your Account and Registration Obligations</h2>
-                                        <p>If You use the Website, You shall be responsible for maintaining the confidentiality of your Display Name and Password and You shall be responsible for all activities that occur under your Display Name and Password.
-                                            You agree that if You provide any information that is untrue, inaccurate, not current or incomplete or We have reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete,
-                                            or not in accordance with the this Terms of Use, We shall have the right to indefinitely suspend or terminate or block access of your membership on the Website and refuse to provide You with access to the
-                                            Website.
-                                        </p>
-                                        <h2>Contact Us</h2>
-                                        <p>Please <u>contact us</u> for any questions or comments (including all inquiries unrelated to copyright infringement) regarding this Website.
-                                        </p>
-                                        <h2>Grievance officer</h2>
-                                        <p>In accordance with Information Technology Act 2000 and rules made there under, the name and contact details of the Grievance Officer are provided below :
-                                        </p>
-                                        <p>Porterfield 508 Virginia Street Chicago,</p>
-                                        <p>Opp M. Alexander Building.</p>
-                                        <p>IL 60653</p>
-                                        <h2>contact us</h2>
-                                        <p>Email: support@ciyastore.com</p>
-                                        <p>Time: Mon – Sat (9:00 – 18:00)</p>
-                                    </div>
+
                                     <p class="form-row validate-required">
                                         <label class="form__label form__label-for-checkbox checkbox">
                                             <input type="checkbox" class="form__input form__input-checkbox input-checkbox" name="terms" id="terms">
@@ -628,8 +310,8 @@
                                         <input type="hidden" name="terms-field" value="1">
                                     </p>
                                 </div>
-                                <a class="button alt" id="place_order" href="page-thank-you.php">Place
-                                    order</a>
+                                <button class="button alt" id="place_order">Place
+                                    order</button>
                                 <input type="hidden" id="process-checkout-nonce" name="process-checkout-nonce" value="22d433e66f"><input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review">
                             </div>
                         </div>
@@ -639,6 +321,74 @@
         </div>
     </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            $('#place_order').on("click", function() {
+                var amount = $(".Price-amount.amount1 ").text()
+                amount = amount.substring(1)
+                address1 = $("#billing_address_1").val()
+                address2 = $("#billing_address_2").val()
+                city = $("#billing_city").val()
+                state = $("#billing_state").val()
+                zipcode = $("#billing_postcode").val()
+                var address = address1 + "/" + address2 + "," + city + "," + state + "," + zipcode
+                $('input[name="payment_method"]:checked').each(function() {
+                    payment_method = $(this).val()
+                })
+                addErr = cityErr = stateErr = zipErr = 0
+
+                if (address1 == "") {
+                    alert('empty address')
+                    addErr = 1;
+                }
+                if (city == "") {
+                    alert('empty city')
+                    cityErr = 1;
+                }
+                if (state == "") {
+                    alert('empty state')
+                    stateErr = 1
+                }
+                if (zipcode == "") {
+                    alert('empty zipcode')
+                    zipErr = 1
+                }
+                if (zipcode.length != 6) {
+                    alert("zipcode must be of 6 latter")
+                    zipErr = 1
+                }
+                let pattern = /^[0-9]+$/;
+                if (pattern.test(zipcode) == false) {
+                    console.log('only numbers')
+                    zipErr = 1
+                }
+                if (addErr == 1 || cityErr == 1 || stateErr == 1 || zipErr == 1) {
+                    alert("invalid cradencials")
+                } else {
+                    $.ajax({
+                        url: "AddOrder.php",
+                        type: "post",
+                        data: {
+                            address: address,
+                            amount: amount,
+                            payment_method: payment_method
+                        },
+
+                        success: function(data) {
+                            alert(data)
+                            if (data == "UPI" || data == 'bacs') {
+                                window.location.href = `../PaymentGateway?amount=${amount}`;
+                            }
+                            if (data == "cod") {
+                                window.location.href = "./page-thank-you.php"
+                            }
+
+                        }
+                    })
+                }
+            })
+        })
+    </script>
 
 </body>
 

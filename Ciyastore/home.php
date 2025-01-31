@@ -956,7 +956,7 @@
                 success: function() {
                     $(document).on("click", ".ADDcart", function(e) {
                         var id = $(this).data("id")
-
+                        alert(id)
                         $.ajax({
                             url: "./cart/adding.php",
                             type: "POST",
@@ -964,10 +964,11 @@
                                 id: id
                             },
                             success: function(data) {
-                                console.log(data);
+                                alert(data)
                                 if (data == 1) {
-                                    alert("added")
                                     window.location.reload()
+                                    alert("added")
+
                                 } else if (data == 0) {
                                     alert('exist')
                                 }

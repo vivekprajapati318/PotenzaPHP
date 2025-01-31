@@ -376,7 +376,7 @@
                                                                 if (isset($_SESSION['email'])) {
                                                                     require "./DBconn/DB.php";
                                                                     $sql = $conn->query("SELECT * FROM cart WHERE Email='$_SESSION[email]'");
-
+                                                                    $total = 0;
                                                                     if (mysqli_num_rows($sql) > 0) {
                                                                         while ($row = mysqli_fetch_assoc($sql)) {
 
@@ -394,7 +394,20 @@
                                                                                 </span>
                                                                             </span>
                                                                         </div>
-                                                                    </div>
+                                                                    </div>  
+                                                                    </li>  ';
+
+
+                                                                            $val22 = $row['quantity'] * $row['price'];
+                                                                            $total += $val22;
+
+                                                                            echo '
+                                                                    <input type="hidden" value="' .
+                                                                                $total .
+                                                                                '" name="cov" class="checkout_value">
+
+
+
                                                                 </li>
  ';
                                                                         }
@@ -402,6 +415,7 @@
                                                                 } else {
                                                                     echo "please login to access cart";
                                                                 }
+
                                                                 ?>
 
 
@@ -410,7 +424,7 @@
 
                                                         <p class="ciyastore-mini-cart__buttons buttons">
                                                             <a href="cart.php" class="button wc-forward">View cart</a>
-                                                            <a href="Order/order.php" class="button checkout wc-forward">Checkout</a>
+                                                            <a href="Order/order.php?stotal=<?php echo $total ?>&amo=<?php echo $total + (0.08 * $total) ?>" class="button checkout wc-forward">Checkout </a>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -418,7 +432,6 @@
 
 
 
-                                            </li>
 
 
                                         </ul>
