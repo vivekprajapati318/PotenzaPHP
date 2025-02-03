@@ -96,6 +96,8 @@
 
                 })
 
+
+
                 $(document).on("click", '.OrderDetails', function() {
                     var email = $(this).data('id')
                     $.ajax({
@@ -109,9 +111,9 @@
 
                         }
                     })
-                })
 
-            });
+                });
+            })
         </script>
     </body>
 

@@ -168,7 +168,6 @@
 
 
 
-        print_r($pro);
 
         echo "<br>";
         $quant = $delete['quantity'];
@@ -189,6 +188,7 @@
     <div class="thank-you-message">
         <h2>Thank you for your order, <?php $name = $conn->query("SELECT customer_name from `order` where Email='$_SESSION[email]';");
                                         $name = mysqli_fetch_assoc($name);
+
                                         echo  $name['customer_name'];
                                         ?>!</h2>
         <p>We're getting your order ready to be shipped, and you'll receive a confirmation email shortly.</p>
@@ -197,13 +197,17 @@
     <div class="order-summary">
         <h3>Order Summary</h3>
         <ul>
+            <li>
+                <span>Item 1</span>
+                <span>$29.99</span>
+            </li>
 
             <li class="total">
                 <span>Total</span>
-                <span>$ <?php echo $_GET['amount'] ?></span>
+                <span><?php echo $_GET['amount'] ?></span>
             </li>
         </ul>
-        <p><strong>Order #<?php   ?></strong></p>
+        <p><strong>Order #12345</strong></p>
     </div>
 
     <div class="cta-buttons">

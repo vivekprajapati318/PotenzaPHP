@@ -44,6 +44,7 @@
             <th>phone number</th>
             <th>address</th>
             <th>SKU</th>
+            <th>quantity</th>
             <th>total price</th>
             <th>payment method</th>
 
@@ -63,7 +64,7 @@
                    <td>" . $row['customer_name'] . "</td>
                    <td>" . $row['phone'] . "</td>
                    <td>" . $row['address'] . "</td>
-                   <td>" . $row['SKU'] . "</td>
+                   <td>" . $row['SKU'] . "</td> " . "   <td>" . $row['quantity'] . "</td>
                    <td>" . $row['total price'] . "</td>
                    <td>" . $row['payment method'] . "</td>
             
