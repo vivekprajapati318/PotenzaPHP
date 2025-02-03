@@ -365,6 +365,7 @@
                             if (data == 1) {
                                 alert("data updated")
                                 window.location.href = "Product.php"
+                                window.location.reload()
                             } else {
                                 alert(data);
                             }

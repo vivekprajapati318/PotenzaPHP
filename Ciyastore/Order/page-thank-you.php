@@ -154,16 +154,30 @@
 <body>
     <?php
     require "../DBconn/DB.php";
+    //cart product count
     $deletePRO = $conn->query("SELECT proid , quantity from cart where Email='$_SESSION[email]' ;");
+
     while (
         $delete = mysqli_fetch_assoc($deletePRO)
     ) {
+
         $id = $delete['proid'];
+        //main product count
+        $result = $conn->query("SELECT ProCount,proid from product where proid='$id';");
+        $pro = mysqli_fetch_assoc($result);
+
+
+
+        print_r($pro);
+
+        echo "<br>";
         $quant = $delete['quantity'];
-        echo $id, $quant;
-        // $prod = $conn->query("UPDATE product set ProCount='Quant'");
+
+        $updated_count = $pro['ProCount'] - $quant;
+
+        $prod = $conn->query("UPDATE product set ProCount='$updated_count' where proid='$id';");
     }
-    // $sql = $conn->query("DELETE from cart where Email='$_SESSION[email]' ;");
+    $sql = $conn->query("DELETE from cart where Email='$_SESSION[email]' ;");
 
     echo "<script>alert('ordered')</script>";
     ?>
@@ -173,27 +187,23 @@
     <button class="back"> &#8592; back</button>
 
     <div class="thank-you-message">
-        <h2>Thank you for your order, [Customer Name]!</h2>
+        <h2>Thank you for your order, <?php $name = $conn->query("SELECT customer_name from `order` where Email='$_SESSION[email]';");
+                                        $name = mysqli_fetch_assoc($name);
+                                        echo  $name['customer_name'];
+                                        ?>!</h2>
         <p>We're getting your order ready to be shipped, and you'll receive a confirmation email shortly.</p>
     </div>
 
     <div class="order-summary">
         <h3>Order Summary</h3>
         <ul>
-            <li>
-                <span>Item 1</span>
-                <span>$29.99</span>
-            </li>
-            <li>
-                <span>Item 2</span>
-                <span>$49.99</span>
-            </li>
+
             <li class="total">
                 <span>Total</span>
-                <span>$79.98</span>
+                <span>$ <?php echo $_GET['amount'] ?></span>
             </li>
         </ul>
-        <p><strong>Order #12345</strong></p>
+        <p><strong>Order #<?php   ?></strong></p>
     </div>
 
     <div class="cta-buttons">

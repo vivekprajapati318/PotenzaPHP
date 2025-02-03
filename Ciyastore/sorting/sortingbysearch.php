@@ -4,14 +4,14 @@ $search = $_POST['search'];
 $sql = "SELECT * FROM product where Title LIKE '%{$search}%' ";
 $result = $conn->query($sql);
 if (mysqli_num_rows($result) > 0) {
-    while ($row = mysqli_fetch_assoc($result)) {
-        $image =  explode(" ", $row['image']);
-        $catagory =  explode(",", $row['catagory']);
+  while ($row = mysqli_fetch_assoc($result)) {
+    $image =  explode(" ", $row['image']);
+    $catagory =  explode(",", $row['catagory']);
 
-        require "shopPRO.php";
-    }
+    require "shopPRO.php";
+  }
 } else {
-    echo "
+  echo "
     <html>
     <head>
     <style>

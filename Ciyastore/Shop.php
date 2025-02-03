@@ -301,6 +301,11 @@
                                                     } else if (data == 0) {
                                                         alert('exist')
                                                     }
+                                                    if (data == 404) {
+
+                                                        alert("login first")
+
+                                                    }
                                                 }
 
                                             })

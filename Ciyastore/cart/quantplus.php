@@ -7,8 +7,9 @@ $procount = $conn->query("SELECT ProCount from product WHERE proid='$id' ");
 $procount = mysqli_fetch_assoc($procount);
 
 if (($quant + 1) > $procount['ProCount']) {
-    echo 1;
+    echo  $procount['ProCount'];
 } else {
     $add = $quant + 1;
     $result = $conn->query("UPDATE cart set quantity='$add' where proid='$id'");
+    echo  $procount['ProCount'];
 }

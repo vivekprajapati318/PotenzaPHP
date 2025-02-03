@@ -278,20 +278,6 @@
 
 
                             })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             $(document).on('click', ' .minus', function() {
                                 updateCart();
                                 quant = $(this).data('id')
@@ -309,8 +295,6 @@
                                     }
 
                                 })
-
-
 
                             });
                             $(document).on('click', '.plus ', function() {
@@ -330,14 +314,13 @@
                                             alert("quantity you have entered is higher then stock")
                                             window.location.reload()
                                         } else {
+
                                             window.location.reload()
                                         }
                                     }
 
 
                                 })
-
-
                             });
                             $(document).on('input', '.quantity', function() {
                                 updateCart();
@@ -356,21 +339,19 @@
                                             id: id
                                         },
                                         success: function(data) {
+
                                             if (data == 1) {
                                                 alert("quantity you have entered is higher then stock")
                                                 window.location.reload()
                                             } else {
                                                 window.location.reload()
+                                                alert(data)
                                             }
                                         }
 
 
                                     })
                                 })
-
-
-
-
 
                             });
                             $('.back').on("click", function() {
@@ -381,7 +362,7 @@
                                 $('.commm').load("login.php", function() {
 
                                     $("#pgs_login_form").toggle()
-                                    window.location.reload()
+
                                 })
 
                             })

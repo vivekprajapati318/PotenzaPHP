@@ -9,11 +9,10 @@ if ($sort == 'asc' || $sort == 'desc') {
 }
 
 $result = $conn->query($sql);
-if (mysqli_num_rows($result) > 0) {
-    while ($row = mysqli_fetch_assoc($result)) {
-        $image =  explode(" ", $row['image']);
-        $catagory =  explode(",", $row['catagory']);
 
-        require "shopPRO.php";
-    }
+while ($row = mysqli_fetch_assoc($result)) {
+    $image =  explode(" ", $row['image']);
+    $catagory =  explode(",", $row['catagory']);
+
+    require "shopPRO.php";
 }

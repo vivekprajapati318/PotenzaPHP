@@ -41,5 +41,5 @@ if (isset($_SESSION['email'])) {
                 echo 0;
         }
 } else {
-        echo "<script>alert('login first')</script>";
+        echo  404;
 }

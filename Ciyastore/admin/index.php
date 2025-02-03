@@ -6,10 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin </title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>admin</title>
+
     <!-- Favicon -->
     <link rel="icon" href="../assets/images/favicon.png" />
     <!-- Google Fonts -->
@@ -27,9 +24,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <!-- REVOLUTION LAYERS STYLES -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fix Alignment</title>
     <style>
         .container {
             font-family: Arial, sans-serif;
@@ -126,6 +120,11 @@
 
 <script>
     $('#back').hide()
+
+
+    $(document).on("click", '#back', function() {
+        window.location.href = "index.php"
+    })
     $(document).ready(function() {
 
         $("#user").on('click', function() {

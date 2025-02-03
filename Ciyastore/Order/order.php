@@ -338,19 +338,19 @@
                 addErr = cityErr = stateErr = zipErr = 0
 
                 if (address1 == "") {
-                    alert('empty address')
+
                     addErr = 1;
                 }
                 if (city == "") {
-                    alert('empty city')
+
                     cityErr = 1;
                 }
                 if (state == "") {
-                    alert('empty state')
+
                     stateErr = 1
                 }
                 if (zipcode == "") {
-                    alert('empty zipcode')
+
                     zipErr = 1
                 }
                 if (zipcode.length != 6) {
@@ -359,7 +359,7 @@
                 }
                 let pattern = /^[0-9]+$/;
                 if (pattern.test(zipcode) == false) {
-                    console.log('only numbers')
+
                     zipErr = 1
                 }
                 if (addErr == 1 || cityErr == 1 || stateErr == 1 || zipErr == 1) {
@@ -375,12 +375,13 @@
                         },
 
                         success: function(data) {
+
                             alert(data)
                             if (data == "UPI" || data == 'bacs') {
                                 window.location.href = `../PaymentGateway?amount=${amount}`;
                             }
                             if (data == "cod") {
-                                window.location.href = "./page-thank-you.php"
+                                window.location.href = `./page-thank-you.php?amount=${amount}`
                             }
 
                         }

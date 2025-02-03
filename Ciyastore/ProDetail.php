@@ -318,7 +318,7 @@
                 $cat = $conn->query("SELECT * from product");
                 while ($row = mysqli_fetch_assoc($cat)) {
                     $image = $row['image'];
-
+                    $prodetail = array();
                     $image = explode(" ", $image); // Assuming images are space-separated in your database
                     $title = $row['Title'];
                     $description = $row['description'];
@@ -380,6 +380,11 @@
                         alert("added")
                     } else if (data == 0) {
                         alert('exist')
+                    }
+                    if (data == 404) {
+
+                        alert("login first")
+
                     }
                 }
 

@@ -35,9 +35,7 @@
 
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "<pre>";
-            print_r($row);
-            echo "</pre>";
+
             $name = explode(" ", $row['customer_name']);
             $first = $name[0];
             $last = end($name);
